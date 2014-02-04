@@ -1,0 +1,53 @@
+<ul class="main-menu main-menu_js_no">
+	{% for _item in items %}<li class="main-menu__elem">
+	<a href="{{ _item.link|raw }}" class="main-menu__link">
+	{{ _item.caption|raw }}</a>
+{% if _item.customHtml %}<div class="main-menu__sub main-menu__sub_width_global submenu">
+	<div class="layout">
+	<div class="layout__base">
+	<div class="grid">
+	{{ _item.customHtml|raw }}</div>
+</div>
+</div>
+</div>
+{% endif %}{% if _item.linkList %}<div class="main-menu__sub main-menu__sub_width_global submenu">
+	<div class="layout">
+	<div class="layout__base">
+	<div class="grid">
+	<div class="submenu">
+	{% for __item in _item.links %}<ul class="submenu__list grid__module {% if __item.col %}grid__module_col_{{ __item.col|raw }}{% endif %} {% if __item.span %}grid__module_span_{{ __item.span|raw }}{% endif %}">
+	{% for ___item in __item.columnLinks %}<li class="submenu__elem">
+	<a href="{{ ___item.link|raw }}" class="submenu__link">{{ ___item.caption|raw }}</a>
+</li>
+{% endfor %}</ul>
+{% endfor %}</div>
+</div>
+</div>
+</div>
+</div>
+{% endif %}</li>
+{% endfor %}<li class="main-menu__elem">
+	<div class="main-menu__more">
+	Еще<span class="main-menu__arrow">
+	▾</span>
+</div>
+<div class="main-menu__sub main-menu__sub_width_global main-menu__sub_padding-bottom_no">
+	<div class="layout">
+	<div class="layout__base">
+	<ul class="flat-sub">
+	{% for _item in moreItems %}<li class="flat-sub__elem">
+	<div class="sub">
+	<ul class="sub__list sub__list_separator_left">
+	{% for __item in _item.columnLinks %}<li class="sub__elem {% if __item.size %}sub__elem_size_{{ __item.size|raw }}{% endif %}">
+	<a class="sub__link" href="{{ __item.link|raw }}">
+	{{ __item.caption|raw }}</a>
+</li>
+{% endfor %}</ul>
+</div>
+</li>
+{% endfor %}</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>

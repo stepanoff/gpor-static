@@ -1,0 +1,187 @@
+<ul class="main-menu main-menu_js_no">
+	<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Новости</a>
+<div class="main-menu__sub main-menu__sub_width_global submenu">
+	<div class="layout">
+	<div class="layout__base">
+	<div class="grid">
+	<ul class="submenu__list submenu__list_separator_left grid__module grid__module_col_1 grid__module_span_17">
+	{% for _item in news_sublinks0 %}<li class="submenu__elem submenu__elem_size_l {% if _item.hilite %}submenu__elem_hilite_{{ _item.hilite|raw }}{% endif %}">
+	<a href="#" class="submenu__link">{{ _item.title|raw }}</a>
+</li>
+{% endfor %}</ul>
+<ul class="submenu__list grid__module grid__module_col_21 grid__module_span_15">
+	<li class="submenu__elem submenu__elem_hilite_yes">
+	<a href="#" class="submenu__link">{{ news_sublinks1.title|raw }}</a>
+</li>
+{% for _item in news_sublinks2 %}<li class="submenu__elem">
+	<a href="#" class="submenu__link">{{ _item.title|raw }}</a>
+</li>
+{% endfor %}</ul>
+<div class="grid__module grid__module_col_38 grid__module_span_90">
+	{% for _item in news_cases %}<a href="{{ _item.link|raw }}" class="case" style="background-image: url({{ _item.imageSrc|raw }});">
+	<span class="case__desc">{{ _item.text|raw }}&nbsp;<span class="case__comments">({{ _item.comments|raw }})</span></span>
+</a>
+{% endfor %}</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Банки</a>
+<div class="main-menu__sub main-menu__sub_width_global submenu">
+	<div class="layout">
+	<div class="layout__base">
+	<div class="grid">
+	<ul class="submenu__list submenu__list_separator_left submenu__list_tight_yes grid__module grid__module_col_1 grid__module_span_21">
+	<li class="submenu__elem submenu__elem_size_l">
+	<a href="#" class="submenu__link">{{ banki_sublinks_heading0.title|raw }}</a>
+</li>
+{% for _item in banki_sublinks0 %}<li class="submenu__elem">
+	<a href="#" class="submenu__link">{{ _item.title|raw }}</a>
+</li>
+{% endfor %}</ul>
+<ul class="submenu__list submenu__list_separator_left grid__module grid__module_col_23 grid__module_span_28">
+	<li class="submenu__elem submenu__elem_size_l">
+	<a href="#" class="submenu__link">{{ banki_sublinks_heading_1.title|raw }}</a>
+</li>
+<li class="submenu__elem">
+	<div class="grid">
+	<ul class="submenu__list submenu__list_tight_yes grid__module grid__module_col_1 grid__module_span_60">
+	{% for _item in banki_sublinks1l %}<li class="submenu__elem">
+	<a href="#" class="submenu__link">{{ _item.title|raw }}</a>
+</li>
+{% endfor %}</ul>
+<ul class="submenu__list submenu__list_tight_yes grid__module grid__module_col_65 grid__module_span_60">
+	{% for _item in banki_sublinks1r %}<li class="submenu__elem">
+	<a href="#" class="submenu__link">{{ _item.title|raw }}</a>
+</li>
+{% endfor %}</ul>
+</div>
+</li>
+<li class="submenu__elem">
+	<a href="#" class="button button_color_orange">Заполнить заявку на кредит</a>
+</li>
+</ul>
+<ul class="submenu__list submenu__list_separator_left submenu__list_tight_yes grid__module grid__module_col_51 grid__module_span_23">
+	<li class="submenu__elem submenu__elem_size_l">
+	<a href="#" class="submenu__link">{{ banki_sublinks_heading1.title|raw }}</a>
+</li>
+{% for _item in banki_sublinks2 %}<li class="submenu__elem">
+	<a href="#" class="submenu__link">{{ _item.title|raw }}</a>
+</li>
+{% endfor %}</ul>
+<ul class="submenu__list submenu__list_separator_left submenu__list_tight_yes grid__module grid__module_col_74 grid__module_span_17">
+	{% for _item in banki_sublinks3 %}<li class="submenu__elem">
+	<a href="#" class="submenu__link">{{ _item.title|raw }}</a>
+</li>
+{% endfor %}</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Работа</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Объявления</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Недвижимость</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Авто</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Общение</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Афиша</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Справка</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Здоровье</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Еда</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Конкурсы</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<a href="#" class="main-menu__link">
+	Почта</a>
+<div class="main-menu__sub main-menu__sub_width_global">
+	<div class="layout">
+	</div>
+</div>
+</li>
+<li class="main-menu__elem">
+	<div class="main-menu__more">
+	Еще<span class="main-menu__arrow">
+	▾</span>
+<ul class="flat-menu main-menu__sub main-menu__sub_more">
+	{% for _item in moretitles %}<li class="flat-menu__elem">
+	<a href="#" class="flat-menu__link">
+	{{ _item.title|raw }}</a>
+</li>
+{% endfor %}</ul>
+</div>
+</li>
+</ul>

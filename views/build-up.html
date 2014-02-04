@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>build up</title>
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width">
+</head>
+<body class="page">
+	<div class="header layout">
+	<div class="layout__base">
+	<div class="grid">
+	<div class="grid__module grid__module_col_1 grid__module_span_73 grid__module_first_yes">
+	<div class="logo">
+	<a href="#" class="logo__link">
+	dfsfds&nbsp;sgfdsfdsg</a>
+</div>
+<ul class="main-menu main-menu_js_no">
+	{% for _item in items %}<li class="main-menu__elem">
+	<a href="{{ _item.link|raw }}" class="main-menu__link">
+	{{ _item.caption|raw }}</a>
+{% if _item.customHtml %}<div class="main-menu__sub main-menu__sub_width_global submenu">
+	<div class="layout">
+	<div class="layout__base">
+	<div class="grid">
+	{{ _item.customHtml|raw }}</div>
+</div>
+</div>
+</div>
+{% endif %}{% if _item.linkList %}<div class="main-menu__sub main-menu__sub_width_global submenu">
+	<div class="layout">
+	<div class="layout__base">
+	<div class="grid">
+	<div class="submenu">
+	{% for __item in _item.links %}<ul class="submenu__list grid__module {% if __item.col %}grid__module_col_{{ __item.col|raw }}{% endif %} {% if __item.span %}grid__module_span_{{ __item.span|raw }}{% endif %}">
+	{% for ___item in __item.columnLinks %}<li class="submenu__elem">
+	<a href="{{ ___item.link|raw }}" class="submenu__link">{{ ___item.caption|raw }}</a>
+</li>
+{% endfor %}</ul>
+{% endfor %}</div>
+</div>
+</div>
+</div>
+</div>
+{% endif %}</li>
+{% endfor %}<li class="main-menu__elem">
+	<div class="main-menu__more">
+	Еще<span class="main-menu__arrow">
+	▾</span>
+</div>
+<div class="main-menu__sub main-menu__sub_width_global main-menu__sub_padding-bottom_no">
+	<div class="layout">
+	<div class="layout__base">
+	<ul class="flat-sub">
+	{% for _item in moreItems %}<li class="flat-sub__elem">
+	<div class="sub">
+	<ul class="sub__list sub__list_separator_left">
+	{% for __item in _item.columnLinks %}<li class="sub__elem {% if __item.size %}sub__elem_size_{{ __item.size|raw }}{% endif %}">
+	<a class="sub__link" href="{{ __item.link|raw }}">
+	{{ __item.caption|raw }}</a>
+</li>
+{% endfor %}</ul>
+</div>
+</li>
+{% endfor %}</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="grid__module grid__module_col_78 grid__module_span_24">
+	<form action="#" class="search">
+	<input type="text" name="search" id="search" class="search__input" tabindex="1" placeholder="Поиск" spellcheck="false">
+<input type="submit" class="search__submit" value="Найти">
+</form>
+</div>
+<div class="grid__module grid__module_col_105 grid__module_span_24">
+	<div class="login">
+	<a href="" class="link">V</a>
+<a href="" class="link">T</a>
+<a href="" class="link">F</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
+
