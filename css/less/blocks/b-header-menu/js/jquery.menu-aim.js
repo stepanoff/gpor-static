@@ -119,7 +119,7 @@
         /**
          * Cancel possible row activations when leaving the menu entirely
          */
-        var mouseleaveMenu = function(event) {
+        var mouseleaveMenu = function() {
                 if (timeoutId) {
                     clearTimeout(timeoutId);
                 }
@@ -128,7 +128,7 @@
                 // currently active row on menu exit.
                 if (options.exitMenu(this) || options.exitOnMouseOut) {
                     if (activeRow) {
-                        options.deactivate(activeRow, event);
+                        options.deactivate(activeRow);
                     }
 
                     activeRow = null;
@@ -140,14 +140,14 @@
         /**
          * Trigger a possible row activation whenever entering a new row.
          */
-        var mouseenterRow = function(event) {
+        var mouseenterRow = function() {
                 if (timeoutId) {
                     // Cancel any previous activation delays
                     clearTimeout(timeoutId);
                 }
 
-                options.enter(this, event);
-                possiblyActivate(this, event);
+                options.enter(this);
+                possiblyActivate(this);
             },
             mouseleaveRow = function() {
                 options.exit(this);
@@ -156,16 +156,16 @@
         /**
          * Activate a menu row.
          */
-        var activate = function(row, event) {
+        var activate = function(row) {
                 if (row == activeRow) {
                     return;
                 }
 
                 if (activeRow) {
-                    options.deactivate(activeRow, event);
+                    options.deactivate(activeRow);
                 }
 
-                options.activate(row, event);
+                options.activate(row);
                 activeRow = row;
             };
 
@@ -174,15 +174,15 @@
          * shouldn't activate yet because user may be trying to enter
          * a submenu's content, then delay and check again later.
          */
-        var possiblyActivate = function(row, event) {
+        var possiblyActivate = function(row) {
                 var delay = activationDelay();
 
                 if (delay) {
                     timeoutId = setTimeout(function() {
-                        possiblyActivate(row, event);
+                        possiblyActivate(row);
                     }, delay);
                 } else {
-                    activate(row, event);
+                    activate(row);
                 }
             };
 

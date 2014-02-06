@@ -1,12 +1,12 @@
-(function($) {
+(function() {
+	var $ = jQuery;
+
 	$(document).ready(function() {
 		checkAndFix();
-		$('.js-header-menu').css({overflow: 'hidden'});
 	});
 
 	$(window).load(function() {
 		checkAndFix();
-		$('.js-header-menu').css({'height' : 'auto'});
 	});
 
 	function checkAndFix() {
@@ -80,4 +80,4 @@
 		$menuContainer.css({overflow: 'visible'});
 		reorganizeMenu();
 	}
-})(jQuery);
+})();
