@@ -1,0 +1,228 @@
+.b-subscribe-title {
+	font-size: 24px;
+	color: #4e4e4e;
+	line-height: 24px;
+	padding: 5px 10px 17px 10px;
+}
+.b-subscribe-content__title {
+	padding: 0px;
+	margin: 14px 0 16px 0;
+	font-weight: normal;
+    color: #4E4E4E;
+    font-size: 18px;
+    line-height: 20px;
+}
+/**/
+.b-subscribe__form-row {
+    border: none;
+    padding: 6px 0;
+	margin: 0px;
+	padding-left: 160px;
+    position: relative;
+}
+.b-subscribe__form-row-birthday {
+	padding-left: 50px;
+}
+.b-subscribe__form-row-box {
+	top: -2px;
+	position: relative;
+	border: 2px solid transparent;
+	padding-right: 2px;
+	
+}
+.b-subscribe__form-row-box_size_short {
+	float: left;
+}
+
+
+.b-subscribe__form-row-box-error input.required,
+.b-subscribe__form-row-box-error select.required{
+	border: 2px solid #f17e00;
+}
+
+
+/**/
+.b-subscribe__form-row label {
+    left: -160px;
+    width: 150px;
+    position: absolute;
+    top: 8px;
+	font-size: 12px;
+}
+.b-subscribe__control,
+.b-subscribe__control-textarea {
+    font-size: 14px;
+	padding: 0px;
+	height: 28px;
+    text-indent: 3px;
+    width: 100%;
+}
+
+.b-subscribe__control[type="checkbox"] {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.b-subscribe__control-checkbox-label {
+    position: relative !important;
+    left: 5px !important;
+    top: 0 !important;
+}
+
+.b-subscribe__control-short {
+	width: auto;
+}
+
+select.b-subscribe__control {
+	height: auto;
+	text-indent: 0px;
+	padding: 6px 6px 6px 3px;
+}
+
+.b-subscribe__control-file {
+	position:relative;
+	top: 3px;
+}
+
+.b-subscribe__control-w60 {
+	width: 60%;
+}
+
+.error .b-subscribe__control,
+.error .b-subscribe__control-textarea {
+    border: 2px solid #FF9D00;
+}
+
+.b-subscribe__control-textarea {
+	height: auto !important;
+}
+
+
+/**/
+a.g-dashed-link-ico {
+    border-bottom: 1px dashed #037DE1;
+    font-size: 13px;
+    line-height: 18px;
+    outline: medium none;
+    position: relative;
+    text-decoration: none;
+}
+a.g-dashed-link-ico:link, 
+a.g-dashed-link-ico:visited, 
+a.g-dashed-link-ico:hover, 
+a.g-dashed-link-ico:active {
+    border-bottom: 1px dashed #037DE1;
+    text-decoration: none;
+}
+.g-arrow-green_down {
+    margin: 0;
+    position: relative;
+    vertical-align: top;
+}
+.g-arrow-green_down i {
+    background: url("../img/b-popup-subscribe_dropdown-sprite.png") no-repeat scroll 0 0px transparent;
+    display: block;
+    font-size: 1px;
+    height: 12px;
+    left: 5px;
+    position: absolute;
+    top: 3px;
+    width: 12px;
+}
+.g-arrow-green_down i.toggle- {
+    background: url("../img/b-popup-subscribe_dropdown-sprite.png") no-repeat scroll -13px 0px transparent;
+}
+/**/
+.b-subscribe-list {
+    margin-bottom: 3px;
+}
+.b-subscribe-list__row {
+	border: none;
+	margin: 0px;
+    margin-left: 20px;
+    padding: 12px 0 6px;
+    position: relative;
+}
+.b-subscribe-list__text {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+    padding: 12px 0 4px;
+    position: relative;
+}
+.b-subscribe-list__control {
+	padding: 0px;
+	margin: 0px;
+    left: -20px;
+    position: absolute;
+    top: 0px;
+}
+.b-subscribe-list label {
+    color: #434445;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 2px;
+	position:relative;
+	top: -2px;
+}
+.b-subscribe-list em {
+    color: #434445;
+    display: block;
+    font-size: 11px;
+    line-height: 14px;
+	font-style: normal;
+}
+
+
+.b-popup-content {}
+
+.b-subscribe__layout-title {
+	font-size: 21px;
+	font-weight: normal;
+	line-height: normal;
+	margin-bottom: 12px;
+}
+
+.b-subscribe__layout-title ins {
+	position:relative;
+	top: 1px;
+	margin-right: 1px;
+}
+
+.b-popup-content h3 {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: normal;
+	margin: 4px 0 13px;
+	padding: 0px;	
+}
+.b-popup-content ul {
+	margin: 6px 0 10px;
+}
+
+.b-popup-content ul li,
+.b-popup-content p {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0px 0 12px;
+	padding: 0px;
+}
+
+.b-popup-content ul li {
+	font-size: 14px;
+	margin-bottom: 6px;
+	background: url(../img/b-popup-li.gif) 0 8px no-repeat; 
+	padding-left: 10px;
+}
+
+.b-popup-content p em {
+	color: #7d7d7d;
+}
+
+
+
+
+
+

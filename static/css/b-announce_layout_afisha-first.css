@@ -1,0 +1,17 @@
+.b-announce_layout_afisha-first {}
+
+.b-announce_layout_afisha-first .b-announce__text__title {
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 3px;
+}
+
+.b-announce_layout_afisha-first .b-announce__text__date {
+	display: block;
+	margin-top: 4px;
+	margin-bottom: 15px;
+}
+
+.b-text .b-announce_layout_afisha-first p {
+	margin-bottom: 10px;
+}

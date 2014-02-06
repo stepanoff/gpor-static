@@ -1,0 +1,111 @@
+.b-zdorovje-question__form {
+	padding-top: 4px;
+	background: url(../img/b-zdorovje-question-header-str.png) 0 0 repeat-x;
+}
+
+.b-zdorovje-question__form form {
+	display: block;
+	background: #efefef;
+}
+
+.b-zdorovje-question__form__row {
+	margin-bottom: 8px;
+}
+
+.b-zdorovje-question__form__control {
+	border: 1px solid #dfdfdf;
+	border-top: 1px solid #9f9f9f;
+	background: #fff url(../img/b-zdorovje-question-top-brd-zdor.gif) 0 0 repeat-x;
+	font-size: 1.4em;
+	padding: 5px 0 6px;
+	text-indent: 5px;
+	width: 100%;
+}
+
+.b-zdorovje-question__form label {
+	display: block;
+	float: left;
+	font-size: 1em;
+	position:relative;
+	margin-bottom: 9px;
+}
+
+.b-zdorovje-question__form label .star {
+	display: none;
+}
+
+.b-zdorovje-question__form .required label .star {
+	position:absolute;
+	display: block;
+	right: -5px;
+	top: -2px;
+	color: #ff9000;
+	text-decoration: none;
+}
+
+.b-zdorovje-question__form__pad {
+	padding: 10px;
+}
+
+.g-custom-control-select__box {
+	clear: both;
+}
+
+.b-zdorovje-question__form__hint {
+	background: #ff9000;
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	border-top: 1px solid #cc7300;
+	padding: 10px 10px 9px;
+}
+
+.b-zdorovje-question__form__footer {
+	height: 50px;
+	background: url(../img/b-zdorovje-question-footerBg.png) 0 0 repeat-x;
+}
+
+.questBoxSubm {
+    background: url(../img/b-zdorovje-question-btnQuest.png) no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 32px;
+    width: 176px;	
+	position:relative;
+	margin-right: 10px;
+	top: 10px;
+}
+
+
+.control-box {
+	position: relative;
+}
+
+.b-zdorovje-question__form .error .b-zdorovje-question__form__control {
+	border: 2px solid #ff9d00;
+	background: #fff;
+}
+
+.control-box__hint,
+.control-box__hint b {
+	display: none;
+}
+
+.error .control-box__hint {
+	display: block;
+	position:absolute;
+	width: 262px;
+	height: 40px;
+	right: -272px;
+	top: -24px;
+	background: url(../img/b-zdorovje-question-hint.png) 0 0 no-repeat;
+	text-decoration: none;
+	z-index: 1;
+}
+
+.error .control-box__hint b {
+	font-weight: normal;
+	display: block;
+	padding-left: 36px;
+	padding-top: 5px;
+	color: #6d561a;
+}

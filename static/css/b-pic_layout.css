@@ -1,0 +1,23 @@
+.b-pic_layout_empty {
+    background: #DEE2D4;
+    height: 60px;
+    width: 80px;
+}
+
+.b-pic_layout_bg-pic {
+	background-position: center center;
+    background-repeat: no-repeat;
+    outline: medium none;
+	position: relative;
+	margin-bottom: -5px;
+}
+
+.b-pic_layout_border-white {
+	border-bottom: 1px solid #cccccc;
+}
+
+.b-pic_layout_border-white .b-pic__pic {
+	border: 3px solid #fff;
+	display: block;
+}
+

@@ -1,0 +1,56 @@
+.b-afisha-kino-descr__title {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 10px 0px;
+    padding: 0;	
+}
+
+.b-afisha-kino-descr__table td {
+	vertical-align: top;
+}
+
+.b-afisha-kino-descr__text {
+	padding-right: 20px;
+}
+
+.b-afisha-kino-descr__pic {
+	padding: 0 10px 20px;
+	width: 1%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.b-afisha-kino-descr {
+	padding-left: 10px;
+}
+
+/**/
+
+.b-afisha-event-descr__table {
+	margin-bottom: 20px;
+	margin-top: 24px;
+	width: 100%;
+	border-collapse: collapse;
+}
+.b-afisha-event-descr__table td {
+	vertical-align: top;
+}
+.b-afisha-event-descr__pic {
+	width: 1%;
+}
+.b-afisha-event-descr__text {
+	padding-left: 20px;
+}
+
+.b-afisha-event-descr__text__date {
+	font-size: 18px;
+	line-height: normal;
+	color: #898989;
+	margin-bottom: 7px;
+}
+.b-afisha-event-descr__text__place {
+	font-size: 14px;
+	line-height: normal;
+	margin-bottom: 20px;
+}

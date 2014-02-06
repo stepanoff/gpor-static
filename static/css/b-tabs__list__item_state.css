@@ -1,0 +1,9 @@
+.context .b-tabs__list__item_state_active .b-tabs__item__link {
+	color: #000;
+	cursor: default;
+}
+
+.context .b-tabs__list__item_state_active .b-tabs__item__inner {
+	border: none;
+	position:relative;
+}

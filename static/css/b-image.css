@@ -1,0 +1,68 @@
+.b-image {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position:relative;
+}
+
+.b-image_layout_main {
+	width: 100%;
+	margin-right: 0px;
+	margin-bottom: 25px;
+}
+
+.b-image__link {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.b-image__link__shadow {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE 5.5+*/
+	-moz-opacity: 0.5; /* Mozilla 1.6 и ниже */
+	-khtml-opacity: 0.5; /* Konqueror 3.1, Safari 1.1 */
+	opacity: 0.5; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */	
+	
+	z-index: 1;
+	display: none;
+}
+.b-image__link__zoom {
+	background: url(../img/b-image__zoom.png) 0 0 no-repeat;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	
+	width: 32px;
+	height: 32px;
+
+	margin-top: -16px;
+	margin-left: -16px;
+	z-index: 5;	
+	
+	display: none;
+}
+
+.b-image__link:hover .b-image__link__shadow,
+.b-image__link:hover .b-image__link__zoom {
+	display: block;
+}
+
+
+
+.b-image__pic {
+	width: 100%;
+	display: block;
+}
+

@@ -1,0 +1,17 @@
+.b-grey-menu-selectorsv__container__item {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+.b-grey-menu-selectors__container__item a {
+	display: block;
+	color: #7d7d7d;
+	text-decoration: none;
+	padding: 10px 10px 13px;
+}
+
+.b-grey-menu-selectors__container__item ins {
+	border-bottom: 1px dashed #7d7d7d;
+	text-decoration: none;
+}

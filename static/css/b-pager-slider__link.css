@@ -1,0 +1,10 @@
+a.b-pager-slider__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+	outline: none;
+}

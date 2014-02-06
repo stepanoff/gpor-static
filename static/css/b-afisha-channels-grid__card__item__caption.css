@@ -1,0 +1,23 @@
+.b-afisha-channels-grid__card__item__caption__pad {
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.b-afisha-channels-grid__card__item__caption img {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	margin-top: 6px;
+}
+.b-afisha-channels-grid__card__item__caption .b-afisha-channels-grid__card__item__caption__lead {
+	font-size: 11px;
+	color: #393939;
+	margin-bottom: 9px;
+}
+.b-afisha-channels-grid__card__item__caption p {
+	margin-top: 10px;
+	color: #000;
+}
+
+.b-afisha-channels-grid__card__item__caption {
+	display: none;
+}

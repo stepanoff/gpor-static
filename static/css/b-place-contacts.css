@@ -1,0 +1,22 @@
+.b-place-contacts {
+	font-size: 13px;
+}
+
+.b-place-contacts h4 {
+	font-size: 1.15em;
+	line-height: 1.2em;
+	font-weight: normal;
+	margin-bottom: 0.25em;
+}
+
+.b-place-contacts address,
+.b-place-contacts p {
+	font-size: 1em;
+	line-height: 1.2em;	
+	margin: 0 0 0.5em 0;
+}
+
+.b-place-contacts address {
+	margin: 0px;
+	margin-bottom: -0.5em;
+}

@@ -1,0 +1,9 @@
+.b-form__body__inner__row__frame_layout_vertical {}
+.b-form__body__inner__row__frame_layout_vertical label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.b-form__body__inner__row__frame_layout_vertical .b-form__body__inner__row__frame__textarea {
+	width: 100%;
+}

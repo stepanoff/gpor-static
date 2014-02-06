@@ -1,0 +1,8 @@
+.b-form__warning {
+	color: #fff;
+	text-align: center;
+	font-size: 11px;
+	line-height: 14px;
+	border-top: 1px solid #cc7300;
+	padding: 8px 0;
+}

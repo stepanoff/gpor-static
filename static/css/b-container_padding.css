@@ -1,0 +1,39 @@
+.context .b-container_padding_left-top {
+	padding: 10px 20px 0 20px;
+}
+
+.context .b-container_padding_10-20 {
+	padding: 10px 20px;
+}
+
+.context .b-container_padding_0 {
+	padding: 0px;
+}
+
+.context .b-container_padding_10 {
+	padding: 10px;
+}
+
+.context .b-container_padding_0-10 {
+	padding: 0 10px;
+}
+
+.context .b-container_padding_left-0 {
+	padding-left: 0px;
+}
+
+.context .b-container_padding_top-10 {
+	padding-top: 10px;
+}
+
+.context .b-container_padding_10-10-0-10 {
+	padding: 10px 10px 0 10px;
+}
+
+.context .b-container_padding_0-10-10-0 {
+	padding: 0px 10px 10px 0;
+}
+
+.context .b-container_padding_0-10-10-10 {
+	padding: 0px 10px 10px 10px;
+}

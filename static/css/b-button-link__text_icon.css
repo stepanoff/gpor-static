@@ -1,0 +1,16 @@
+.context .b-button-link .b-button-link__text_icon {
+	position:relative;
+	display: block;
+	height: 32px;
+	padding-left: 24px;
+	position:relative;
+	
+	font-size: 14px;
+	font-weight: bold;
+	
+}
+
+.context .b-button-link .b-button-link__text_icon_pencil {
+	background: url(img/b-button_ico_write.png) 0 center no-repeat;
+}
+

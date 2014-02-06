@@ -1,0 +1,92 @@
+.b-form-builder__control {
+	width: 99%;
+	outline: none;
+	-moz-appearance: none;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #efefef;
+	border-top: 1px solid #9f9f9f;
+	resize: none;
+	background: #fff url(../img/b-form-builder-control__brd.gif) 0 0 repeat-x;
+	overflow: auto;
+	font-size: 1.2em;
+	line-height: 1em;
+	height: 26px;
+	padding: 3px 0;
+	padding: 0px;
+	text-indent: 3px;
+}
+
+textarea.b-form-builder__control {
+	width: 99%;
+	padding: 3px;
+	text-indent: 0px;
+	height: auto;
+}
+
+select.b-form-builder__control {
+	/*width: auto;*/
+	padding: 0px;
+	padding-right: 0px;
+	text-indent: 0px;
+	height: 1.6em;
+}
+
+select.b-form-builder__control option {
+	padding-right: 10px;
+}
+
+.b-form-builder fieldset input.b-form-builder__control-short {
+	width: 23%;
+	margin-right: 5px;
+}
+
+.horizontal .b-form-builder__control {
+	height: 20px;
+	padding: 0px;
+} 
+
+.b-gorm-builder__table label {
+	color: #646464;
+	font-size: 1.1em;
+	margin-right: 0px;
+	position: relative;
+	top: -2px;
+	white-space: nowrap;													
+}
+.b-gorm-builder__table input[type="text"] {
+	width: 100%;
+}
+.b-gorm-builder__table {
+	width: 100%;
+}
+.b-gorm-builder__table td {
+	padding: 3px 0 4px;
+}												
+.b-gorm-builder__table td.col-middle-label {
+	padding: 0 5px;
+	text-align: center;
+}												
+.b-gorm-builder__table td.col-label {
+	padding-right: 10px;
+}	
+.b-form-builder__h20 {
+	height: 20px;
+}
+
+
+/**/
+
+fieldset.horizontal {
+	position: relative;
+}
+.control-box {
+	margin-left: 65px;
+	position: relative;
+}
+.b-form-builder .horizontal .control-box label {
+	position:relative;
+}
+select.b-form-builder__control_fix-240-col {
+	width: 100%;
+} 

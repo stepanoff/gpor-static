@@ -1,0 +1,32 @@
+.b-grey-menu-selectors {
+	background: #efefef;
+	width: 100%;
+	margin: 10px 0 10px;
+}
+.b-grey-menu-selectors:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.b-grey-menu-selectors__container {
+	padding-left: 10px;
+	float: left;
+}
+.b-grey-menu-selectors__container__item {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+.b-grey-menu-selectors__container__item a {
+	display: block;
+	color: #7d7d7d;
+	text-decoration: none;
+	padding: 4px 10px 8px;
+}
+
+.b-grey-menu-selectors__container__item ins {
+	border-bottom: 1px dashed #7d7d7d;
+	text-decoration: none;
+}

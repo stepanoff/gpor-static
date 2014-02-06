@@ -1,0 +1,16 @@
+.b-photoreport-preview_cols_2 .b-photoreport-preview__second__list__item {
+	width: 45%;
+}
+
+.b-photoreport-preview_cols_1 .b-photoreport-preview__second__list__item {
+	width: 100%;
+    background-position: left center;
+}
+
+@media screen and (max-width: 1180px) {
+	.b-photoreport-preview_cols_1 .b-photoreport-preview__second__list {
+		display: none;
+	}	
+}
+
+

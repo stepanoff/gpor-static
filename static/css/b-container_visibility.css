@@ -1,0 +1,7 @@
+.context .b-container_visibility_hidden {
+	display: none;
+}
+
+.context .b-container_visibility_visible {
+	display: block;
+}

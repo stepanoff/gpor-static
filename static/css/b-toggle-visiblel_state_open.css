@@ -1,0 +1,6 @@
+.b-toggle-visible_state_open b-toggle-visible__label_layout_closed {
+    display: none;
+}
+.b-toggle-visible_state_open b-toggle-visible__label_layout_innactive {
+    display: none;
+}

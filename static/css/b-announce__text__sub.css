@@ -1,0 +1,9 @@
+.b-announce__text__sub {
+	color: #898989;
+	display: block;
+	/*margin-top: 4px;*/
+}
+
+.b-announce_layout_afisha-first .b-announce__text__sub {
+	margin-bottom: 10px;
+}

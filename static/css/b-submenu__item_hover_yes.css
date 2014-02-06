@@ -1,0 +1,7 @@
+.b-submenu__item_hover_yes .b-submenu__link-drop {
+	background: #f2efe8;
+}
+
+.b-submenu__item_hover_yes .b-submenu__link-drop-arr {
+	background-position: left 0;
+}

@@ -1,0 +1,85 @@
+.b-doska-goods-list {
+	margin: 8px 0;
+}
+
+.b-doska-goods-list__item__pic {
+	float: left;
+	background: blue;
+	z-index: 10;
+}
+
+.b-doska-goods-list__item__pic-hide {
+	display: none;
+}
+
+a.b-doska-goods-list__item__pic-link {
+	position: relative;
+	display: block;
+	margin-left: 20px;
+	top: -2px;
+	outline: none;
+	z-index: 10;
+}
+
+.b-doska-goods-list__item__pic-link:hover .b-doska-goods-list__pic-hide {
+	position: absolute;
+	left: 1px; 
+	top: 1px;
+	display: block;
+	z-index: 11;
+	background: black;
+	border: 1px solid #fff;
+}
+
+.b-doska-goods-list__item__body {
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-bottom: 27px;
+	position: relative;
+}
+
+.b-doska-goods-list__item__body-inner {
+	position:relative;
+}
+
+.b-doska-goods-list__item {
+	margin: 12px 0;
+	position:relative;
+}
+
+.b-doska-goods-list__item:hover {
+	background: url(../img/b-doska-goods-list-hover-bg.png) 0 bottom repeat-x;
+}
+
+.b-doska-goods-list__item__body__events {
+	position:absolute;
+	bottom: -20px;
+	left: 0px;
+	height: 20px;
+	display: none;
+}
+
+.b-doska-goods-list__item:hover .b-doska-goods-list__item__body__events {
+	display: block;
+}
+
+.b-doska-goods-list__item__body__title {
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 5px;
+}
+
+.b-doska-goods-list__item__body__date {
+	color: #898989;
+	margin-bottom: 9px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.b-doska-goods-list__item__body__cost {
+	text-align: right;
+	font-weight: bold;
+	position: absolute;
+	right: -105px;
+	top: 2px;
+}

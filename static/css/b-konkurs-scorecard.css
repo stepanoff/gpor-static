@@ -1,0 +1,54 @@
+.b-konkurs-scorecard {
+	position:relative;
+	/*padding-right: 340px;*/
+
+}
+.b-konkurs-scorecard__photo-card {
+	position:relative;
+	float: right;
+	top: 0px;
+	width: 340px;
+	
+}
+
+.b-konkurs-scorecard__score-data {
+	overflow: hidden;
+	/*width: 95%;*/
+}
+
+.b-konkurs-scorecard__score-data-pad {
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+
+.b-konkurs-scorecard__raiting {
+	text-align: center;
+	background: #76a100;
+	color: #fff;
+	float: left;
+	padding: 10px 0px 25px;
+	width: 100px;
+	left: -100px;
+	top: 0px;
+	position: absolute;
+}
+.b-konkurs-scorecard__raiting-title {
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.b-konkurs-scorecard__raiting b {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.b-konkurs-scorecard__pictures {
+	padding: 10px 10px 20px;
+	background: #efefef;	
+}
+
+.b-konkurs-scorecard__photo-card-bottom {
+	background: #76a100;
+	padding: 8px 0 10px;
+}

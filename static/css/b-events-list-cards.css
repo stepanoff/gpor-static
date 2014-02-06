@@ -1,0 +1,124 @@
+.b-events-list-cards {
+	position:relative;
+	overflow: hidden;
+}
+	
+.b-events-list-cards__cols {
+	height: 776px;
+}
+
+.b-events-list-cards__cols:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.b-events-list-cards__head {
+	background: #dedede url(../img/b-events-list-cards__plashki-bg.png) 0 0 repeat-x;
+	position:relative;
+	height: 51px;
+	border-bottom: 1px solid #cccccc;
+	margin: 0 0 10px;
+}
+.b-events-list-cards__head:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.b-events-list-cards__head__link_pos_next,
+.b-events-list-cards__head__link_pos_prev {
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 26px;
+	top: 50%;
+	margin-top: -13px;
+	background-image: url(../img/b-events-list-cards__rows.png);
+}
+
+a.b-events-list-cards__head__link_pos_next {
+	right: 10px;
+}
+
+a.b-events-list-cards__head__link_pos_prev {
+	left: 10px;
+}
+
+a.b-events-list-cards__head__link_pos_next:link,
+a.b-events-list-cards__head__link_pos_next:visited {
+	background-position: -20px 0;
+}
+a.b-events-list-cards__head__link_pos_next:hover,
+a.b-events-list-cards__head__link_pos_next:active {
+	background-position: -20px -30px;
+}
+
+a.b-events-list-cards__head__link_pos_prev:link,
+a.b-events-list-cards__head__link_pos_prev:visited {
+	background-position: 0px 0;
+}
+
+a.b-events-list-cards__head__link_pos_prev:hover,
+a.b-events-list-cards__head__link_pos_prev:active {
+	background-position: 0px -30px;
+}
+
+.b-events-list-cards__head__count {
+	color: #898989;
+	height: 54px;
+	line-height: 56px;
+	font-size: 24px;
+}
+
+
+.b-events-list-cards__head__count_pos_left {
+	float: left;
+	margin-left: 55px;
+}
+.b-events-list-cards__head__count_pos_right {
+	float: right;
+	margin-right: 55px;
+}
+
+
+.b-events-list-cards__head__count a {
+	color: #040404;
+	text-decoration: none;
+	border-bottom: 1px dashed #7d7d7d;
+	position:relative;
+	
+}
+
+.b-events-list-cards__shadow {
+	position:absolute;
+	top: 0px;
+	height: 100%;
+	width: 7px;
+	display: block;
+	z-index: 101;
+}
+
+.b-events-list-cards__shadow_pos_left {
+	background: url(../img/b-events-list-cards__left-sh.png) 0 0 no-repeat;
+	left: 0px;
+}
+
+.b-events-list-cards__shadow_pos_right {
+	background: url(../img/b-events-list-cards__right-sh.png) 0 0 no-repeat;
+	right: 0px;
+}
+
+.b-events-list-cards__cols__frame {
+	position:absolute;
+	width: 10000px;
+	height: 780px;
+	top: 62px;
+    position: absolute;
+    width: 10000px;	
+}
+
+
+
+
+

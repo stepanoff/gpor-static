@@ -1,0 +1,10 @@
+.b-announce_frame_green {padding: 3px; background-color: #779f1a; border-bottom: 1px solid #cccccc;}
+
+.b-announce_frame_green .b-announce__text {margin-left: 10px; margin-right: 10px; }
+.b-announce_frame_green .b-announce__text__title,
+.b-announce_frame_green .b-announce__title__sub,
+.b-announce_frame_green .b-announce__title__date,
+.b-announce_frame_green a
+{color: #fff; }
+.b-announce_frame_green a
+{text-decoration: none;}

@@ -1,0 +1,13 @@
+.b-advertisement-caption__title {
+    float: left;
+    font-size: 1.6em;
+    line-height: 1em;
+    margin-left: 20px;
+    margin-right: 33px;	
+	white-space: nowrap;
+}
+
+.b-advertisement-caption__title a {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3;
+}

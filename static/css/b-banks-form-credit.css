@@ -1,0 +1,180 @@
+
+
+.b-form-builder_container-for-hint {
+	clear: both;	
+}
+
+h3.b-banks-form-credit__h3 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 18px;
+}
+.b-banks-form-credit__hr {
+	height: 1px;
+	background: #d1d1d1;
+	width: 100%;
+	margin: 16px 0;
+}
+.b-banks-form-credit__hr-orange {
+	height: 3px;
+	background: #f17e00;
+	width: 100%;
+	margin: 24px 0 -4px;
+}
+
+.b-banks-form-credit__row {
+	padding: 0px;
+	position: relative;
+	padding-left: 270px;
+	margin: 12px 0;
+	border: none;
+}
+.b-banks-form-credit__row_layout_head-section {
+	margin-bottom: -4px;
+}
+
+.b-banks-form-credit__row .error select,
+.b-banks-form-credit__row .error input {
+	border: 2px solid #ff9600;
+}
+
+.b-banks-form-credit__row .error select {
+	padding: 0px !important;
+}
+
+.b-banks-form-credit__row-label {
+	width: 240px;
+	position:relative;
+	float: left;
+	margin-left: -250px;
+	top: 0px;
+	left: 0px;
+	text-align: right;
+	line-height: 18px;
+	font-size: 12px;
+	
+}
+
+.b-banks-form-credit__row-proportion .b-banks-form-credit__row-label {
+	top: auto;
+}
+
+
+.b-banks-form-credit-chk-box_conteiner {
+	margin: 5px 0 10px;
+	clear: both;
+}
+.b-banks-form-credit-chk-box_conteiner__control {
+	position:relative;
+	top: 2px;
+	margin-right: 6px;
+}
+.b-banks-form-credit-chk-box_conteiner__label {
+	font-size: 12px;
+}
+ 
+
+input.b-banks-form-credit-control,
+select.b-banks-form-credit-control,
+textarea.b-banks-form-credit-chk-box_conteiner__control_textarea {
+	color: #000;
+	font-size: 12px;
+	width: 99%;
+	top: 0px !important;
+	padding: 2px !important;
+	
+}
+
+
+
+select.b-banks-form-credit-control option {
+	padding: 0px 0 !important;
+}
+
+select.b-banks-form-credit-control {
+	width: 100%;
+	min-width: 100px;
+	//width: 100px;
+}
+
+input.b-banks-form-credit-control_input {
+	text-indent: 3px;
+	padding: 1px 0 !important;;
+}
+
+.b-banks-form-credit__textfield {
+	height: 110px;
+	color: #000;
+	resize: none;
+	font-size: 14px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	line-height: 18px;
+	border: 1px solid #d1d1d1;
+}
+
+.b-banks-form-credit-control_select {
+	
+}
+
+.b-banks-form-credit-slash-sep {
+	font-size: 14px;
+	color: #9d9d9d; 
+	padding: 0 14px;
+}
+
+
+.b-banks-form-credit-fraction-disabled input.b-banks-form-credit-control {
+	border: 1px solid #cecece;
+}
+
+.b-banks-form-credit-example {
+
+	color: #7d7d7d;
+	font-size: 11px;
+}
+
+.b-banks-form-credit-fraction .b-banks-form-credit-chk-box_conteiner {
+	margin-top: -10px;
+	min-width: 130px;
+	//width: 130px;
+}
+
+.b-banks-form-credit-control:disabled {
+	background: #f0f0f0;
+	border: 1px solid #9d9d9d;
+}
+
+
+.b-banks-form-credit__row-proportion-content {
+	padding-top: 19px;
+}
+
+.question_sign {
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid black;
+	height: 14px;
+	width: 10px;
+	padding-left: 4px;
+	cursor: pointer;
+	font-size: 12.75px;
+}
+
+.answer_tooltip {
+	display: none;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 3px 5px;
+	width: 180px;
+	top: -10px;
+}
+
+#all_banks {
+	display: inline-block;
+	position: relative;
+	top: -3px;
+}

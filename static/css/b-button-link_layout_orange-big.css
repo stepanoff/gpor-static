@@ -1,0 +1,125 @@
+.context a.b-button-link_layout_orange-big {
+	padding: 0 7px;
+	outline: none;
+	float: none;
+}
+
+a.b-button-link_layout_orange-big .b-button-link-crn-left,
+a.b-button-link_layout_orange-big .b-button-link-crn-right {
+    display: block;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+
+.context a.b-button-link_layout_orange-big .b-button-link-crn-left {
+    background: url("../img/b-button-link_orange.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+}
+.context a.b-button-link_layout_orange-big .b-button-link-crn-right {
+    background: url("../img/b-button-link_orange.png") no-repeat scroll 0 -43px transparent;
+    right: 0;
+}
+.context a.b-button-link_layout_orange-big .b-button-link-bg-text {
+    background: url("../img/b-button-link_orange.png") repeat-x scroll 0 -86px transparent;
+    display: block;
+    height: 42px;
+}
+
+
+
+
+
+
+.context a.b-button-link_layout_orange-big:hover .b-button-link-crn-left {
+    background: url("../img/b-button-link_orange.png") no-repeat scroll 0 -129px transparent;
+}
+.context a.b-button-link_layout_orange-big:hover .b-button-link-crn-right {
+    background: url("../img/b-button-link_orange.png") no-repeat scroll 0 -172px transparent;
+}
+.context a.b-button-link_layout_orange-big:hover .b-button-link-bg-text {
+    background: url("../img/b-button-link_orange.png") repeat-x scroll 0 -215px transparent;
+}
+
+
+.context a.b-button-link_layout_orange-big:active .b-button-link-crn-left {
+    background: url("../img/b-button-link_orange.png") no-repeat scroll 0 -258px transparent;
+}
+.context a.b-button-link_layout_orange-big:active .b-button-link-crn-right {
+    background: url("../img/b-button-link_orange.png") no-repeat scroll 0 -301px transparent;
+}
+.context a.b-button-link_layout_orange-big:active .b-button-link-bg-text {
+    background: url("../img/b-button-link_orange.png") repeat-x scroll 0 -344px transparent;
+}
+
+
+
+
+
+
+
+
+a.b-button-link_layout_orange-big .b-button-link__text {
+	color: #fff;
+	height: 40px;
+	line-height: 38px;
+	padding: 0 30px;
+    display: block;
+    font-size: 16px;
+    position: relative;
+    text-shadow: 1px 1px 0 #bf6400;
+    text-transform: inherit;	
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/
+
+a.b-button-link_layout_orange-big-disabled {
+	padding: 0 7px;
+	outline: none;
+	cursor: default;
+}
+
+a.b-button-link_layout_orange-big-disabled .b-button-link-crn-left,
+a.b-button-link_layout_orange-big-disabled .b-button-link-crn-right {
+    display: block;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+
+.context a.b-button-link_layout_orange-big-disabled .b-button-link-crn-left {
+    background: url("../img/b-button-link_green-disabled.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+}
+.context a.b-button-link_layout_orange-big-disabled .b-button-link-crn-right {
+    background: url("../img/b-button-link_green-disabled.png") no-repeat scroll 0 -43px transparent;
+    right: 0;
+}
+.context a.b-button-link_layout_orange-big-disabled .b-button-link-bg-text {
+    background: url("../img/b-button-link_green-disabled.png") repeat-x scroll 0 -86px transparent;
+    display: block;
+    height: 42px;
+}
+a.b-button-link_layout_orange-big-disabled .b-button-link__text {
+	color: #666666;
+	height: 42px;
+	line-height: 42px;
+	padding: 0 30px;
+    display: block;
+    font-size: 14px;
+    position: relative;
+    text-shadow: 1px 1px 0 #cccccc;
+    text-transform: uppercase;	
+}

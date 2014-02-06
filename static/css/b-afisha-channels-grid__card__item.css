@@ -1,0 +1,44 @@
+.b-afisha-channels-grid__card__item {
+	font-size: 12px;
+	line-height: 14px;
+	padding-top: 10px;
+	position:relative;
+	margin-bottom: 6px;
+}
+
+.b-afisha-channels-grid__card__item a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #000000;
+	outline: none;
+}
+
+.b-afisha-channels-grid__card__item dt {
+	position:absolute;
+	left: -109px;
+	width: 100px;
+	text-align: right;
+	color: #959595;
+}
+
+.b-afisha-channels-grid__card__item dd {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.b-afisha-channels-grid__card__item a:link,
+.b-afisha-channels-grid__card__item a:visited {
+	border-bottom: 1px dashed #000000;
+}
+
+.b-afisha-channels-grid__card__item a:hover,
+.b-afisha-channels-grid__card__item a:active {
+	border-bottom: 1px dashed transparent
+}
+
+
+
+
+
+
+

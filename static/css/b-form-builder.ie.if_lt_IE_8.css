@@ -1,0 +1,109 @@
+.b-form-builder fieldset  {
+	margin-bottom: 10px;
+	font-size: 11px;
+}
+
+.b-form-builder label {
+	font-size: 1em;
+	color: #434445;
+}
+
+.b-form-builder dt {
+	margin-bottom: 9px;
+	position:relative;
+	float: left;
+}
+
+.b-form-builder dd {
+	clear: both;
+}
+
+
+
+
+
+
+
+.b-form-builder fieldset.require {
+	
+}
+
+.b-form-builder fieldset.require input {
+	border: 1px solid red;
+}
+
+.b-form-builder fieldset input {
+	width: 100%;
+}
+
+.b-form-builder fieldset textarea {
+	
+}
+
+.b-form-builder fieldset div dl {
+	position: relative;
+}
+
+
+
+.error .b-form-builder__control {
+	border: 2px solid #ff9d00;
+	position:relative;
+	top: -1px;
+}
+
+
+.star {
+	display: none;
+}
+
+.require .star {
+	display: inline;
+	color: #ff9000;
+	margin-left: 3px;
+	top: 0px;
+	position:relative;
+}
+
+
+/**/
+
+.rc2 {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.rc3 {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.rc5 {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.rc-bl {
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+}
+.rc-br {
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.rc-tl {
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+}
+.rc-tr {
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+}

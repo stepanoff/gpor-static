@@ -1,0 +1,28 @@
+.b-advertisement-listing__items {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.b-advertisement-listing__items td {
+    line-height: 18px;
+    padding: 5px 0 8px;
+	font-size: 1.15em;
+	line-height: 1.1em;
+}
+.b-advertisement-listing__items td a {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3
+}
+
+.b-advertisement-listing__items tr.nodd td {
+	background-color: #F1F5E8;
+}
+.b-advertisement-listing__items td.date {
+    color: #669900;
+    text-align: center;
+    width: 90px;
+	font-size: 1.1em;
+}
+.b-advertisement-listing__items td.descr {
+	padding-right: 24px;
+}
+

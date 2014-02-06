@@ -1,0 +1,269 @@
+/**/
+.b-afisha-date-plashka {
+	background: #cfcfcf url(../img/b-afisha-date-bg.png) 0 bottom repeat-x;
+	padding: 0 0 3px 1px;
+	position:relative;
+	vertical-align: top;
+}
+
+.b-afisha-top-fix-pannel .b-afisha-date-plashka {
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.b-afisha-date-plashka__time {
+	background: #618d00 url(../img/green-bg.png) 0 0 repeat-x;
+	font-size: 13px;
+	vertical-align: top;
+	height: 30px;
+}
+
+.b-afisha-date-plashka__time-value,
+.b-afisha-date-plashka__current-link__pad {
+	color: #fff;
+	font-size: 15px;
+	line-height: 30px;
+	padding-left: 30px;
+	padding-right: 12px;
+	position:relative;
+}
+
+.b-afisha-date-plashka__current-link__pad {
+	font-size: 15px;
+	padding: 0em 30px 0em 34px;
+}
+
+.b-afisha-date-plashka__time-ico {
+	position:absolute;
+	display: block;
+	
+	width: 16px;
+	height: 15px;
+	
+	left: 10px;
+	top: 0.45em;
+	
+	background: url(../img/b-afisha-date-sprite.png) 0 0 no-repeat;
+}
+
+a.b-afisha-date-plashka__current-link {	
+	
+	position: relative;
+	left: -2px;
+	height: 30px;
+	outline: none;
+	text-decoration: none;
+	background: #fe7609 url(../img/orange-bg.png) 0 0 repeat-x;
+}
+
+.b-afisha-date-plashka__current-link__pad {
+	display: block;
+}
+
+.b-afisha-date-plashka__current-ico {
+	background: url(../img/b-afisha-date-sprite.png) -18px 0px no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 10px;
+	top: 0.45em;
+	display: block;
+}
+
+.b-afisha-date-plashka__current-drop {
+	background: url(../img/b-afisha-date-sprite.png) -35px -2px no-repeat;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	right: 7px;
+	top: 0.65em;
+	display: block;
+}
+
+.b-afisha-date-plashka__current-drop {
+	background: url(../img/b-afisha-date-sprite.png) -35px -2px no-repeat;
+}
+
+/**/
+
+.b-afisha-date-bubble-container {
+	position:relative;
+}
+
+.b-afisha-date-bubble {
+    left: 0;
+    position: absolute;
+    top: -5px;
+    visibility: hidden;
+    z-index: 101 !important;
+	
+}
+
+.menu_title-bubble .b-afisha-date-title-content {
+    background: url(../img/empty.gif) repeat scroll 0 0 transparent;
+    float: left;
+    min-width: 205px;
+    padding: 0;
+}
+
+.b-afisha-date-bubble .framed, 
+.b-afisha-date-bubble .framed .f_r, 
+.b-afisha-date-bubble .framed .f_b, 
+.b-afisha-date-bubble .framed .f_l, 
+.b-afisha-date-bubble .framed .f_c {
+    float: left;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+
+.b-afisha-date-bubble .framed .f_tt, 
+.b-afisha-date-bubble .framed .f_rr, 
+.b-afisha-date-bubble .framed .f_bb, 
+.b-afisha-date-bubble .framed .f_ll {
+    display: none;
+}
+
+.b-afisha-date-bubble .framed {
+    background: url("../img/hint-t.png") no-repeat scroll left top transparent;
+    margin: 0 0 15px;
+}
+
+.b-afisha-date-bubble .framed .f_r {
+    background: url("../img/hint-r.png") no-repeat scroll right top transparent;
+    left: 22px;
+    margin-top: 5px;
+    top: -13px;
+}
+
+.b-afisha-date-bubble .framed .f_b {
+    background: url("../img/hint-b.png") no-repeat scroll right bottom transparent;
+    left: 8px;
+    top: 22px;
+}
+
+.b-afisha-date-bubble .framed .f_c {
+    background-color: #F2EFE8;
+    float: none;
+    left: 6px;
+    margin: 0 -2px 0 0;
+    padding: 3px 0 9px;
+    position: relative;
+    top: -16px;
+}
+
+.b-afisha-date-bubble .framed .f_l {
+    background: url("../img/hint-l.png") no-repeat scroll left bottom transparent;
+    left: -22px;
+    padding: 0;
+    top: 8px;
+}
+
+* html .b-afisha-date-bubble .framed .f_r, 
+* html .b-afisha-date-bubble .framed .f_b, 
+* html .b-afisha-date-bubble .framed .f_l {
+    height: 0;
+}
+
+* html .b-afisha-date-bubble .framed .f_tt, 
+* html .b-afisha-date-bubble .framed .f_rr, 
+* html .b-afisha-date-bubble .framed .f_bb, 
+* html .b-afisha-date-bubble .framed .f_bb *, 
+* html .b-afisha-date-bubble .framed .f_ll, 
+* html .b-afisha-date-bubble .framed .f_ll * {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+* html .b-afisha-date-bubble .framed .f_tt {
+}
+
+* html .b-afisha-date-bubble .framed .f_rr {
+}
+
+* html .b-afisha-date-bubble .framed .f_tt, 
+* html .b-afisha-date-bubble .framed .f_bb {
+    height: 22px;
+}
+
+* html .b-afisha-date-bubble .framed .f_rr, 
+* html .b-afisha-date-bubble .framed .f_ll {
+    width: 22px;
+}
+
+* html .b-afisha-date-bubble .framed .f_bb, 
+* html .b-afisha-date-bubble .framed .f_ll {
+    overflow: hidden;
+}
+
+* html .b-afisha-date-bubble .framed .f_bb * {
+    height: 22px;
+    width: 3000px;
+}
+
+* html .b-afisha-date-bubble .framed .f_ll * {
+    height: 3000px;
+    width: 22px;
+}
+
+* html .b-afisha-date-bubble .framed .f_rr, 
+* html .b-afisha-date-bubble .framed .f_bb * {
+    left: auto;
+}
+
+* html .b-afisha-date-bubble .framed .f_ll, 
+* html .b-afisha-date-bubble .framed .f_ll *, 
+* html .b-afisha-date-bubble .framed .f_bb, 
+* html .b-afisha-date-bubble .framed .f_bb * {
+    top: auto;
+}
+
+.b-afisha-date-bubble .framed ul {
+    margin: 0;
+    padding: 0;
+}
+
+.b-afisha-date-bubble .framed ul li {
+    border-top: 1px solid transparent;
+    color: #FFFFFF;
+    font: 13px Arial,Tahoma,Sans-Serif;
+    list-style: none outside none;
+    margin-bottom: 0;
+    padding: 0px;
+}
+
+.b-afisha-date-bubble .framed ul li a,
+.b-afisha-date-title-content__nolink {
+	padding: 2px 10px 5px;
+	text-decoration: none;
+	border: none;
+	display: block;
+	border-top: 1px solid transparent;
+	outline: none;
+}
+
+.b-afisha-date-bubble .framed ul li .b-afisha-date-title-content__nolink ins {
+	border: none;
+	text-decoration: none;
+	color: #7D7D7D;
+}
+
+.b-afisha-date-bubble .framed ul li a:hover {
+	background: #ffa900;
+	color: #fff;
+	border-top: 1px solid #e59800;
+}
+
+.b-afisha-date-bubble .framed ul li ins {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3;
+}
+
+.b-afisha-date-bubble .framed ul li a:hover ins {
+	border-bottom: 1px solid #fff;
+}

@@ -1,0 +1,111 @@
+.b-online-translation {
+	font-size: 13px;
+}
+.b-online-translation-header {
+	background: #779f1a;
+	position: relative;
+	padding-right: 150px;
+	margin-bottom: 25px;
+}
+.b-online-translation-header__pad {
+	padding: 1em 20px 1.2em;
+}
+
+.b-online-translation__title {
+	font-size: 150%;
+	color: #fff;
+}
+.b-online-translation__descr {
+	position: absolute;
+	right: 20px;
+	color: #fff;
+	top: 1.55em;
+	font-size: 95%;
+}
+.b-online-translation__descr span {
+	border-bottom: 1px dotted #fff;
+	cursor: pointer;
+}
+.b-online-translation__ico {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	display: block;
+	background: url(../img/online/no-refresh.gif) 0 0 no-repeat;
+	left: -28px;
+	top: -4px;
+}
+
+.b-online-translation__descr .refresh {
+	background: url(../img/online/refresh.gif) 0 0 no-repeat !important;
+} 
+
+.b-online-translation-list {
+	padding: 0 10px;
+}
+
+.b-online-translation-list dl dt {
+	color: #7d7d7d;
+	background: #f3f3f3;
+	font-size: 95%;
+	float: left;
+	padding: 0.2em 10px 0.15em;
+	margin: 6px 0;
+}
+.b-online-translation-list dl dd {
+	clear: both;
+	overflow: hidden;
+}
+.b-online-translation-list dl dd p {
+	margin-bottom: 10px;
+}
+.b-online-translation-list dl dd img {
+	max-width: 100%;
+}
+
+/**/
+
+a.b-online-translation__fixed-plashka {
+	outline: none;
+	position: fixed;
+	left: 50%;
+	top: 0px;
+	z-index: 1000;
+	background: url(../img/online/online-translation__fixed-plashka_bg.png) 0 0 no-repeat;
+	height: 31px;
+	display: block;
+	text-decoration: none;
+	width: 262px;
+	left: 50%;
+	margin-left: -131px;
+}
+.b-online-translation__fixed-plashka__text {
+	color: #fff;
+	line-height: 31px;
+	font-size: 15px;
+	padding: 0 10px;
+	display: block;
+	text-align: center;
+	text-shadow: 0px 1px #cb740e;
+}
+
+.b-online-translation__fixed-plashka_l-cnr,
+.b-online-translation__fixed-plashka_r-cnr {
+	position: absolute;
+	width: 5px;
+	height: 31px;
+	top: 0px;
+	display: block;
+}
+
+
+
+
+.b-online-translation__fixed-plashka_l-cnr {
+	left: -5px;
+	background: url(../img/online/online-translation__fixed-plashka_l-cnr.png) 0 0 no-repeat;
+}
+.b-online-translation__fixed-plashka_r-cnr {
+	right: -5px;
+	background: url(../img/online/online-translation__fixed-plashka_r-cnr.png) 0 0 no-repeat;
+}

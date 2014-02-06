@@ -1,0 +1,85 @@
+/**/
+
+.b-print-version__wrap .resume-card {
+	border: none;
+	margin-bottom: 15px;
+}
+
+.b-print-version__wrap .resume-card__header {
+	background: none;
+}
+
+.b-print-version__wrap .resume-card__header-l {
+	float: left;
+	padding: 13px 20px 15px 5px;
+} 
+
+.b-print-version__wrap .resume-card__header-r {
+	float: right;
+	padding-top: 22px;
+	font-size: 11px;
+	text-align: right;
+	line-height: 14px;
+	padding-right: 0px;
+}
+
+.b-print-version__wrap .resume-card__header-r b {
+	color: #000;
+}
+
+.b-print-version__wrap .resume-card-post {
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.b-print-version__wrap .resume-card-name {
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+
+.b-print-version__wrap .resume-card-details {
+	font-size: 13px;
+}
+
+.b-print-version__wrap .resume-card-details span {
+	margin-right: 18px;
+}
+
+.b-print-version__wrap .resume-card__body {
+	padding: 13px 5px 15px 5px;
+}
+
+.b-print-version__wrap .resume-card__body h3 {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: bold;
+	margin: 0px;
+	margin-bottom: 4px;
+	
+}
+.b-print-version__wrap .resume-card__body .date {
+	color: #000;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.b-print-version__wrap .resume-card__body p {
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

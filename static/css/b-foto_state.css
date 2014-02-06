@@ -1,0 +1,11 @@
+.context .b-foto_state_current,
+.context .b-foto_state_current .b-foto__text {
+	background: #779f1a;
+}
+
+.context .b-foto_state_current .b-foto__text a {
+	color: #fff;
+	tetx-decoration: none;
+	border: none;
+	cursor: default;
+}

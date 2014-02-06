@@ -1,0 +1,145 @@
+.b-dropdown__bubble {
+    left: 0;
+    position: absolute;
+    top: -5px;
+    visibility: hidden;
+    z-index: 101 !important;
+
+}
+
+.b-dropdown__bubble:after,
+.b-dropdown__bubble__pad:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.b-dropdown__bubble__pad {
+    background: url(../img/empty.gif) repeat scroll 0 0 transparent;
+    float: left;
+    min-width: 205px;
+    padding: 0;
+}
+
+.b-dropdown__bubble__frame, 
+.b-dropdown__bubble__frame__f_r, 
+.b-dropdown__bubble__frame__f_b, 
+.b-dropdown__bubble__frame__f_l, 
+.b-dropdown__bubble__frame__f_c {
+    float: left;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+
+.b-dropdown__bubble__frame__f_tt, 
+.b-dropdown__bubble__frame__f_rr, 
+.b-dropdown__bubble__frame__f_bb, 
+.b-dropdown__bubble__frame__f_ll {
+    display: none;
+}
+
+.b-dropdown__bubble__frame {
+    background: url("../../img/hint-t.png") no-repeat scroll left top transparent;
+    margin: 0 0 15px;
+}
+
+.b-dropdown__bubble__frame__f_r {
+    background: url("../../img/hint-r.png") no-repeat scroll right top transparent;
+    left: 22px;
+    margin-top: 0px;
+    top: -9px;
+}
+
+.b-dropdown__bubble__frame__f_b {
+    background: url("../../img/hint-b.png") no-repeat scroll right bottom transparent;
+    left: 8px;
+    top: 22px;
+}
+
+.b-dropdown__bubble__frame__f_c {
+    background-color: #F2EFE8;
+    float: none;
+    left: 6px;
+    margin: 0 -2px 0 0;
+    padding: 3px 0 9px;
+    position: relative;
+    top: -16px;
+}
+
+.b-dropdown__bubble__frame__f_l {
+    background: url("../../img/hint-l.png") no-repeat scroll left bottom transparent;
+    left: -22px;
+    padding: 0;
+    top: 8px;
+}
+
+* html .b-dropdown__bubble__frame__f_r, 
+* html .b-dropdown__bubble__frame__f_b, 
+* html .b-dropdown__bubble__frame__f_l {
+    height: 0;
+}
+
+* html .b-dropdown__bubble__frame__f_tt, 
+* html .b-dropdown__bubble__frame__f_rr, 
+* html .b-dropdown__bubble__frame__f_bb, 
+* html .b-dropdown__bubble__frame__f_bb *, 
+* html .b-dropdown__bubble__frame__f_ll, 
+* html .b-dropdown__bubble__frame__f_ll * {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+* html .b-dropdown__bubble__frame__f_tt {
+}
+
+* html .b-dropdown__bubble__frame__f_rr {
+}
+
+* html .b-dropdown__bubble__frame__f_tt, 
+* html .b-dropdown__bubble__frame__f_bb {
+    height: 22px;
+}
+
+* html .b-dropdown__bubble__frame__f_rr, 
+* html .b-dropdown__bubble__frame__f_ll {
+    width: 22px;
+}
+
+* html .b-dropdown__bubble__frame__f_bb, 
+* html .b-dropdown__bubble__frame__f_ll {
+    overflow: hidden;
+}
+
+* html .b-dropdown__bubble__frame__f_bb * {
+    height: 22px;
+    width: 3000px;
+}
+
+* html .b-dropdown__bubble__frame__f_ll * {
+    height: 3000px;
+    width: 22px;
+}
+
+* html .b-dropdown__bubble__frame__f_rr, 
+* html .b-dropdown__bubble__frame__f_bb * {
+    left: auto;
+}
+
+* html .b-dropdown__bubble__frame__f_ll, 
+* html .b-dropdown__bubble__frame__f_ll *, 
+* html .b-dropdown__bubble__frame__f_bb, 
+* html .b-dropdown__bubble__frame__f_bb * {
+    top: auto;
+}
+
+.b-dropdown__bubble__frame ul {
+    margin: 0;
+    padding: 0;
+    width: 177px;
+}

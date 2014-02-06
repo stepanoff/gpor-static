@@ -1,0 +1,26 @@
+.b-subscriber_layout_narrow .b-subscriber__container__table__label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.b-subscriber_layout_narrow .b-subscriber__container__table__cell {
+	padding-left: 0px;
+	padding-right: 4px;
+}
+
+.b-subscriber_layout_narrow  .b-btn__text {
+	padding: 0 10px;
+}
+
+.b-subscriber_layout_narrow  .b-subscriber__container__table {
+	margin-bottom: 2px;
+}
+
+.b-subscriber_layout_narrow .b-link-ico {
+	
+}
+
+.b-subscriber_layout_narrow .b-subscriber__container__capture {
+	float: left;
+	margin-left: 30px;
+}

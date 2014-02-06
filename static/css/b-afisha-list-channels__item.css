@@ -1,0 +1,25 @@
+a.b-afisha-list-channels__item {
+	display: block;
+	float: left;
+	width: 16%;
+	margin-right: -4%;
+	text-align: center;
+	outline: none;
+}
+.b-afisha-list-channels__item__pic {
+	display: block;
+	background-position: center center;
+	border-bottom: 1px solid #c6cbba;
+	background-color: #fff;
+	width: 70px;
+	height: 48px;
+	margin: 0 auto;
+	margin-bottom: 6px;
+}
+.b-afisha-list-channels__item em {
+	display: block;
+	font-size: 12px;
+	line-height: 14px;
+	height: 36px;
+	overflow: hidden;
+}

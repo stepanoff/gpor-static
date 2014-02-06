@@ -1,0 +1,132 @@
+/*
+/* 30.08.11 payment news: repo
+*/
+
+.news_section-news-list_reportage {
+	background: #454545;
+	padding: 15px 20px 20px;
+	margin-top: 12px;
+	margin-bottom: 15px;
+}
+.news_section-list-reportage {
+	clear: both;
+}
+.news_section-list-reportage-item {
+	float: left;
+	width: 25%;
+}
+.news_section-news-list_reportage a {
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+}
+.news_section-list-reportage-item a .news_section-list-reportage-item__text ins {
+	border-bottom: 1px solid #34a1ee;
+	color: #34a1ee;
+}
+.news_section-list-reportage-item__text {
+	display: block;
+	padding-right: 10px;
+	line-height: 18px;
+	font-size: 13px;
+}
+.news_section-list-reportage-item__text ins {
+	text-decoration: none;
+}
+.news_section-list-reportage-item img {
+	display: block;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #3b3b3b;
+}
+.news_section-news-list_reportage-title {
+	font-size: 18px;
+	line-height: 18px;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	float: left;
+	margin-bottom: 16px;
+}
+.news_section-news-list_reportage-title ins {
+	position: absolute;
+	background: url(../img/photoRepoTitleIco.png) 0 0 no-repeat;
+	width: 21px;
+	height: 16px;
+	right: -28px;
+	top: 2px;
+}
+/**/
+.b-author-columns {
+    background: none repeat scroll 0 0 #E9EFDB;
+    
+    overflow: hidden;
+}
+.b-author-columns__content {
+    padding: 14px 15px 0 20px;
+}
+.b-author-columns__tite {
+    margin-bottom: 10px;
+	font-size: 18px;
+	
+}
+
+.b-author-columns__tite a {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3
+}
+
+
+
+
+.b-author-columns__list {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+	margin-bottom: 5px;
+}
+.b-author-columns__list li {
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 20px;
+}
+.b-author-columns__list td {
+    padding-bottom: 10px;
+	vertical-align: top;
+}
+.b-author-columns__list li img {
+    display: block;
+}
+.b-author-columns__list td.b-author-columns-l {
+    padding-left: 0;
+    padding-right: 14px;
+    padding-top: 0;
+    width: 50px;
+}
+.b-author-columns__list td.b-author-columns-r {
+    padding-left: 0;
+    padding-top: 0;
+}
+.b-author-columns-r p {
+    color: #8C8C8C;
+    float: left;
+    font: 11px/14px Arial,Tahoma,Sans-Serif;
+    margin: 0;
+	margin-bottom: 7px;
+}
+.b-author-columns-r h6 {
+    float: left;
+    font: 13px/18px Arial,Tahoma,Sans-Serif;
+    margin: 0;
+	margin-bottom: 10px;
+}
+
+/**/
+
+.blueScreen {
+	background: #ecf8ff;
+	border: 1px solid #a7d4f1;
+}
+

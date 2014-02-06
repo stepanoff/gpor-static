@@ -1,0 +1,64 @@
+.b-konkurs-descr__text,
+.b-text .b-konkurs-descr__text p {
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+.b-konkurs-lenta-item_layout_with-pic .b-konkurs-descr {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	overflow: hidden;
+	padding: 0;
+	width: 98%;
+	color: #fff;
+}
+
+.b-konkurs-lenta-item_layout_with-pic .b-button-link {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}
+
+.b-konkurs-lenta-item_layout_with-pic .b-konkurs-descr__inner {
+	padding: 10px 240px 10px 10px;
+}
+
+.b-konkurs-lenta-item_layout_with-pic .b-header_size_h2 {
+	margin-bottom: 1px;
+}
+
+.b-konkurs-descr__shadow {
+	display: none;
+}
+
+.b-konkurs-lenta-item_layout_with-pic .b-konkurs-descr__shadow {
+	background: #000;
+	opacity: 0.7;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.b-konkurs-lenta-item_layout_with-pic .b-link {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+.b-konkurs-descr__inner {
+	position: relative;
+	z-index: 2;
+}
+
+.b-konkurs-descr__button {
+	position:absolute;
+	right: 10px;
+	top: 10px;
+}
+
+

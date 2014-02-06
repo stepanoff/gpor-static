@@ -1,0 +1,29 @@
+.b-afisha-channels-grid__card {
+	position:relative;
+	background: url(../img/b-afisha-channel__item-brd.gif) 0 bottom repeat-x;
+	padding-left: 0px;
+	padding-bottom: 22px;
+	margin-bottom: 14px;
+}
+
+.b-afisha-channels-grid__card__title {
+	position:relaqtive;
+	padding-left: 20px;
+	float: left;
+	top: 10px;
+	font-size: 16px;
+	line-height: 16px;
+	outline: none;
+}
+.b-afisha-channels-grid__card__title img {
+	display: block;
+}
+.b-afisha-channels-grid__card__title ins {
+	display: block;
+	margin-top: 15px;
+	text-decoration: none;
+}
+
+.b-afisha-channels-grid__card__descr {
+	margin-left: 300px;
+}

@@ -1,0 +1,5 @@
+<div class="{% renderClass(context) %}">
+	<a href="{% renderContent(context, 'link', 'plain') %}" title="{% renderContent(context, 'title', 'plain') %}" class="link">
+		{% renderContent(context, 'content') %}
+	</a>
+</div>

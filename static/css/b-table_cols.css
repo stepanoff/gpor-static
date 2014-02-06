@@ -1,0 +1,23 @@
+.b-table_cols_3 .b-table__cell {
+	width: 33%;
+}
+.b-table_cols_2 .b-table__row__cell {
+	width: 50%;
+}
+
+.b-table__row__cell_width_short {
+	width: 1%;
+}
+
+.b-table td {
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+
+
+
+.b-table__row_state_odd td {
+	background: #f4f7ee;
+}
+

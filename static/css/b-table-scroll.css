@@ -1,0 +1,107 @@
+.b-table-scroll  {
+	overflow: hidden; 
+	position: relative; 
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.b-table-fix-row {
+	margin: 0px 0 0;	
+    margin-left: 300px;
+	overflow-x: auto;
+    overflow-y: hidden;
+}
+.b-table-fix-row__table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.b-table-fix-row__table a {
+	text-decoration: none;
+}
+
+.b-table-fix-row__table span {
+	margin: 0 5px;
+}
+
+.b-table-fix-row td {
+	background: #f1f5e8;
+	white-space: nowrap;
+	vertical-align: top;
+	text-align: center;
+	font-size: 13px;
+	line-height: 16px;
+	padding: 0px;
+	width: 1%;
+}
+
+.b-table-fix-row td.b-table-fix-wide {
+	width: 100%;
+}
+
+.b-table-fix-row th {
+	height: 340px;
+	position: absolute;
+	left: 0px;
+	text-align: left;
+	top: auto;
+	width: 300px;
+	vertical-align: top;
+	background: #e5f1dc;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 0px;
+}
+
+.b-table-fix-row th a {
+	font-weight: bold;
+}
+
+.b-table-fix-row .pad {
+	padding: 10px 10px 10px;
+}
+
+.b-table-fix-row th .pad {
+	padding-bottom: 9px;
+}
+
+.b-table-fix-row th .pad {
+	position: relative;
+}
+
+.b-table-fix-row .odd th,
+.b-table-fix-row .odd td,
+.b-table-fix-row .odd th .bg {
+	background: #fff;
+}
+
+.viewport-cnr-l {
+	position:absolute;
+	background: url(../img/scroll-table-left-bg.png) 0 0 no-repeat;
+	top: 0px;
+	left: 300px;
+	width: 15px;
+	height: 1500px;
+	z-index: 100;
+	margin-left: -10px;
+}
+
+.viewport-cnr-r {
+	position:absolute;
+	background: url(../img/scroll-table-right-bg.png) 0 0 no-repeat;
+	top: 0px;
+	right: 0px;
+	width: 7px;
+	height: 1500px;
+	z-index: 100;
+}
+
+.b-afisha-booking-ico {
+	position:relative;
+	width: 11px;
+	height: 16px;
+	top: 4px;
+	background: url(../img/booking-ico.png) 0 0 no-repeat;
+	margin: 0 10px;
+	display: inline-block;
+}

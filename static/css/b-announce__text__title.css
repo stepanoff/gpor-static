@@ -1,0 +1,24 @@
+.b-announce__text__title {
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 3px;
+	margin-right: 5px;
+}
+
+.b-list__item_layout_afisha-first .b-announce__text__title {
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 3px;
+}
+
+.b-list_layout_main-news .b-announce__text__title,
+.b-list_style_green-marker .b-announce__text__title {
+	font-size: 13px;
+}
+
+.b-list__item_index_first a.b-announce__text__title {
+	font-size: 21px;
+	line-height: 24px;
+	text-decoration: none;
+	border-bottom: 2px solid #67a3de;
+}

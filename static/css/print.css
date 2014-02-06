@@ -1,0 +1,13 @@
+body .b-print-version-head__wrap-paddings { display: none; }
+body .onejob-left { overflow: hidden; }
+body .see_actual { display: none; }
+.print_object_dummy {
+	display: block; width: 450px; height: 150px; 
+	border: 1px solid #000000; background-color: #CCCCCC;
+}
+.print_object_dummy p {margin: 60px auto; width: 360px; font: 16px/24px Arial,Tahoma,Sans-Serif; }
+
+.full_width {
+    width: 100%;
+    margin: 0;
+}

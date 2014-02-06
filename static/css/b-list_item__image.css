@@ -1,0 +1,13 @@
+a.b-list__item__image {
+	display: block;
+	outline: none;
+}
+
+.b-list__item__image-teaser {
+	height: 120px;
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+

@@ -1,0 +1,61 @@
+.b-afisha-teleprogramma {
+	background: #fef7d2;
+	position:relative;
+	padding: 13px 10px 7px;
+	font-size: 13px;	
+	margin: 10px 0;
+}
+.b-afisha-teleprogramma__title {
+	font-size: 1.4em;
+	line-height: 1.2em;
+	margin-bottom: 0.55em;	
+}
+.b-afisha-teleprogramma__title a {
+	color: #037DD3;
+	border-bottom: 1px solid #037DD3;
+	text-decoration: none;
+}
+.b-afisha-teleprogramma__clock {
+	position:absolute;
+	background: #76a100;
+	right: 10px;
+	top: 10px;
+	font-size: 115%;
+	color: #fff;
+	padding: 0.55em 10px 0.45em 28px;
+}
+.b-afisha-teleprogramma__clock ins {
+	position:absolute;
+	left: 7px;
+	top: 50%;
+	margin-top: -7px;
+	width: 16px;
+	height: 15px;
+	background: url(../img/b-afisha-teleprogramma_clock-ico.png) 0 center no-repeat;
+}
+.b-afisha-teleprogramma__content {
+	padding-top: 0.45em;
+}
+
+.b-afisha-teleprogramma dl {
+	margin-top: 0.35em;
+	background: url(../img/b-afisha-teleprogramma_list-dot.gif) 0 bottom repeat-x;
+	padding-bottom: 1em;
+}
+
+.b-afisha-teleprogramma dl.last {
+	background: none;
+}
+
+.b-afisha-teleprogramma dt {
+	font-size: 115%;
+	line-height: 1.2em;
+}
+.b-afisha-teleprogramma dd {
+	font-size: 85%;
+	margin-top: 0.3em;
+}
+.b-afisha-teleprogramma dd a {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3;
+}

@@ -1,0 +1,16 @@
+.b-foto-contest-cards__empty_position_side {
+	width: 30%;
+}
+
+.context .b-foto-contest-cards__empty_position_center {
+	width: 1%;
+}
+
+@media screen and (max-width: 1100px) {
+	.b-foto-contest-cards__empty_position_side {
+		display: none;
+	}
+	.context .b-foto-contest-cards__empty_position_center {
+		width: 1%;
+	}
+}

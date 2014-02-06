@@ -1,0 +1,10 @@
+.context:after, .js_context:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.context:after, .js_context:after {
+    clear: both;
+    content: "";
+    display: block;
+}

@@ -1,0 +1,10 @@
+@import url(__content/b-auto-teaser-choose__content.css);
+
+a.b-auto-teaser-choose {
+	outline: none;
+	background: #fff;
+	border: 1px solid #dad4b4;
+	display: block;
+	margin-bottom: 10px;
+}
+

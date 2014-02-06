@@ -1,0 +1,17 @@
+input.b-button-link__text {
+	border: none;
+}
+
+.b-button-link__text {	
+	height: 32px;
+	line-height: 29px;
+	font-size: 18px;
+	display: block;
+	text-align: center;
+	color: #666666;
+	padding: 0 10px;
+	position:relative;	
+	
+	background: transparent;
+}
+

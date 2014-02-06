@@ -1,0 +1,90 @@
+@import url(b-section-news/b-section-news.css);
+@import url(b-zdorovje-question/b-zdorovje-question.css);
+@import url(g-custom-select/custom-select.css);
+@import url(b-zdorovje-rubricator/b-zdorovje-rubricator.css);
+@import url(b-advertisement-caption/b-advertisement-caption.css);
+@import url(b-advertisement-listing/b-advertisement-listing.css);
+
+@import url(b-zdorovje-find-drugs/b-zdorovje-find-drugs.css);
+
+@import url(b-zdorovje-appointments-button/b-zdorovje-appointments-button.css);
+@import url(b-experts/b-experts.css);
+
+@import url(b-blogs-list/b-blogs-list.css);
+
+
+.rc2 {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.rc3 {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.rc5 {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.rc-bl {
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+}
+.rc-br {
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.rc-tl {
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+}
+.rc-tr {
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+}
+
+/**/
+
+.menus_thumbed__orange-bottom-brd {
+	border-bottom: 2px solid #ff8e00;
+	padding-bottom: 14px !important;
+}
+
+/**/
+.b-zdorovje-popup_text {
+	font-size: 11px;
+}
+
+.b-zdorovje-popup_text__list {}
+.b-zdorovje-popup_text__list li {
+	vertical-align: baseline;
+	float: left;
+	margin-right: 36px;
+	font-size:1.2em;
+}
+.b-zdorovje-popup_text__list a {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3;
+	position:relative;
+	
+	
+}
+.b-zdorovje-popup_text__list a.b-zdorovje-popup_text__big-link {
+	font-size: 1.4em;
+	top: -0.3em;
+}
+
+
+
+
+

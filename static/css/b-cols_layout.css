@@ -1,0 +1,56 @@
+/*.b-cols_layout_annonce-hide-cols-main .b-announce,
+.b-cols_layout_annonce-hide-cols .b-announce {
+	width: 29%;
+	float: left;
+	margin-right: 20px;
+}
+
+.b-cols_layout_annonce-hide-cols-main .b-announce_layout_afisha-first {
+	width: 61%;
+	padding-right: 0px;
+}
+
+.b-cols_layout_annonce-hide-cols-main,
+.b-cols_layout_annonce-hide-cols {
+	margin-right: -7%;
+}
+.b-cols_layout_annonce-hide-cols-main .b-announce,
+.b-cols_layout_annonce-hide-cols .b-announce {
+	width: 29%;
+	float: left;
+	margin-right: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+	.b-cols_layout_annonce-hide-cols-main .b-announce,
+	.b-cols_layout_annonce-hide-cols .b-announce {
+		width: 45%;	
+	}
+	
+	.context .b-cols_layout_annonce-hide-cols-main .b-announce_layout_afisha-first {
+		width: 94%;
+		padding-right: 40px;
+		margin-right: 0px;
+	}
+	.b-cols_layout_annonce-hide-cols .b-announce:nth-child(2) {
+		display: none;
+	}	
+	
+}
+.b-cols_layout_annonce-hide-cols-main .b-announce_layout_afisha-first {
+	width: 61%;
+	padding-right: 0px;
+	
+}
+
+*/
+
+
+
+
+
+
+
+
+
+

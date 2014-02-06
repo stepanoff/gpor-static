@@ -1,0 +1,143 @@
+.b-afisha-event {
+	font-size: 13px;
+	line-height: 1.5em;
+}
+.b-afisha-event__pic-link {
+	height: 140px;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 0.55em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: grey;
+}
+
+.b-afisha-event__pic-link img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.b-afisha-event h4 {
+	font-size: 1.15em;
+	line-height: 1.2em;
+	display: inline;
+	margin: 0.5em 5px 1em 0;
+}
+
+.b-afisha-event h4 a {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3
+}
+
+.b-afisha-event-kino-list h4 {
+	font-size: 1.4em;
+	line-height: 1.2em;
+}
+
+
+.b-afisha-event img {
+	display: block;
+}
+
+.b-afisha-event__descr {
+	margin-top: 0.75em;
+	font-size: 0.85em;
+	color: #434445;
+}
+
+a.b-afisha-event-ico {
+	outline: none;
+	text-decoration: none;
+	color: #434445;
+}
+
+.b-afisha-event-ico {
+	padding-left: 15px;
+	position:relative;
+	margin-right: 8px;
+}
+
+.b-afisha-event-ico ins {
+	position:absolute;
+	display: block;
+	left: 0px;
+	top: 50%;
+	margin-top: -5px;
+	width: 10px;
+	height: 10px;	
+	background: url(../img/b-afisha-event-sprite.gif) 0 0 no-repeat;
+}
+
+.b-afisha-event-ico ins.b-afisha-event-photo__ico {
+	background-position: 0 -2px; 
+}
+
+.b-afisha-event-ico ins.b-afisha-event-trailer__ico {
+	background-position: -13px -2px; 
+}
+
+.b-afisha-event-ico ins.b-afisha-event-seance__ico {
+	background-position: -26px -2px; 
+}
+
+/**/
+
+.b-afisha-event-list-yellow {
+	background: #fefae2;
+}
+
+.b-afisha-event-list-green {
+	background: #e6f6da
+}
+
+.b-afisha-event-list-pad {
+	padding: 1.25em 10px;
+}
+
+.b-afisha-event__date {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.b-afisha-event-list__title {
+	font-size: 1.6em;
+	line-height: 1em;
+	margin: 0px;
+	margin-bottom: 0.3em;
+}
+
+.b-afisha-event-list__list li {
+	background: url(../img/b-afisha-event-sprite.gif) 0 -13px repeat-x; 
+	padding-top: 1em;
+	margin-bottom: 1.2em;
+}
+.b-afisha-event-list__list li.first {
+	background: none;
+}
+
+
+.b-afisha-event__text {
+	margin: 6px 0 20px 0;
+}
+.b-afisha-event__text p {
+	font-size: 0.9em;
+	line-height: 1.55em;
+	margin-bottom: 0.65em;
+}
+
+.b-afisha-event__text p small {
+	font-size: 0.95em;
+}
+
+.b-afisha-event__text p b {
+	font-size: 0.95em;
+}
+
+/**/
+
+.b-afisha-event-kino-list {
+	padding-left: 10px;
+	background: url("../img/b-afisha-event-dotted.gif") repeat-x scroll 0 bottom transparent;
+	padding-bottom: 1.2em;	
+}
+

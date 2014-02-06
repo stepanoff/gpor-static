@@ -1,0 +1,346 @@
+.exclusiveNews {}
+
+.exclusiveNewsTitle {
+	margin-bottom: 7px;
+	padding-left: 10px;
+}
+.exclusiveNewsTitle h1 {
+	font-size: 28px;
+	color: #171717;
+	font-weight: normal;
+}
+
+.exclusiveNewsTitle a {
+	font-size: 28px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.exclusiveNewsTitle a:hover {
+	text-decoration: underline;
+}
+
+.exclusiveNewsGrid {
+	width: 100%;
+	clear: both;
+	padding-left: 10px;
+    margin-bottom:1px;
+}
+
+.exclusiveNewsGrid__first {
+	margin-top: 17px;
+}
+
+.exclusiveNewsGridLeft {
+	float: left;
+	width: 460px;
+}
+.exclusiveNewsGridRight {
+	margin-left: 460px;
+	overflow: hidden;
+	width: 750px;
+}
+
+.exclusiveItemMain a:link,
+.exclusiveItemMain a:visited,
+.exclusiveItemMain a:hover,
+.exclusiveItemMain a:active {
+	text-decoration: none;
+}
+
+.exclusiveItem a:link,
+.exclusiveItem a:visited,
+.exclusiveItem a:hover,
+.exclusiveItem a:active {
+	color: #34a1ee;
+	
+}
+
+.mainExclusive {
+	background: #efefef;
+	margin: 0 0 10px 0;
+}
+
+.mainExclusivePad {
+	padding: 5px 20px 20px;
+}
+
+.mainExclusiveBox {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+}
+
+.mainExclusive h2 {
+	margin-bottom: 10px;
+}
+
+.mainExclusive h2 a {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3;
+}
+
+.exclusiveItem {
+	float: left;
+	width: 245px;
+	position: relative;
+	overflow: hidden;
+	background: #000;
+	height: 150px;
+}
+
+.exclusiveItemLink {
+	display: block;
+	height: 150px;
+	min-height: 150px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.exclusiveItemMain {
+	width: 100%;
+	height: 300px;	
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background: #000;
+	text-decoration: none;
+}
+
+.exclusiveItemMain .exclusiveItemTextPad {
+	top: 0px;
+	bottom: auto;
+}
+
+.exclusiveItemMain .exclusiveItemShadow {
+	bottom: 0px;
+	top: auto;
+}
+
+.exclusiveItemMain .exclusiveItemText {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.exclusiveItemTextTitle {
+	margin-top: 2px;
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 4px;
+}
+
+
+.exclusiveItem img {
+	display: block;
+}
+
+.exclusiveItemTextPad {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	display: block;
+	color: #fff;
+	//zoom: 1;
+}
+
+.exclusiveItemShadow {
+	background: #000;
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	//filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	//zoom: 1;
+	position: absolute;
+	z-index: 10;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	display: block;
+	height: 200px;
+}
+.exclusiveItemText {
+	font-size: 13px;
+	line-height: 16px;
+	display: block;
+	padding: 8px 10px 10px;
+	position: relative;
+	z-index: 100;
+	//zoom: 1
+}
+.advTicketBg {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	height: 5px;
+	width: 100%;
+	/*background: url(../img/advTicketBg.png) 0 0 repeat-x;*/
+}
+
+/**/
+
+.pagerBox {
+    margin-bottom: 10px;
+}
+.pagerBox td {
+    padding-top: 20px;
+}
+.pagerBox td.pagerArr {
+    font-size: 16px;
+    width: 1%;
+}
+.pagerBox td .pagerContent {
+    padding-left: 35px;
+    position: relative;
+    top: 6px;
+}
+.pagerArr a {
+    position: relative;
+}
+.pagerBox ins.leftArr, .pagerBox ins.rightArr {
+    color: #5E5E5E;
+    font-size: 11px;
+    position: absolute;
+    text-decoration: none;
+    top: -16px;
+}
+.pagerBox ins.leftArr i, .pagerBox ins.rightArr i {
+    font-size: 14px;
+    font-style: normal;
+}
+.pagerBox ins.leftArr {
+    left: 0;
+}
+.pagerBox ins.rightArr {
+    right: 0;
+}
+.pagerLabel {
+    color: #5E5E5E;
+    float: left;
+    font-size: 13px;
+    position: relative;
+    top: 3px;
+    width: 60px;
+}
+.pagerList {
+    margin-left: 60px;
+}
+.pagerList li {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 -3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 34px;
+}
+.pagerList li.curr {
+    background: url("../img/discount/pagerCur.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    margin: 0 -1px;
+}
+.pagerArr a {
+    text-decoration: none;
+}
+.pagerArr a span {
+    text-decoration: underline;
+}
+.newsSimpleListPager {
+	padding-left: 120px
+}
+
+/**/
+
+
+
+/**/
+.newsSimpleList {
+	margin-bottom: -10px;
+	padding-right: 20px;
+}
+.newsSimpleItem {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.newsSimplePic {
+	float: left;
+	width: 110px;
+	overlfow: hidden;
+}
+.newsSimplePic img {
+	display: block;
+	position: relative;
+	top: 3px;
+}
+.newsSimpleText {
+	margin-left: 120px;
+}
+.newsSimpleTitle {
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0 5px 10px 0;
+	position:relative;
+	top: 2px;
+}
+.newsSimpleTitle a:link,
+.newsSimpleTitle a:visited,
+.newsSimpleTitle a:hover,
+.newsSimpleTitle a:active {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3
+}
+.newsSimpleText p,
+.greenTeaserText p {
+	font-size: 13px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+/**/
+
+.greenTeaser {
+	clear: both;
+	width: 100%;
+	background: #598600 url(../img/greenTeaserBg.png) 0 0 repeat-x;
+	margin-bottom: 26px;
+	display: block;
+	margin-top: 16px;
+}
+
+.exclusiveNews .greenTeaser:link,
+.exclusiveNews .greenTeaser:visited,
+.exclusiveNews .greenTeaser:hover,
+.exclusiveNews .greenTeaser:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+.greenTeaser span {
+	display: block;
+}
+.greenTeaserPic img {
+	display: block;
+}
+.greenTeaserPic {
+	float: left;
+	overflow: hidden;
+	width: 170px;
+}
+.greenTeaserText {
+	margin-left: 140px;
+}
+.greenTeaserTextPad {
+	padding-left: 20px;
+	padding-top: 17px;
+}
+
+.greenTeaserTitle {
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 6px;
+	color: #ffffff;
+}
+
+.exclusiveNews .news_section-news-list {
+	padding-left: 0px;
+}

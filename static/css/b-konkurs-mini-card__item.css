@@ -1,0 +1,12 @@
+.b-text .b-konkurs-mini-card__item__text__descr {
+	margin: 0px 0 7px;
+}
+
+.b-konkurs-mini-card__item {
+	vertical-align: middle;
+	/*padding: 10px 10px 10px 10px;*/
+}
+
+.b-konkurs-mini-card__item:last {
+	padding-right: 0px;
+}

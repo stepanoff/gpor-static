@@ -1,0 +1,12 @@
+.context a.b-link_layout_auto-teaser {
+	background-color: #fff;
+	background-image: url(../img/b-link_layout_auto-teaser.jpg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	border: 1px solid #ccc;
+	padding: 13px 110px 18px 10px;
+	font-size: 16px;
+	line-height: 21px;
+	display: block;
+	outline: none;
+}

@@ -1,0 +1,20 @@
+.b-submenu .b-submenu__item_state_current {
+	background-color: #ffa900; 
+	background-image: -webkit-linear-gradient(bottom, rgba(255,143,0,1), rgba(255,187,0,1));
+	background-image: -moz-linear-gradient(bottom, rgba(255,143,0,1), rgba(255,187,0,1)); 
+	background-image: -o-linear-gradient(bottom, rgba(255,143,0,1), rgba(255,187,0,1)); 
+	background-image: -ms-linear-gradient(bottom, rgba(255,143,0,1), rgba(255,187,255,1));
+	background-image: linear-gradient(to top, rgba(255,143,0,1), rgba(255,187,0,1));
+}
+
+.b-submenu .b-submenu__item_state_current a.b-submenu__item__link {
+	color: #fff;
+	padding: 0px;
+}
+
+.b-submenu .b-submenu__item_state_current .b-submenu__item__link__brd,
+.b-submenu .b-submenu__item_state_current .b-submenu__link-drop {
+	background: transparent;
+	border: none;
+}
+

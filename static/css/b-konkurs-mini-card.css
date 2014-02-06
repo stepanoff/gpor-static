@@ -1,0 +1,29 @@
+.b-konkurs-mini-card {
+	/*background: #fff;*/
+	/*border-bottom: 1px solid #cccccc;*/
+	overflow: hidden;
+	position:relative;
+}
+
+.b-konkurs-mini-card__link {
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.b-konkurs-mini-card__table {
+	width: 100%;
+}
+
+.b-konkurs-mini-card__col-1 {
+	width: 1%;
+	padding: 10px 20px 10px 10px;
+}
+
+.b-konkurs-mini-card__col-2 {
+	vertical-align: middle;
+	padding: 10px 10px 10px 0;
+}

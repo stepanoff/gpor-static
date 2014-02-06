@@ -1,0 +1,33 @@
+.b-afisha-date-select__bubble__item {
+    border-top: 1px solid transparent;
+    color: #FFFFFF;
+    font: 13px Arial,Tahoma,Sans-Serif;
+    list-style: none outside none;
+    margin-bottom: 0;
+    padding: 0px;
+}
+
+.b-afisha-date-select__bubble__item a:hover {
+	background: #ffa900;
+	color: #fff;
+	border-top: 1px solid #e59800;
+}
+
+.b-afisha-date-select__bubble__item ins {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3;
+}
+
+.b-afisha-date-select__bubble__item a:hover ins {
+	border-bottom: 1px solid #fff;
+}
+
+.b-afisha-date-select__bubble__item a {
+	padding: 2px 10px 5px;
+	text-decoration: none;
+	border: none;
+	display: block;
+	border-top: 1px solid transparent;
+	outline: none;
+}
+

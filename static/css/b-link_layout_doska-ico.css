@@ -1,0 +1,38 @@
+.context .b-link.b-link_layout_doska-ico-message {
+	background: url(../img/b-link_layout_doska-ico.png) -172px 4px no-repeat;
+	padding-left: 20px;
+	border-bottom: none;
+}
+
+.context  .b-link.b-link_layout_doska-ico-favorites {
+	background: url(../img/b-link_layout_doska-ico.png) -152px -21px no-repeat;
+	padding-left: 20px;
+	border-bottom: none;
+}
+
+.context  .b-link.b-link_layout_doska-ico-print {
+	background: url(../img/b-link_layout_doska-ico.png) -132px -46px no-repeat;
+	padding-left: 20px;
+	border-bottom: none;
+}
+
+.context  .b-link.b-link_layout_doska-ico-edit {
+	background: url(../img/b-link_layout_doska-ico.png) -112px -71px no-repeat;
+	padding-left: 20px;
+	border-bottom: none;
+}
+
+.context .b-link.b-link_layout_doska-ico-complaint {
+	background: url(../img/b-link_layout_doska-ico.png) -92px -96px no-repeat;
+	padding-left: 20px;
+	border-bottom: none;
+}
+
+.b-link_solid_yes.b-link_layout_doska-ico-message ins,
+.b-link_solid_yes.b-link_layout_doska-ico-favorites ins,
+.b-link_solid_yes.b-link_layout_doska-ico-print ins,
+.b-link_solid_yes.b-link_layout_doska-ico-edit ins,
+.b-link_solid_yes.b-link_layout_doska-ico-complaint ins {
+	border-bottom: 1px solid #037DD3;
+	text-decoration: none;
+}

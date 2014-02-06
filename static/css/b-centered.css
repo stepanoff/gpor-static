@@ -1,0 +1,23 @@
+.b-centered
+{
+position: relative;
+width: 100%;
+}
+.b-centered:after
+{
+content: '';
+display: block;
+clear: both;
+}
+.b-centered-inner-1
+{
+position: relative;
+right: 50%;
+float: right;
+}
+.b-centered-inner-2
+{
+position: relative;
+z-index: 1;
+right: -50%;
+}	

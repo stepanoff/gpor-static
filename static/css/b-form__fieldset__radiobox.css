@@ -1,0 +1,12 @@
+.b-form__fieldset__radiobox {}
+.b-form__fieldset__radiobox label {
+	font-size: 12px;
+	margin-bottom: 6px;
+	outline: none;
+}
+.b-form__fieldset__radiobox input {
+	position:relative;
+	top: 2px;
+	margin-right: 3px;
+	outline: none;
+}

@@ -1,0 +1,9 @@
+.b-separator_layout_dotted-grey {
+	background: url(../img/b-separator_layout_dotted-grey.gif) 0 bottom repeat-x;
+	height: 1px;
+}
+
+.b-separator_layout_solid-orange {
+	height: 3px;
+	background: #f17e00;
+}

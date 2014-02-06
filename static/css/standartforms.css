@@ -1,0 +1,35 @@
+.standartform { border: 1px solid #fddeb5; padding: 20px; background: #fef8de; width: 700px; margin-bottom: 10px; }
+.standartform h2 { margin-bottom: 18px; font-size: 24px; }
+.standartform h3 { font-size: 13px; margin-bottom: 15px; }
+.standartform .left { float: left; width: 48%; }
+.standartform .right { float: right; width: 48%; }
+.standartform fieldset { margin-bottom: 18px; position: relative; }
+.standartform fieldset { margin-bottom: 18px; position: relative; }
+.standartform fieldset label, .standartform fieldset .label { position: relative; margin-right: 10px; top: 7px; }
+.standartform .toplabel fieldset label, .standartform .toplabel fieldset .label { display: block; top: 0; margin-bottom: 10px; }
+.standartform .toplabel fieldset .text { float: none; width: 99%; }
+.standartform fieldset .text { height: 24px; padding: 0; width: 75%; right: 0; float: right; margin-bottom: 5px; }
+.standartform fieldset textarea { padding: 0; width: 75%; position: absolute; right: 0; }
+.standartform fieldset .checkbox { position: relative; }
+.standartform fieldset .checkbox_labeled, .standartform .checkbox-list .checkbox { float: left; }
+.standartform fieldset img { border: 1px solid #d0d1cc; margin-bottom: 5px; }
+.standartform div.toplabel .errorBox { margin-top: 0; }
+.standartform fieldset select.text { width: 76%; }
+.standartform .errorBox { display: none; }
+.standartform .forinput, .standartform .checkbox-list label { position: relative; margin-left: 20px;}
+.standartform .toplabel .forinput, .standartform .toplabel .checkbox-list label { }
+.standartform .hint { display: none; }
+.standartform .showhint .hint { display: block; }
+.standartform .hint { clear: both; font-size: 11px; position: relative; top: -5px; }
+.standartform .showerror .errorBox { display: block; clear: both; margin-top: 12px; margin-bottom: 25px; border: 1px solid #DE4713; background-color: #FFD6BF; padding: 5px; }
+.standartform .buttons_wrap-grey { background: #ebe6d1; }
+.standartform .tags { color: #494949; margin-top: 6px; line-height: 1.6; }
+.standartform .tags .tag { text-decoration: none; border-bottom: 1px solid #037DD3; }
+
+.wrapborder { border: 1px solid #fcf6dc; margin-left: -4px; }
+.wrapborder .wrap2 { border: 1px solid #f9f3da; }
+.wrapborder .wrap3 { border: 1px solid #f3edd4; }
+.wrapborder .wrap4 { border: 1px solid #efead5; background: white; padding: 12px 13px; }
+.wrapborder .wrap4 h3 { font-size: 13px; margin-bottom: 7px; }
+.wrapborder .wrap4 .complex_field input { float: left; padding: 1px; width: 80%; margin-right: 10px; }
+.wrapborder .wrap4 .complex_field a { float: left; width: 32px; height: 22px; background: url('../img/add_field.png') 0 0 no-repeat; }

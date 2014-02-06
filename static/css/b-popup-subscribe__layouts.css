@@ -1,0 +1,43 @@
+.b-subscribe_pad {
+	padding: 10px 20px;
+}
+
+.b-subscribe__layout {
+	background: #f1f5e8;
+	font-family: Arial, Tahoma, Sans-Serif;
+}
+
+.b-subscribe-top {
+	background: #fff;
+}
+
+.b-subscribe-middle {
+	background: #efefef;
+}
+
+.b-subscribe-bottom {
+    background: #D6DEC3;
+    border-top: 1px solid #C5CCB3;	
+}
+
+.b-subscribe__form-row__pad {
+	position: relative;
+}
+
+.col-min {
+    width: 1%;
+	vertical-align: middle;
+	padding: 0px;
+}
+
+.col-max {
+	width: 98%;
+}
+
+.b-popup-layout-pad {
+	padding: 10px 20px;
+}
+
+.b-popup-layout_bg {
+	background: #e3e9d5;
+}

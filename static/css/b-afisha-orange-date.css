@@ -1,0 +1,22 @@
+.b-afisha-orange-date {
+	background: #fe8b0d;
+	font-size: 13px;
+	margin: 0 0 10px;
+}
+.b-afisha-orange-date__content {
+	position: relative;
+	color: #fff;
+	font-size: 115%;
+	padding: 0.5em 10px 0.5em 32px;
+	white-space: nowrap;
+}
+
+.b-afisha-orange-date ins {
+	position:absolute;
+	left: 10px;
+	background: url(../img/b-afisha-orange__ico.png) -17px 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	margin-top: -8px;
+}

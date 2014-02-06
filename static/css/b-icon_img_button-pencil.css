@@ -1,0 +1,11 @@
+.context .b-icon_img_button-pencil {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-left: 0px;
+	line-height: 17px;
+	position:relative;
+	top: 3px;
+	margin-right: 4px;
+	background: url(../img/b-icon-buttons.png) 0 0 no-repeat;
+}

@@ -1,0 +1,18 @@
+/* 
+    Document   : hypothecwidget
+    Created on : 25.05.2011, 10:23:40
+    Author     : Кузнецов Алексей
+    Description:
+        Стили для виджета ипотек.
+*/
+
+.realty-bank-info__title { font-size: 18px; line0height: 21px; font-weight: normal; margin-bottom: 6px; }
+.realty-bank-info__table-items { width: 100%; border-collapse: collapse; border-width: 0px; }
+.realty-bank-info__table-items .nowrap { white-space: nowrap; }
+.realty-bank-info__table-items th { background: #8a8f7e; color: #fff; font-size: 11px; padding: 10px 10px 5px 10px; border-bottom: 1px solid #fff; text-align: left; }
+.realty-bank-info__table-items th a:link, .realty-bank-info__table-items th a:visited, .realty-bank-info__table-items th a:hover, .realty-bank-info__table-items th a:active { color: #fff }
+.realty-bank-info__table-items td { background: #f1f5e8; font-size: 14px; padding: 5px 10px 7px 10px; line-height: 18px; text-align: left;}
+.realty-bank-info__table-items td a:link, .realty-bank-info__table-items td a:visited, .realty-bank-info__table-items td a:hover, .realty-bank-info__table-items td a:active { text-decoration: none; border-bottom: 1px solid #037dd3; }
+.realty-bank-info__table-items tr.nodd td { background: #fff; }
+.realty-social-block__title { font-size: 18px; line-height: 21px; font-weight: normal; }
+

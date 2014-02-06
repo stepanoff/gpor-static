@@ -1,0 +1,9 @@
+@import url(__control/b-form__item__control.css);
+@import url(__error/b-form__item__error.css);
+@import url(__hint/b-form__item__hint.css);
+@import url(__label/b-form__item__label.css);
+
+.b-form__item {
+	font-size: 16px;
+	margin: 0px 0 10px; 
+}

@@ -1,0 +1,18 @@
+table.tariffItems {margin: 0 0 1em 0;}
+table.servicesItems {margin: 0 0 1em 0;}
+
+.servicesOrderForm .bonus {font-size: 8pt; color: gray;margin:10px 0;}
+.servicesOrderForm td.order label {display:inline;font-weight:normal;}
+.servicesOrderForm input.amount {width:20px;}
+.servicesOrderForm td.order fieldset {border:none;margin:0;padding:0;}
+
+.servicesOrderForm span.sum {font-size:1.2em;wont-weight:bold;}
+.servicesItems td.topline {border-top:1px solid gray;}
+.servicesItems td.order {width:200px;}
+.servicesItems .enabled {color:green; font-weight:bold;}
+.tariffItems td.topline {border-top:1px solid gray;}
+.tariffItems .enabled {color:green; font-weight:bold;}
+.tariffItems td.order {width:200px;}
+
+.servicesOrderForm .buttons {text-align:center;}
+.servicesOrderForm .buttons input.submit {width:400px;height:60px;}

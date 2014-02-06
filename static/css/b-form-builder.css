@@ -1,0 +1,108 @@
+.b-form-builder fieldset.b-form-builder__header {
+	margin-bottom: 0px;
+	padding-bottom: 26px;
+}
+
+.b-form-builder__title {
+	margin-bottom: 26px;
+	font-size: 1.6em;
+	color: #393939;
+}
+
+.b-form-builder__p {
+    color: #646464;
+    font-size: 1em;
+    line-height: 1.35em;
+    margin: 0 0 9px 0;
+}
+
+/**/
+
+
+.b-form-builder fieldset  {
+	padding-bottom: 10px;
+	font-size: 11px;
+}
+
+.b-form-builder label {
+	font-size: 1em;
+	color: #434445;
+}
+
+.b-form-builder .horizontal label {
+	position:relative;
+	top: 2px;
+	font-size: 1.2em;
+	color: #646464;
+	white-space: nowrap;
+	margin-right: 5px;
+}
+
+.b-form-builder .horizontal label {
+	position:absolute;
+	left: 0px;
+}
+
+.b-form-builder dt {
+	margin-bottom: 9px;
+	position:relative;
+	float: left;
+}
+
+.b-form-builder dd {
+	clear: both;
+}
+
+/**/
+
+.b-form-builder fieldset input {
+	width: 100%;
+}
+
+.b-form-builder fieldset div dl {
+	position: relative;
+}
+
+/**/
+
+.error .b-form-builder__control {
+	border: 2px solid #ff9d00;
+	position:relative;
+	top: -1px;
+}
+
+.star {
+	display: none;
+}
+
+.require .star {
+	display: inline;
+	color: #ff9000;
+	margin-left: 3px;
+	top: 0px;
+	position:relative;
+}
+
+/**/
+
+.b-form-builder .horizontal dd {
+	clear: none;
+}
+
+/**/
+
+.b-form-builder_pad-10 {
+	padding: 10px 10px; 
+}
+
+.b-form-builder_pad-20 {
+	padding: 10px 20px; 
+} 
+
+.b-form-builder_grey {
+	background: #EFEFEF; 
+}
+
+.b-form-builder_blue {
+	background: #E6F2F6
+}

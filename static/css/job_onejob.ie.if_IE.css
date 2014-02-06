@@ -1,0 +1,33 @@
+.onejob-left .buttons_wrap { padding-top: 14px; padding-bottom: 18px; _padding-top: 10px; _padding-bottom: 10px; }
+.onejob-left .button { padding: 10px 5%; *position: relative; *height: 30px; }
+.onejob-left .button input { width: 100%; *width: 90%; *left: 5%; _width: 100%; *position: absolute; }
+div.payIntervals .selected { padding-bottom: 3px; }
+.diagrams .d-right { zoom: 1; z-index: 999; position: relative; }
+.news_single_heading_title_first { margin-bottom: 2px; }
+.news_single_date { margin-left: -2px; }
+.job_onejob-in { zoom: 1; }
+.news_cute-news-block_heading { 
+	*margin-top: 0; 
+}
+
+.job_page-right-vacancy .news_cute-news-block_news-list_item {
+	*margin-bottom:4px; 
+	*margin-top:4px; 
+}
+
+.job_page-right-vacancy .news_cute-news-block .frames_cute_frame { 
+	*margin:0px;
+	*margin-top:-5px;
+	*margin-bottom:-5px;
+}
+
+.job_page-right-vacancy .frames_cute_frame { 
+	*width:100%; 
+	*left:-15px; 
+	*position:relative 
+}
+
+.job_page-right-vacancy .news_single_heading {
+	*margin-bottom:0px;
+}
+.job_send-resume-add-in form .job_set_checkbox .job_guser { position: relative; margin-top: -2px; margin-left: 29px; }

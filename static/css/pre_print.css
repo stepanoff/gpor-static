@@ -1,0 +1,72 @@
+.b-print-version-head {
+	background: #d6d6d6; 
+	max-width: 1280px; 
+	margin: 0 auto;
+}
+
+body .js_popup_button-higlited  {
+	padding:2px 39px;
+}
+
+body .js_popup_button-higlited {
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	height:30px;
+}
+
+body .buttons_wrap, .buttons_wrap-grey {
+	padding:9px 10px;
+}
+
+.b-print-version__wrap {
+	width: 800px;
+	margin: 0 auto
+}
+
+.b-print-version-head__wrap-paddings {
+	height: 65px;
+	padding: 14px 1% 0;	
+}
+
+.printversion__table {
+	border-bottom: 1px dotted black;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.printversion__table td {
+	padding: 10px 10px 15px 10px;
+	vertical-align: top;
+}
+
+td.b-printversion-left {
+	padding-top: 23px;
+	color: #646464;
+	font: italic 23px Arial, Tahoma, Sans-Serif;	
+}
+
+.printversion__table td img {
+	float: left;
+	position: relative;
+}
+
+h4.b-printversion-subtext {
+	clear: both;
+	color: #646464;
+	float: right;
+	text-align: right;	
+	font: 13px Arial, Tahoma, Sans-Serif;
+	margin: 12px 0 3px 0;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+

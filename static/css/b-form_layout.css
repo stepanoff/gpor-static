@@ -1,0 +1,13 @@
+.b-form_layout_inline {
+	position: relative;
+}
+
+.b-form__item__label.b-form__item__label_layout_inline {
+	color: #fff;
+	font-size: 21px;
+	line-height: 24px;
+	position:relative;
+	top: -2px;
+	margin-right: 10px;
+}
+

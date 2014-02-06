@@ -1,0 +1,402 @@
+/**
+ * @package portal
+ */
+
+/**
+ * @subpackage comments
+ */
+
+/**
+ * @section tree
+ */
+
+.js_comments {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left:10px;
+}
+
+.js_comments-head {
+	display: block;
+}
+.js_comments-head div {
+
+}
+
+.js_comments__count {
+	font: 18px Arial,Tahoma,Sans-Serif;
+	float: right;
+}
+
+.form-bottom {
+	margin-bottom:15px;
+}
+
+.comment,
+.js_comment {
+    margin-top: 18px;
+}
+
+.comment .comment,
+.comment .js_comment,
+.js_comment .comment,
+.js_comment .js_comment {
+    margin-left: 31px;
+}
+/* Для комментариев без отступа вырабаем margin */
+.js_comment_noindent {
+	margin-left: 0px !important;
+}
+
+.comment_head {
+    position: relative;
+    background-color: #F3F3F0;
+    border: 1px solid #E8E8E5;
+	height: auto; /*25px; - узкие комменты не влазят*/
+	min-height: 25px;
+    line-height: 25px;
+    margin-left: 30px;
+    padding: 0 45px 0 10px; /* 45 - отступ для кнопок */
+}
+
+.comment_head a {
+	white-space: nowrap; /* Решим проблему кардинально - все ссылки в заголовке будут непереносимыми */
+}
+
+.comment_head_link_to {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.unread-comment > .comment_head {
+    background-color: #F2FFE1;
+}
+
+.comment_head_avatar {
+    float: left;
+    height: 25px;
+    left: -40px;
+    margin-right: -25px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 25px;
+}
+
+.comment_head_avatar img {
+	max-width:100%;
+}
+
+.comment_head a.js_user {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.comment_head_user {
+    font-size: 1.077em;
+    font-weight: bold;
+}
+
+.js_comment_head_user,
+.comment_head_date {
+    vertical-align: baseline;
+}
+
+.comment_head_icon {
+	width: 16px;
+	height: 16px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.comment_head_content a {
+	outline: none;
+}
+
+a.comment_head_next-new {
+	padding-top: 0.3em;
+	position: relative;
+	z-index: 10;
+	font-size: 1em;
+	line-height: 1.1em;
+	margin-left: 3px;
+	margin-right: 25px;
+}
+
+.comment_head_next-new-pic {
+	position: absolute;
+	z-index: 20;
+	right: -11px;
+	top: 0.65em;
+	background: url('../img/icons.png') -18px -1569px no-repeat;
+	width: 5px;
+	height: 7px;
+	text-decoration: none;
+}
+
+.comment_head_next-new:link,
+.comment_head_next-new:visited {
+	text-decoration: none;
+	color: #5d8109;
+	border-bottom: 1px dotted #5d8109;
+}
+.comment_head_next-new:hover,
+.comment_head_next-new:active {
+	text-decoration: none;
+	color: #5d8109;
+	border-bottom: 1px dotted #5d8109;
+}
+
+.js_comment i.comment_head_date,
+.comment_head_date {
+    color: #666666;
+    font-size: 0.923em;
+    font-style: normal;
+    padding: 0 15px 0 5px;
+    vertical-align: baseline;
+	white-space: nowrap;
+}
+
+.comment_head_parent_caption {
+    display: none;
+}
+
+.comment_head_parent_link {
+    background: url('../img/comment_arrow.jpg') no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 10px;
+    left: -65px;
+    margin-right: -11px;
+    position: relative;
+    text-indent: -999em;
+    top: 5px;
+    width: 11px;
+}
+
+.comment_content {
+    padding: 11px 0 9px;
+    font-size: 14px;
+    line-height: 1.5;
+	overflow: hidden;
+}
+
+.comment_content p {
+	margin: 0px;
+}
+
+.comment_content img {
+	max-width:100%; max-height:100%;
+}
+
+.comment_content_unvisible {
+	visibility: hidden !important;
+	height: 10px;
+}
+
+.comment_removed {
+	color: #A5A8A3;
+}
+
+.js_comment_head_user {
+	font-weight: bold;
+}
+
+
+.comment_foot_answer {
+    float: left;
+    margin-right: 15px;
+    font: bold 12px/12px Arial, Tahoma, Sans-Serif;
+}
+
+a.comment_foot_answer:link,
+a.comment_foot_answer:visited,
+a.comment_foot_answer:hover,
+a.comment_foot_answer:active {
+    text-decoration: none;
+    border-bottom: 1px dashed #037dd3;
+}
+
+
+.comment_foot_rating {
+    float: right;
+    margin-left: 10px;
+}
+
+.comment_foot_hr {
+    overflow: hidden;
+    position: relative;
+    top: 8px;
+}
+
+.b-iframe-wrap {
+    position: relative;
+    max-width: 600px;
+}
+
+.b-iframe-wrap__ratio {
+    width: 100%;
+    height: 0;
+    padding-bottom: 66%;
+}
+
+.b-iframe-wrap__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ * @section form
+ */
+.js_comment_form {
+	clear: both;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+.js_comment_form-pad {
+	margin-top: 1em;
+	padding: 8px 13px 14px 13px;
+	background: #fef8de;
+	border: 1px solid #fddeb5;
+}
+
+.js_comment_form-bottom_text {
+	float: left;
+	width: 70%;
+	padding-top: 8px;
+	color: #5a564f;
+	font: 0.85em/1.45em Arial, Tahoma, Sans-Serif;
+}
+
+.js_comments_forms_submit {
+	font-weight: bold;
+	padding: 4px 18px;
+}
+
+.js_comments-wrap {
+	margin-bottom: 20px;
+	paddingTop: '4px'
+}
+
+.js_comment_form-bottom_but {
+	float: left;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+.js_comment_form-bottom_but-submit-but {
+	background: url(../img/send-btn.gif) 0 0 no-repeat;
+	margin-right: 2px;
+	margin-top: 2px;
+}
+
+.js_comments__opinion-link {
+	float: left;
+	color: #037DD3;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.js_comment-to-object {
+    border-bottom:2px dotted #F17E00;
+    color:#F17E00;
+    text-decoration:none;
+    font-size: 24px;
+    position: relative;
+}
+
+
+.show_bad_comment {
+    text-decoration: none;
+    position: relative;
+    top: -1px;
+    border-bottom: 1px dotted #A6A6A4;
+    color: #A6A6A4;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 2px;
+    margin-left: 20px;
+}
+
+.show_bad_comment i {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/show-ban-comment.png) 0 0 no-repeat;
+
+}
+
+.js_comment-to-object:link,
+.js_comment-to-object:visited {
+	color: #037DD3;
+	text-decoration: none;
+	border-bottom: 1px dashed #037DD3;
+}
+
+.js_comment-to-object:hover,
+.js_comment-to-object:active {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.comment_head  a.buttons_anchor_small {
+    position: absolute;
+    right: 24px;
+    top: 5px;
+}
+
+.comment_head .js_comment_remove {
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    right: 42px;
+}
+
+.comment_head  a.buttons_report_small {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+/*.js_comment { display: none; }*/
+
+.js_comment i {
+    font-style: italic;
+}
+
+.commentSmilesForm { background: white; z-index: 9999; display: none; margin-left: 4px; margin-top: 5px; }
+.commentSmilesForm {z-index:10000;width:520px; background-color:#ffffff; display: none; margin-left: 4px; margin-top: 5px; position:absolute;}
+.commentSmilesForm td { padding: 5px; }
+
+.all-comments-wrap {
+	background: #f3f3f1;
+	border:1px solid #e8e8e6;
+	height: 25px;
+	padding-left:10px;
+	line-height:25px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.all-comments-wrap .all-comments {
+	font-weight: bold;
+}
+
+.comments_editor { margin-bottom: 8px; width: 100%; }
+.comments_editor td div { border-right: 1px solid rgb(224, 219, 191); float: left; padding: 2px 8px 0px 0px; margin: 0px 8px 0px 0px; }
+.comments_editor td div.smile_block { border: none; }
+.comments_editor td div img { margin: 0px 2px 2px; width: 17px; height: 17px; }
+
+#smile_table { border: 1px solid gray; position: absolute; }
+#smile_table td { vertical-align: middle; width: 70px; }

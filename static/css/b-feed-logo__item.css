@@ -1,0 +1,15 @@
+@import url(__pic/b-feed-logo__item__pic.css);
+@import url(__text/b-feed-logo__item__text.css);
+
+.b-feed-logo__item {
+    display: block;
+    padding-top: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+a.b-feed-logo__item {
+	outline: none;
+}

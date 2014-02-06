@@ -1,0 +1,5 @@
+.b-pager-slider__item {
+    float: left;
+    position: relative;
+    margin: 0 10px 0 0;
+}

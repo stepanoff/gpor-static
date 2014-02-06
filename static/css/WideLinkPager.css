@@ -1,0 +1,107 @@
+.pagerDiscountBox {
+	margin-bottom: 10px;
+	margin-top: 30px;
+	padding: 0 130px;
+}
+
+.pagerDiscountBoxPad {
+	position:relative;
+}
+
+.pagerDiscountArrP,
+.pagerDiscountArrN {
+	font-size: 16px;
+	text-decoration: none;
+	height: 16px;
+	top: -1px;
+}
+
+.pagerDiscountArrP {
+	position:absolute;
+	left: -130px;
+}
+.pagerDiscountArrN {
+	position:absolute;
+	right: -130px;
+}
+.pagerDiscountLabel,
+.pagerDiscountList li,
+.pagerDiscountArrP,
+.pagerDiscountArrN {
+	line-height: 20px;
+}
+
+.pagerDiscountArrP a,
+.pagerDiscountArrN a {
+	text-decoration: underline;
+}
+
+.emptyPAgeContainer {
+	position:relative; 
+	color:gray;
+	display: block;
+	height: 16px;
+}
+
+.pagerDiscountBox .pagerDiscountContent {
+	top: 0px;
+	position: relative;
+	padding-left: 0px;
+}
+.pagerDiscountBox ins.leftArr,
+.pagerDiscountBox ins.rightArr {
+	color: #5e5e5e;
+	font-size: 11px;
+	position: absolute;
+	top: -16px;
+	text-decoration: none;
+	border: none;
+}
+.pagerDiscountBox ins.leftArr i,
+.pagerDiscountBox ins.rightArr i {
+	font-style: normal;
+	font-size: 14px;
+}
+.pagerDiscountBox ins.leftArr {left: 0px; text-decoration: none;}
+.pagerDiscountBox ins.rightArr {right: 0px; text-decoration: none;}
+.pagerDiscountLabel {
+	color: #5e5e5e;
+	font-size: 13px;
+	width: 60px;
+	float: left;
+	position: relative;
+	top: 0px;
+}
+.pagerDiscountList {
+    margin-left: 60px;
+	position:relative;
+}
+.pagerDiscountArr a {
+    position: relative;
+}
+.pagerDiscountList li {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 -3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 34px;
+}
+.pagerDiscountList li.curr {
+    background: url("../img/pagerCur.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    margin: 0 5px;
+}
+.pagerDiscountList li.curr a {
+	text-decoration: none;
+	color: white;
+}
+
+.pagerDiscountArr a {
+	text-decoration: none;
+}
+
+.pagerDiscountArr a span {
+	text-decoration: underline;
+}

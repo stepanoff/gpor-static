@@ -1,0 +1,198 @@
+a.b-popup-green-auth-btn {
+	width: 210px;
+	margin: 0 auto;
+}
+
+/**/
+
+.g-subscribe-button_ico {
+    font-size: 1px;
+    height: 9px;
+    left: -13px;
+    position: absolute;
+    top: 16px;
+    width: 9px;
+}
+.g-subscribe-button_ico-ok {
+    background: url("../img/b-popup-subscribe_sb-ico-sprite.png") no-repeat scroll 0 0 transparent;
+}
+/**/
+a.g-subscribe-button_green {
+    color: #FFFFFF;
+    display: block;
+    outline: medium none;
+    padding: 0 8px 0 7px;
+    position: relative;
+    text-decoration: none;
+}
+.g-subscribe-button_green__left-cnr, 
+.g-subscribe-button_green__right-cnr {
+    display: block;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    width: 8px;
+}
+.g-subscribe-button_green__left-cnr {
+    background: url("../img/b-popup-subscribe_sb-left-cnr.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+}
+.g-subscribe-button_green__right-cnr {
+    background: url("../img/b-popup-subscribe_sb-right-cnr.png") no-repeat scroll 0 0 transparent;
+    right: 0;
+}
+.g-subscribe-button_green__bg {
+    background: url("../img/b-popup-subscribe_sb-bg.png") repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 42px;
+}
+.g-subscribe-button_green__text {
+    display: block;
+    font-size: 14px;
+    padding: 0 30px 0 30px;
+    position: relative;
+    text-shadow: 1px 1px 0 #648200;
+    text-transform: uppercase;
+}
+.g-subscribe-button_green__text-wrap {
+    display: block;
+    line-height: 41px;
+    position: relative;
+	text-align: center;
+}
+/**/
+a.g-subscribe-button_orange-small {
+    color: #FFFFFF;
+    display: block;
+    outline: medium none;
+    padding: 0 7px 0 7px;
+    position: relative;
+    text-decoration: none;
+    top: 1px;
+}
+.g-subscribe-button_orange-small__left-cnr, 
+.g-subscribe-button_orange-small__right-cnr {
+    display: block;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+.g-subscribe-button_orange-small__left-cnr {
+    background: url("../img/b-popup-subscribe_sbc-left-cnr.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+}
+.g-subscribe-button_orange-small__right-cnr {
+    background: url("../img/b-popup-subscribe_sbc-right-cnr.png") no-repeat scroll 0 0 transparent;
+    right: 0;
+    width: 7px;
+}
+.g-subscribe-button_orange-small__bg {
+    background: url("../img/b-popup-subscribe_sbc-bg.png") repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 32px;
+}
+.g-subscribe-button_orange-small__text {
+    display: block;
+    font-size: 14px;
+    padding: 0 10px 0 25px;
+    position: relative;
+    text-shadow: 1px 1px 0 #BF4100;
+}
+.g-subscribe-button_orange-small__text-wrap {
+    display: block;
+    line-height: 31px;
+    position: relative;
+}
+/**/
+a.g-subscribe-button_orange-big {
+    color: #FFFFFF;
+    display: block;
+    outline: medium none;
+    padding: 0 7px;
+    position: relative;
+    text-decoration: none;
+    top: 1px;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.g-subscribe-button_orange-big__left-cnr, 
+.g-subscribe-button_orange-big__right-cnr {
+    display: block;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+
+.g-subscribe-button_orange-big__left-cnr {
+    background: url("../img/b-popup-subscribe_sbsc-left-cnr.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+}
+
+.g-subscribe-button_orange-big__right-cnr {
+    background: url("../img/b-popup-subscribe_sbsc-right-cnr.png") no-repeat scroll 0 0 transparent;
+    right: 0;
+    width: 7px;
+}
+
+.g-subscribe-button_orange-big__bg {
+    background: url("../img/b-popup-subscribe_sbsc-bg.png") repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 42px;
+}
+
+.g-subscribe-button_orange-big__text {
+    display: block;
+    padding: 0 10px 0 25px;
+    position: relative;
+    text-shadow: 1px 1px 0 #BF4100;
+}
+
+.g-subscribe-button_orange-big__text-wrap {
+    display: block;
+    line-height: 41px;
+    position: relative;
+}
+
+a.g-subscribe-button_orange-big .g-subscribe-button_ico-cancel {
+    top: 18px;
+}
+
+.g-subscribe-button_ico-cancel {
+    background: url("../img/b-popup-subscribe_sb-ico-sprite.png") no-repeat scroll -10px 0 transparent;
+    left: -14px;
+    top: 12px;
+}
+
+a.g-subscribe-button_green:link,
+a.g-subscribe-button_green:visited,
+a.g-subscribe-button_green:hover,
+a.g-subscribe-button_green:active,
+a.g-subscribe-button_orange-big:link,
+a.g-subscribe-button_orange-big:visited,
+a.g-subscribe-button_orange-big:hover,
+a.g-subscribe-button_orange-big:active,
+a.g-subscribe-button_orange-small:link,
+a.g-subscribe-button_orange-small:visited,
+a.g-subscribe-button_orange-small:hover,
+a.g-subscribe-button_orange-small:active {
+	cursor: hand;
+	cursor: pointer;
+	color: #fff;
+	font-family: Arial, Tahoma, Sans-Serif;
+}
+
+.g-subscribe-button-center-col {
+	width: 180px;
+	margin: 0 auto;
+}
+
+.g-subscribe-button-center-col .g-subscribe-button_green__text {
+	padding: 0 35px;
+}
+
+.g-subscribe-button-center-col .g-subscribe-button_green__text-wrap {
+	text-align: center;
+}

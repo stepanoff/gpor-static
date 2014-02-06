@@ -1,0 +1,11 @@
+.b-header_bg_dark-green {
+    color: #fff;
+    padding: 10px 20px;
+    background: #779f1a;
+}
+
+.b-header_bg_dark-green a {
+    color: #fff;
+    text-decoration: none;
+}
+

@@ -1,0 +1,44 @@
+.b-form-builder__bottom {
+	height: 50px;
+}
+
+.b-form-builder__bottom_grey {
+	background: url(../img/grey-footerBg.png) 0 0 repeat-x;
+}
+
+.b-form-builder__bottom_blue {
+	background: url(../img/blue-footer-bg.png) 0 0 repeat-x;
+}
+
+.b-form-builder__submit {
+	border: none;
+    margin: 0 10px;
+    min-width: 100px;
+    padding: 2px 15px;
+    vertical-align: middle;
+    float: right;
+    height: 32px;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+    width: 176px;
+	text-align: left;
+	padding-left: 40px;
+	text-indent: -9999px;
+	display: block;
+}
+
+.b-form-builder__submit-center {
+	float: none;
+	margin: 0 auto;
+}
+
+.b-form-builder__submit-find {
+	background: url("../img/find-form-submit.png") no-repeat scroll 0 0 transparent;
+	width: 206px;
+}
+
+.b-form-builder__submit-quest {
+	background: url("../img/quest-form-submit.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+}

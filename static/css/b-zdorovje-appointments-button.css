@@ -1,0 +1,27 @@
+.b-zdorovje-appointments-button {
+	font-size: 1.8em;
+	line-height: 1em;
+	margin: 10px 0;
+}
+.b-zdorovje-appointments-button a {
+	display: block;
+	text-decoration: none;
+	background: #ff6008 url(../img/b-zdorovje-appointments-button-appointsments-btn-bg.png) 0 0 repeat-x;
+	color: #fff;
+	
+	height: 70px;
+}
+.b-zdorovje-appointments-button a ins {
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	position:relative;
+	top: 12px;
+	
+}
+.b-zdorovje-appointments-button__pic {
+	display: block;
+	height: 70px;
+	padding-left: 57px;
+	background: url(../img/b-zdorovje-appointments-button-heart-pic.png) 10px center no-repeat;
+	
+}

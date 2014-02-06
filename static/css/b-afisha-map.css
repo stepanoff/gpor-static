@@ -1,0 +1,9 @@
+.b-afisha-map {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px 0;
+}
+.b-afisha-map__img {
+	display: block;
+	width: 100%;
+}

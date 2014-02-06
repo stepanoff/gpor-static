@@ -1,0 +1,9 @@
+.context .b-link-user_social_vk,
+.context .b-link-user_social_fb,
+.context .b-link-user_social_tw,
+.context .b-link-user_social_lj {
+	background-image: url(../img/b-link-user-icons.png);
+	background-repeat: no-repeat;
+	padding-left: 0px;
+	padding-right: 15px;
+}

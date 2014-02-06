@@ -1,0 +1,129 @@
+.b-map-popup {
+	position:relative;
+	width:400px;
+	float:left;
+	margin: 20px;
+}
+
+.b-map-popup__shadow {
+	display: block;
+	position:absolute;
+	left: 2px;
+	bottom: 5px;
+	width: 97%;
+	height: 80%;
+	
+   box-shadow: 18px 16px 20px -5px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 18px 16px 20px -5px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 18px 16px 20px -5px rgba(0, 0, 0, 0.51);	
+	
+}
+
+.b-map-popup__frame{
+	position:relative;
+	overflow:hidden;
+	padding:10px 0;
+}
+
+.b-map-popup__content {
+	padding:0px 6px 0 2px;
+	position:relative;
+	overflow:hidden;
+	z-index:10;
+}
+
+.b-map-popup__frame .blc-cn {
+	position:absolute;
+	width:20px;
+	height:24px;
+	left:-10px;
+	top:-14px;
+}
+
+.b-map-popup__frame .blc-cn.blc-tr, 
+.b-map-popup__frame .blc-cn.blc-br {
+	margin-left:100%;
+}
+
+.b-map-popup__frame .blc-cn.blc-bl, 
+.b-map-popup__frame .blc-cn.blc-br {
+	top:auto;
+}
+
+.b-map-popup__frame .blc-cn{
+	background:url(../img/placeholder/map-popup.png);
+}
+
+.b-map-popup__frame .blc-cn.blc-tl, 
+.b-map-popup__frame .blc-cn.blc-bl {
+	width:100%;
+} 
+
+.b-map-popup__left-line {
+	background:url(../img/placeholder/map-popup_l.png);
+	position:absolute;
+	left:1px;
+	top:0px;
+	width:3px;
+	height:1000px;
+}
+
+.b-map-popup__right-line {
+	background:url(../img/placeholder/map-popup_r.png);
+	position:absolute;
+	right:5px;
+	top:0px;
+	width:3px;
+	height:1000px;
+}
+
+.b-map-popup__close,
+.close {
+	width: 8px;
+	height: 8px;
+	top: 0px;
+	right: 10px;
+	position:absolute;
+	display: block;
+	background: url(../img/placeholder/control-sprite.png) 0 0 no-repeat;
+}
+
+.b-map-popup__text {
+	font-family: Arial;
+	padding: 3px 7px 2px;
+	background-color: #fff;
+}
+.b-map-popup__text h3 {
+	font-size: 16px;
+	line-height: 20px;
+	color: #0d7ac0;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+.b-map-popup__text p, .b-map-popup__text div {
+	margin: 0px;
+	font-size: 13px;
+	line-height: 20px;
+	color: #505254;
+	margin-bottom: 0px;
+}
+
+.b-map-popup__text p.b-map-popup__text_last {
+	font-size: 14px;
+}
+
+.b-map-popup__text_bg-image_novostroy {
+	padding-left: 50px;
+	background-image: url(../img/placeholder/marker.png);
+	background-position: 9px center;
+	background-repeat: no-repeat;
+
+}
+
+.b-map-popup__text_bg-image_novostroy a {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3;
+	color: #037dd3;
+}
+
+

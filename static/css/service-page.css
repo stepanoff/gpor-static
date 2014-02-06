@@ -1,0 +1,90 @@
+.service-page__header {
+	background: #6a920f;
+	padding-bottom: 15px;
+}
+
+.service-page__header__inner {
+	background: #779f1a;
+	height: 54px;
+}
+
+
+.service-page__logo {
+    color: #FFFFFF;
+    font-size: 11px;
+    height: 60px;
+    left: 30px;
+    position: absolute;
+    top: 5px;
+    width: 250px;
+    vertical-align: middle;
+}
+
+/*.service-page-logo-pic {*/
+	/*background: url(../misc/logo.png) 0 0 no-repeat;*/
+	/*_background:none;*/
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./misc/logo.png",sizingMethod="crop");*/
+	/*width: 93px;*/
+	/*height: 47px;*/
+	/*display: inline-block;*/
+	/*position: relative;*/
+/*}*/
+
+.service-page__logo span {
+  	line-height: 13px;
+    width: 130px;
+    position: absolute;
+    height: 40px;
+    top: 11px;
+    left: 105px;
+    display: block;
+}
+
+.service-page__logo a:link, .service-page__logo a:visited,
+.service-page__logo a:hover, .service-page__logo a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+.service-page__body {
+	padding: 0px 30px 0 30px;
+}
+
+.service-page__body h1 {
+	font: normal 24px/33px Arial, Tahoma, Sans-Serif;
+	margin-bottom: 15px;
+}
+
+.service-page__body a:link, .service-page__body a:visited,
+.service-page__body a:hover, .service-page__body a:active {
+	color: #037dd3;
+}
+
+.buttons-block {
+	margin-bottom: 70px;	
+	clear: both;
+}
+
+.button {
+	padding: 10px 12px 9px 12px;
+	background: #5e820e url(../img/butbg.jpg) 0 top repeat-x;
+	display: inline-block;
+	//display: inline;
+	margin-right: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+  	/*//behavior: url(border-radius.htc);*/
+}
+
+.button__input {
+	font-size: 13px;
+	font-family: Arial, Tahoma, Sans-Serif;
+	padding: 4px 25px 3px;
+}
+
+.button .button__input {
+	font-weight: bold;
+}
+

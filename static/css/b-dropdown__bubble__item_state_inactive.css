@@ -1,0 +1,23 @@
+.b-afisha-date-select .b-afisha-date-select__bubble__item_state_inactive {
+    cursor: default;
+}
+.b-afisha-date-select .b-afisha-date-select__bubble__item_state_inactive a {
+    cursor: default;
+}
+
+.b-dropdown .b-dropdown__bubble__item_state_inactive ins {
+	border: none;
+	text-decoration: none;
+	color: #7D7D7D;
+}
+
+.b-dropdown .b-dropdown__bubble__item_state_inactive a:hover {
+	background: inherit;
+    border: inherit;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.b-dropdown .b-dropdown__bubble__item_state_inactive a:hover ins {
+	border-bottom: none;
+}

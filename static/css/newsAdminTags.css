@@ -1,0 +1,26 @@
+.tags__tagRow {
+  margin-bottom: 3px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.tags__tagRow__value {
+  
+}
+
+.tags__tagRow__btns {
+  display: none;
+}
+
+.tags__tagRow:hover .tags__tagRow__btns {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.tags__tagRow_status_plot .tags__tagRow__value {
+  font-weight: bold;
+}
+
+.union-tags-acResults {
+    z-index: 1000000;
+}

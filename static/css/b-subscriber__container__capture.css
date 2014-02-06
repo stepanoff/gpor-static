@@ -1,0 +1,36 @@
+/*__capture*/
+.b-subscriber__container__capture {
+	float: right;
+	font-size: 14px;
+	position:relative;
+}
+
+.b-subscriber__container__capture_layout_refresh ins,
+.b-subscriber__container__capture_layout_ok ins {
+	position:absolute;
+	left: -34px;
+	top: 50%;
+	display: block;
+}
+
+.b-subscriber__container__capture_layout_refresh ins {
+	background: url(../img/gren_round_arrows.gif) 0 0 no-repeat;
+	width: 19px;
+	height: 19px;
+	margin-top: -10px;
+	left: -27px;
+}
+.b-subscriber__container__capture_layout_ok ins {
+	background: url(../img/b-subscriber__capture_layout_ok.png) 0 0 no-repeat;
+	width: 24px;
+	height: 22px;
+	margin-top: -11px;
+}
+
+
+@media screen and (max-width: 1100px) {
+	.b-subscriber__container__capture_state_replaced-in-new-str {
+		margin-top: 10px;
+		
+	}
+}

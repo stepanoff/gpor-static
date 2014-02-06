@@ -1,0 +1,247 @@
+body div .job_onejob { width: 100%; background: #f1f5e8; font-family: arial, sans-serif; position: relative; }
+body div .job_onejob-print { background: white; }
+.job_onejob-in { padding: 16px 20px 20px 20px; position: relative; }
+.job_onejob h1{ font-size: 24px; margin-bottom: 13px; width: 75%; margin-left: -1px; }
+.info { position: absolute; top: 12px; right: 18px; }
+.info .info-top { margin-bottom: 1px; }
+.info span { font-size: 11px; }
+.info span.time-live-value { color: #628315; font-weight: bold; }
+.info .info-bottom { text-align: right; }
+.info .info-bottom .time-add-value { margin-right: 5px; }
+
+.onejob-left { width: 33%; float: left; }
+.onejob-left table { width: 100%; margin-bottom: 20px; }
+.onejob-left table td { font-size: 12px; padding: 9px 0 9px 19px; border-bottom: 1px solid #cdc8c2; border-top: 1px solid #cdc8c2;  background: white; }
+.onejob-left table tr.first td { padding: 6px 0 6px 19px; vertical-align: middle; }
+.onejob-left table tr.first td.left span {  }
+.onejob-left table tr.odd td { background: #f7f9f2; }
+.onejob-left table td.left { color: #484744; }
+.onejob-left table td.right { color: #484744; font-weight: bold; }
+.onejob-left table td.right span { color: #fc8100; font-size: 18px; }
+
+.onejob-left .js_popup_button-higlited { font-size: 14px; height: 30px; font-family: arial, sans-serif; }
+.onejob-left .button { width: 90%; padding: 10px 5%; }
+.onejob-left .button input { width: 100%; *width: 90%; }
+
+.onejob-left .contact { padding: 16px 20px; }
+.onejob-left .contact p { line-height: 1.8; clear: both; }
+.onejob-left .contact h3.company { margin-bottom: 17px; margin-top: 5px; }
+.onejob-left .contact h3.company a { color: #037dd3; font-size: 14px; }
+.onejob-left .contact h3.company img { border: 1px solid #e7e7e7; display: block; margin-bottom: 6px; }
+.onejob-left .contact h4 { color: #333333; font-size: 12px; margin-bottom: 7px; }
+.onejob-left .contact h3 { color: #333333; font-size: 18px; margin-bottom: 6px; }
+
+.onejob-left .vbranches { background: white; padding: 16px 20px; margin-top: 20px; }
+.onejob-left .vbranches h3, .vacancy_rubriks { color: #333333; font-size: 18px; margin-bottom: 6px; }
+.onejob-left .vbranches a { color: #037dd3; font-size: 14px; display: block; padding-top: 8px; }
+
+
+.onejob-right { width: 100%; position: relative; }
+body div .onejob-right .onejob-right-top { background: white; padding: 16px 20px 23px 20px; }
+body div .onejob-right .onejob-right-top { margin-top: 0; }
+body .onejob-right-in .onejob-right-in-in { margin-left: 20px; }
+.onejob-right h3 { font-weight: bold; font-size: 14px; margin-bottom: 20px; }
+.onejob-right p { font-family: arial, sans-serif; line-height: 1.3; margin-bottom: 18px; font-size: 14px; color: #333333; }
+
+.onejob-right-in { float: right; width: 67%; }
+.onejob-right-in .onejob-right-in-in { background: #F1F5E8; padding-left: 20px; }
+
+.job_rating { margin-top: 4px; }
+table.payIntervals { width: 100%; overflow: hidden; }
+table.payIntervals a { color: #037dd3; }
+table.payIntervals .selected { color: #FFFFFF; font-weight: bold; }
+table.payIntervals .selected th { background-color: #a1a598; padding: 3px 0 3px 7px; width: 96px; _padding-bottom: 3px; }
+table.payIntervals  td { padding: 2px 0 3px 6px; }
+table.payIntervals  th,
+table.payIntervals  td { font-size: 12px; font-family: arial, sans-serif; }
+table.payIntervals tbody tr.first td { padding-top: 4px; }
+table.payIntervals .selected a { color: #FFFFFF; text-decoration: none; font-weight: bold; }
+
+
+.diagrams { margin-left: 1px; }
+.diagrams .d-left,
+.diagrams .d-right,
+.diagrams .d-center-in { background: url('../img/job_sprite.png') 0 0 no-repeat; float: left; }
+
+.diagrams .d-left { background-position: 0 0; width: 5px; height: 10px; overflow: hidden; }
+.diagrams .d-right { background-position: -10px 0; width: 6px; height: 10px; margin-right: -6px; overflow: hidden; }
+.diagrams .d-center { width: 80%; float: left; position: relative; }
+.diagrams .d-center-in { height: 10px; background-position: 0 -10px; overflow: hidden; }
+
+.diagrams .count { color: #8a8f7e; font-size: 10px; font-family: arial, sans-serif; margin-left: 12px; position: absolute; }
+
+.onejob-right .action .print,
+.onejob-right .action .complain,
+.onejob-right .action span { color: #fc8100; font-weight: bold; font-size: 12px; }
+.onejob-right .action span { font-size: 12px; margin: 0 4px; }
+.onejob-right .action { margin-top: -4px; }
+
+.onejob-right-bottom { margin-top: 20px; font-size: 11px; width: 67%; margin-left: 33%; }
+.onejob-right-bottom .br-left { float: left; margin-left: 20px; }
+.onejob-right-bottom .br-left span { margin-right: 9px; color: #5e5e5e; }
+.onejob-right-bottom .br-right { float: right; margin-right: 1px; }
+.onejob-right-bottom .br-right span { margin-left: 9px; color: #5e5e5e; }
+.onejob-right-bottom .prev,
+.onejob-right-bottom .next { color: #0168bb; font-size: 18px; }
+
+.job-right-block { z-index: 0; }
+.job-right-block .job-banner { display: block; margin-bottom: 10px; }
+.job-right-block .news_cute-news-block { margin-left: 0; padding: 10px 20px 20px 20px; }
+
+/* правый блок для главной */
+.job_page-right-vacancy { }
+.job_page-right-vacancy .news_cute-news-block { margin-left: 0; width: auto; }
+.job_page-right-vacancy .news_cute-news-block .rocon-tl { display: none; position: absolute; right: -3000px; }
+
+.job_page-right-vacancy .news_single_heading_title_first .news_single_heading_link { 
+	font: normal 14px/1.25em Arial, Tahoma, sans-serif;
+}
+
+.job_page-right-vacancy .news_cute-news-block_heading { 
+	margin-top: 0px;
+	margin-left: -7px;
+	font: normal 1.35em Arial, Tahoma, sans-serif; 
+}
+
+.job_page-right-vacancy .news_single_date { line-height: 1.2; text-decoration: none; font-size: 10px; font-family: arial, sans-serif; color: #555555; white-space: normal; }
+.job_page-right-vacancy .news_news-list_item_cute-marker { top: 8px; }
+.job_page-right-vacancy .news_cute-news-block { padding-left: 20px; }
+
+.job_page-right-vacancy .news_single_heading_title_first { 
+	margin-bottom: 5px; 
+}
+
+.job_page-right-vacancy .news_cute-news-block-last { background: #f7f0c8; }
+.job_page-right-vacancy .news_single_heading_title { display: block; margin-bottom: 5px; }
+.job_page-right-vacancy .news_single_heading_title_first {display:block;}
+
+.job_page-right-vacancy .news_cute-news-block .frames_cute_frame { 
+	margin: -6px -16px -9px -16px; 
+}
+
+.job_page-right-vacancy .frames_cute_frame_content, 
+.job_page-right-vacancy .js_frames_cute_frame_content {
+	padding:0.4em;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+/* правый блок для вакансии */
+/* спизженый код с модуля новостей */
+
+.news_cute-news-block {
+    padding: 10px 20px 20px;
+}
+
+.news_cute-news-block .frames_cute_frame {
+    margin: 0 -16px;
+}
+
+.news_cute-news-block_news-list_item { 
+	margin-bottom: 8px; 
+}
+
+.news_cute-news-block-last {
+    background-color: #f1f5e8;
+}
+
+.news_cute-news-block-hour {
+
+}
+
+.news_cute-news-block p { color: #333333; font-family: arial, sans-serif; font-size: 12px; margin-bottom: 15px; margin-left: -1px; }
+
+.news_cute-news-block_heading { 
+	margin: 7px 0 12px -2px; 
+}
+
+.news_cute-news-block_heading a {
+ 	font-size: 18px;
+	color: #037dd3;
+}
+
+.news_cute-news-block { /*margin-top: 20px;*/ position: relative; }
+
+.news_news-list_item_cute-marker {
+    background-color: #638B09;
+    float: left;
+    font-size: 0;
+    height: 5px;
+    left: -10px;
+    margin-right: -3px;
+    position: relative;
+    top: 9px;
+    width: 3px;
+}
+
+.news_cute-news-block_more-link {
+    margin-top: 0.8em;
+}
+
+.news_single_heading_title_first { 
+	line-height: 1.3; 
+	margin-bottom: 1px; 
+}
+
+.news_single_heading_title_first .news_single_heading_link {
+	font-size: 13px; 
+	font-family: arial, sans-serif; 
+	font-weight: bold;
+}
+
+.news_single_heading_title {
+    display: inline;
+}
+
+.news_single_annotation {
+    margin-top: 0em;
+}
+
+.news_single_date {
+	display:block;
+    color: #91938b;
+    font-size: 12px;
+	line-height: 1.2;
+	margin-left: -1px;
+	font-family: arial, sans-serif;
+}
+
+.news_blog-one-piple-head .news_single_date {
+	display:inline;
+}
+
+
+.news_single-view .news_single_heading_title {
+    font-size: 1.923em;
+}
+
+.job_send-file-download 
+{
+	line-height:1.5;
+}
+
+.job_send-file-download a
+{
+	font-weight: bold;
+	background-image: url('../img/example.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 24px;
+}
+
+.onejob-right-top-print,
+.onejob-right-top-print a { color: #fc8100; font-size: 12px; font-weight: bold; font-family: arial; }
+/* конец спизженного */
+
+.job_onejob-you-already-feedback { margin: 16px 0 19px 0; overflow: hidden; }
+.job_onejob-you-already-feedback img { float: left; margin-left: 2px; width: 37px; }
+.job_onejob-you-already-feedback__text { color: #fc8100; display: block; font: 18px Arial,Tahoma,Sans-Serif; margin-left: 50px; padding-top: 8px; position: relative; }
+
+/*
+/* для принта
+*/
+
+.job_onejob-in-print {
+	padding-left:0px;
+	padding-right: 0px;
+}

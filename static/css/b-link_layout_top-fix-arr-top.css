@@ -1,0 +1,10 @@
+a.b-link_layout_top-fix-arr-top {
+	padding-left: 18px;
+	background: url(../img/b-link_layout_sprite.png) -81px -54px no-repeat;
+	text-decoration: none;
+	font-size: 13px;
+	position:absolute;
+	right: 20px;
+	top: 14px;
+	outline: none;
+}

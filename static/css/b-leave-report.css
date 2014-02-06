@@ -1,0 +1,15 @@
+
+.b-leave-report {
+	background: #efefef;
+	height: 20px;
+	line-height: 20px;
+	font-size: 0.95em;
+	
+	float: left;
+	padding: 0 13px;
+	margin: 0 0 0 0px;
+}
+
+.b-leave-report a {
+	font-weight: bold;
+}

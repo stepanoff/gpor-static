@@ -1,0 +1,11 @@
+.b-form__body__inner__row__frame__input {
+	
+}
+
+.b-form__body__inner__row__frame__input input {
+	border: none;
+	width: 100%;
+	padding: 3px 0;
+	text-indent: 3px;
+	background: #fff url(../img/b-form__body__inner__textarea-bg.jpg) 0 0 repeat-x;
+}

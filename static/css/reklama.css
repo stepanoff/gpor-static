@@ -1,0 +1,113 @@
+.reklama {}
+.rek-caption { position: relative; z-index: 1; font-size: 24px; border-bottom: 3px solid #f17e00; margin-top: 27px; padding: 0 8px 12px 8px; }
+.reklama .rek-table-main { margin-right: 8px; }
+.rek-caption a {color: #000000;text-decoration:none;}
+
+.reklama .rek-attention { margin-top: 6px; border-bottom: 1px solid #d2d2d2; padding-bottom: 13px; margin-bottom: 13px; }
+.reklama .rek-attention h3 { font-size: 18px; color: #b10a0a; margin-left: 10px; }
+.reklama .rek-attention p { font-size: 14px; color: #b10a0a; line-height: 1.5; margin-left: 10px; }
+
+.reklama .rek-platform { margin-bottom: 0; padding-bottom: 7px; margin-top: 9px; }
+.reklama .rek-platform h3 { font-size: 14px; margin-bottom: 11px; margin-left: 10px; font-weight: bold; }
+.reklama .rek-platform table { width: 100%; }
+.reklama .rek-platform table td { padding-bottom: 12px; }
+.reklama .rek-platform table td.firstcolumn { width: 40%; }
+
+.reklama .rek-platform table a { margin-left: 51px; position: relative; _zoom: 1; text-decoration: none; border-bottom: 1px solid #037dd3; font-size: 14px; color: #037dd3; }
+.reklama .rek-platform table a i { position: absolute; display: block; width: 18px; height: 16px; top: 0; left: -28px; }
+.reklama .rek-platform table .auto i { background-position: 0 0; }
+.reklama .rek-platform table .inet i { background-position: -18px 0; }
+.reklama .rek-platform table .banks i { background-position: 0 -16px; }
+.reklama .rek-platform table .food i { background-position: -17px -16px; }
+.reklama .rek-platform table .hotels i { background-position: 0 -32px; }
+.reklama .rek-platform table .build i { background-position: -17px -32px; }
+
+.reklama .rek-nonstandart { margin-top: 0; }
+.reklama div.rek-nonstandart h3 { margin-bottom: 6px; padding-bottom: 6px; margin-left: 10px; }
+.rek-counter { float: right; }
+.rek-counter-in { margin-left: 10px; width: 200px; background: #f1f5e8; padding: 14px 0 8px 0; }
+div.rek-counter-in p { line-height: 1.2; color: #575a4f; font-size: 11px; text-align: center; width: 130px; margin: 0 auto 6px auto; }
+.rek-counter-in .item { text-align: center; padding: 4px 1px 0 1px; background: url('../img/fonnumber.png') 0 0 no-repeat; font-family: "Arial Narrow", sans-serif; width: 27px; height: 41px; color: #f2f2f1; font-size: 33px; font-weight: bold; }
+.rek-counter-in table { margin: 0 auto; margin-bottom: 6px; }
+div.rek-platform tr.offer-current td a { color: #f17e00; font-size: 14px; font-weight: bold; border: none; }
+
+.banner-price { margin-bottom: 25px; }
+.banner-price h3 { font-size: 18px; margin-left: 10px; padding-top: 11px; margin-bottom: 16px; }
+.banner-price table { width: 100%; margin-bottom: 9px; border-collapse: separate; }
+.banner-price table th { background: #8a8f7e; font-size: 11px; color: white; padding: 10px 12px 6px 12px; vertical-align: bottom; }
+.banner-price table th.fwidth { width: 20%; }
+.banner-price table th.fwidth2 { width: 25%; }
+.banner-price table td { color: #555555; font-size: 12px; padding: 8px 11px 7px 11px; }
+.banner-price table .odd td { background: #f1f5e8; }
+.banner-price .rek-print { color: #8a8f7e; font-size: 11px; margin-left: 33px; position: relative; }
+.banner-price .rek-print i { position: absolute; top: 0; left: -22px; background: url('../img/print.jpg') 0 0 no-repeat; width: 18px; height: 17px; display: block; }
+.banner-price table tr.head_group { background: white; color: black; }
+.banner-price table tr.body_group { background: #f1f5e8;}
+.banner-price table tr.head_group td { font-size: 16px; color: black; padding-top: 11px; border-bottom: 1px solid #c4c7be; }
+.banner-price table tr.body_group td { line-height: 1.2; font-size: 14px; color: black; padding-bottom: 9px; border-top: 1px solid white;  }
+.banner-price table tr.body_group td a { color: #037dd3; text-decoration: none; border-bottom: 1px dotted #037dd3; }
+
+.rek-desct { padding-left: 10px; font-size: 14px; border-bottom: 1px solid #d2d2d2; padding-bottom: 13px; margin-bottom: 16px; }
+.rek-desct-in { border-bottom: none; padding-bottom: 0; margin-bottom: 16px; }
+.rek-desct h3 { font-weight: bold; font-size: 14px; margin-bottom: 10px; }
+.rek-desct p { line-height: 1.4; margin-bottom: 11px; }
+
+.rek-leftright { width: 100%; position: relative; }
+.rek-left { width: 240px; vertical-align:top;  }
+.rek-right { padding-left: 20px;  vertical-align:top; }
+
+.reklama_right { padding-top: 17px; }
+.reklama_right h3 { font-size: 18px; margin-bottom: 0; margin-left: 19px; }
+.reklama_right p { line-height: 1.5; margin-bottom: 12px; font-size: 14px; margin-left: 20px; }
+.reklama_right .rek-tel { font-size: 24px; margin-left: 20px; }
+.reklama_right .rek-tel span { font-size: 18px; font-style: italic; }
+
+.reklama_right .form-top { margin-top: 20px; background: #8a8f7e; color: white; font-size: 18px; padding: 13px 20px 14px 20px; }
+.reklama_right .form-bottom { background: #f7f0c8; padding: 15px 20px 8px 20px; }
+.reklama_right .form-bottom input { width: 97%; padding: 3px; display: block; margin-bottom: 8px; font-style: italic; }
+.reklama_right .form-bottom .comment { font-style: italic;  margin-bottom: 6px; display: block;  padding-top: 5px; margin-left: 5px; }
+.reklama_right .form-bottom textarea { height: 68px; width: 97%; padding: 0 3px; margin-bottom: 10px; }
+.reklama_right .form-bottom .rek-submit { font-style: normal; float: right; padding: 0 15px; font-weight: bold; font-size: 13px; width: 116px; height: 28px; }
+.rek-subscribe { background-color: #f1f5e8; padding: 16px 20px 18px 20px; }
+.rek-subscribe p { font-size: 14px; margin-bottom: 9px; line-height: 1.5; }
+.rek-subscribe input { width: 97%; padding: 3px;  display: block; margin-bottom: 12px; font-style: italic; }
+.rek-subscribe input.rek-submit { font-style: normal; font-weight: bold; height: 28px; float: right; margin-bottom: 0; padding: 0 15px; width: 116px; }
+
+.rek-statistic { margin-top: 20px; margin-left: 20px; }
+.rek-statistic h3 { font-size: 18px; margin-bottom: 2px; }
+.rek-statistic div.lr { margin-bottom: 18px; }
+.rek-statistic div div { float: left; width: 48%; height: 46px; background: #fcf9e9; }
+.rek-statistic div .right { float: right; }
+.rek-statistic a { color: #037dd3; font-size: 14px; }
+
+div.reklama .rek-stat { border-top: 1px solid #d2d2d2; margin-bottom: 9px; padding-bottom: 1px; border-bottom: 1px solid #d2d2d2; margin-top: 2px; padding-top: 14px; }
+div.reklama div.rek-stat h3 { margin-bottom: 9px; }
+div.reklama .rek-stat table td { padding-bottom: 20px; }
+div.reklama .rek-stat table .tns i { left: -36px; top: -2px; background: url('../img/tns.png') 0 0 no-repeat; width: 26px; height: 26px; }
+div.reklama .rek-stat table .lin i { left: -36px; top: -2px; background: url('../img/lin.png') 0 0 no-repeat; width: 26px; height: 26px; }
+
+div.require_banners_text {height:0px;font-size:0px;}
+
+.require_banners { margin-left: 20px; margin-bottom: 20px; }
+.require_banners a { text-decoration: none; border-bottom: 1px solid #037DD3; font-size: 14px; color: #037dd3; line-height: 1.5; }
+.price-download { margin-left: 35px; position: relative; top: -1px; color: #8a8f7e; font-size: 11px; }
+.price-download i { left: -20px; top: 0; *top: 18px; position: absolute; width: 17px; height: 17px; background: url("../img/download.png") 0 0 no-repeat; }
+
+.reklama_right .form-bottom .signDiscount { display: inline; width:40px;}
+
+/*
+.reklama_right .form-top {
+-webkit-border-bottom-right-radius:0;
+-webkit-border-bottom-left-radius:0;
+
+-moz-border-radius-bottomleft:0;
+-moz-border-radius-bottomright:0;
+}
+
+.reklama_right .form-bottom {
+-webkit-border-top-right-radius:0;
+-webkit-border-top-left-radius:0;
+
+-moz-border-radius-topleft:0;
+-moz-border-radius-topright:0;
+}*/

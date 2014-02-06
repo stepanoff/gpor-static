@@ -1,0 +1,64 @@
+.b-doska-filter {
+	background: #e7eadf;
+	padding: 10px 20px 13px;
+}
+.b-doska-filter__title {
+	font-size: 21px;
+	line-height: 26px;
+	margin-bottom: 5px;
+}
+.b-doska-filter__content dt {
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 7px;
+	position:relative;
+	cursor: pointer;
+}
+
+
+
+ 
+
+
+.b-doska-filter__content__rubric-title__arr {
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	position:relative;
+	
+	bottom: 1px;
+	margin-left: 5px;
+	background: url(../img/b-filter-arr.gif) 0 0 no-repeat;
+}
+
+
+.context .b-doska-filter__content__rubric-title_state_opened .b-doska-filter__content__rubric-title__arr {
+	background-position: 0 -9px;
+}
+
+.b-doska-filter__content__rubric-content {
+	display: none;
+}
+
+.b-doska-filter__content__rubric-content_state_opened {
+	display: block;
+}
+
+
+
+.b-doska-filter__content__rubric-content__list {
+	margin-bottom: 13px;
+}
+.b-doska-filter__content__rubric-content__list li {
+	line-height: 18px;
+	margin-bottom: 7px;
+}
+.b-doska-filter__content__rubric-content__list input {
+	position:relative;
+	top: 1px;
+	margin-right: 2px;
+}
+.b-doska-filter__content__rubric-content__list label {
+	font-size: 14px;
+	
+}

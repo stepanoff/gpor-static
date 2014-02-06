@@ -1,0 +1,86 @@
+/*.b-read-more-link {
+    display: block;
+    height: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+a.b-read-more-link ins {
+    text-decoration: none;
+}
+a.b-read-more-link:link, 
+a.b-read-more-link:visited, 
+a.b-read-more-link:hover, 
+a.b-read-more-link:active {
+	background: url(../img/readmore-green.png) 0 0 repeat-x;
+    color: #FFFFFF;
+    outline: medium none;
+    text-decoration: none;
+}
+
+a.b-read-more-linkHide:link, 
+a.b-read-more-linkHide:visited, 
+a.b-read-more-linkHide:hover, 
+a.b-read-more-linkHide:active {
+	background: url(../img/readmore-orange.png) 0 0 repeat-x;
+	color: #FFFFFF;
+    outline: medium none;
+	text-decoration: none;
+}
+a.b-read-more-link span {
+    font-size: 13px;
+    height: 31px;
+    left: 10px;
+	top: 3px;
+    position: relative;
+	float: left;
+    text-align: center;
+}
+a.b-read-more-link span ins {
+    float: right;
+	height: 31px;
+	line-height: 27px;
+	display: block;
+	padding-right: 30px;
+	padding-left: 10px;
+	white-space: nowrap;
+}
+
+.b-read-more-link ins {
+	background: url("../img/readmore.png") no-repeat scroll right 0px transparent;
+}
+
+.b-read-more-linkHiden ins {
+	background: url("../img/readmore.png") no-repeat scroll right -64px transparent;
+}
+
+.context a.b-read-more-link_position_last-news ins {
+	background: url("../img/readmore.png") no-repeat scroll left -136px transparent;
+	padding-left: 26px;
+	padding-right: 20px;
+}
+
+
+
+
+.b-read-more-linkShow {
+    background: url("../img/readmore.png") no-repeat scroll 0 -32px transparent;
+}
+
+.b-read-more-linkHiden {
+    background: url("../img/readmore.png") no-repeat scroll 0 -96px transparent;
+}
+
+
+
+a.b-read-more-link .b-read-more-linkShow {
+    display: block;
+}
+a.b-read-more-link .b-read-more-linkHiden {
+    display: none;
+}
+a.b-read-more-linkHide .b-read-more-linkShow {
+    display: none;
+}
+a.b-read-more-linkHide .b-read-more-linkHiden {
+    display: block;
+}*/

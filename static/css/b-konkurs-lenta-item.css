@@ -1,0 +1,15 @@
+.b-konkurs-lenta-item {
+	background: #eef3dd;
+	position:relative;
+}
+
+.b-konkurs-lenta-item__pad {
+	padding: 10px 10px 10px 20px;
+}
+
+.b-konkurs-lenta-item_layout_with-pic {
+
+	height: 240px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}

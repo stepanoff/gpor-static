@@ -1,0 +1,30 @@
+.b-table_layout_pad td {
+	padding: 8px 0px 8px 20px;
+	font-size: 12px;
+}
+
+.b-table_layout_event-description {
+	margin-left: 0px;
+	margin-bottom: 20px;
+}
+
+.b-table_layout_event-description th,
+.b-table_layout_event-description td {
+	vertical-align: top;
+	padding-bottom: 9px;
+	line-height: 24px;
+}
+
+.b-table_layout_event-description th {
+	width: 1%;
+	white-space: nowrap;
+	text-align: left;
+	font-weight: bold;
+}
+.b-table_layout_event-description td {
+	padding-right: 20px;
+}
+
+.b-table_layout_event-description .b-text {
+	line-height: inherit;
+}

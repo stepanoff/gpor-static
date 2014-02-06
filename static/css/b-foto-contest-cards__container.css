@@ -1,0 +1,7 @@
+.b-foto-contest-cards__container {
+	vertical-align: top;
+    width: 49%;
+    float: left;
+    z-index: 10;
+    position: relative;
+}

@@ -1,0 +1,9 @@
+.b-row {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.b-row:hover {
+	background: url(../img/b-row-hover-bg.png) 0 bottom repeat-x;
+}

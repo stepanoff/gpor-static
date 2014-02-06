@@ -1,0 +1,94 @@
+.b-doska-goods-list_layout_plitca {
+	margin-right: -20px;
+}
+
+.b-doska-goods-list_layout_plitca .b-doska-goods-list__item {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.b-doska-goods-list_layout_plitca .b-doska-goods-list__item__body {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.b-doska-goods-list_layout_plitca .b-doska-goods-list__item__pic-link {
+	position: relative;
+	display: block;
+	margin-left: 0px;
+	top: -2px;
+	height: 160px;
+	line-height: 160px;
+	text-align: left;
+	overflow: hidden;
+}
+
+.b-doska-goods-list_layout_plitca .b-doska-goods-list__item__pic {
+	float: none;
+	vertical-align: middle;
+}
+
+.b-doska-goods-list_layout_plitca .b-doska-goods-list__item__body__cost {
+	text-align: left;
+	font-weight: bold;
+	position: relative;
+	right: 0px;
+	top: 0px;
+	display: inline-block;
+}
+
+.b-doska-goods-list_layout_plitca .b-doska-goods-list__item__pic-hide {
+	display: none !important;
+}
+
+li.b-doska-goods-list__item.last {
+	margin-right: 0px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+	.context .b-doska-goods-list_layout_plitca {
+		margin-right: -14px;
+	}
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+	.context .b-doska-goods-list_layout_plitca {
+		margin-right: -19px;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+	.context .b-doska-goods-list_layout_plitca {
+		margin-right: -23px;
+	}
+	.b-doska-goods-list_layout_plitca .b-doska-goods-list__item {
+		width: 31%;
+		margin-bottom: -2px;
+	}
+	.context .b-doska-goods-list__item__body  {
+		padding-bottom: 45px;
+	}	
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1440px) {
+	.context .b-doska-goods-list_layout_plitca {
+		margin-right: -22px;
+	}
+	.b-doska-goods-list_layout_plitca .b-doska-goods-list__item {
+		width: 31%;
+		margin-bottom: -2px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.context .b-doska-goods-list_layout_plitca {
+		margin-right: -23px;
+	}
+	.b-doska-goods-list_layout_plitca .b-doska-goods-list__item {
+		width: 31%;
+		margin-bottom: -2px;
+	}	
+}
+

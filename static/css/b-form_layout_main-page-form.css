@@ -1,0 +1,7 @@
+.b-form_layout_main-page-form label.b-form__fieldset__label {
+	font-size: 16px;
+}
+
+.b-form_layout_main-page-form .b-form__fieldset__select {
+	width: 100%;
+}

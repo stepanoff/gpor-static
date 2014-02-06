@@ -1,0 +1,11 @@
+.b-events-list-cards__col__item-container {
+	
+}
+.b-events-list-cards__col__item-report {
+	background: #fff;
+	width: 31%;
+	margin-right: 2%;
+	margin-top: 10px;
+	overflow: hidden;
+	float: left;
+}

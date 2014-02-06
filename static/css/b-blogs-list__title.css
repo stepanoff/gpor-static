@@ -1,0 +1,20 @@
+.b-blogs-list__title {
+    font-size: 1.65em;
+    line-height: 1em;
+    margin: 0 0 8px 10px;
+}
+
+.b-blogs-list__title a {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3;
+	position:relative;
+}
+
+.b-blogs-list__ico {
+	position:absolute;
+	width: 16px;
+	height: 16px;
+	right: -25px;
+	top: 0.25em;
+	background: url(../img/icons.png) -61px -1246px no-repeat;
+}

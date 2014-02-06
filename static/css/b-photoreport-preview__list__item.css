@@ -1,0 +1,23 @@
+.b-photoreport-preview__list__item {
+	display: block;
+	float: left;
+	width: 30%;
+	height: 120px;
+	margin: 0px;
+	top: 0px;
+	margin-left: 10px;
+	margin-bottom: 12px;
+	background-color: #000000;
+	background-position: center center;
+}
+
+@media screen and (max-width: 1300px) {
+	.b-photoreport-preview__list__item {
+		width: 30%;
+	}
+}
+@media screen and (max-width: 1180px) {
+	.b-photoreport-preview__list__item {
+		width: 45%;
+	}
+}

@@ -1,0 +1,11 @@
+.g-subscribe-button_ico {
+	top: 3px;
+}
+
+a.g-subscribe-button_orange-big .g-subscribe-button_ico-cancel {
+	top: 6px;
+}
+
+.g-subscribe-button_ico-cancel {
+ 	top: 4px;
+}

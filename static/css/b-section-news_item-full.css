@@ -1,0 +1,35 @@
+.b-section-news_item-full {
+	clear: both;
+	overflow: hidden;
+	padding-bottom:0.5em;
+}
+
+.b-section-news_item-full__pic {
+	float: left;
+	margin-right: 20px;
+	position:relative;
+	top:0.5em;
+}
+
+.b-section-news_item-full_wrap p {
+	font-size: 1.2em;
+	line-height: 1.35em;
+	margin-top: 0.7em;
+}
+
+.b-section-news_item-full__title {
+	font-size: 1.8em;
+	line-height: 1.25em;
+}
+
+.b-section-news_item-full__date {
+	color: #8f8f8f;
+	font-size: 0.95em;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.b-section-news_item-full__title a {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3;
+}

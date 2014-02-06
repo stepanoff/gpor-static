@@ -1,0 +1,57 @@
+.b-similar-goods-item {
+	overflow: hidden;
+}
+
+.b-similar-goods-item__cost {
+	color: #f96e03;
+	white-space: nowrap;
+	margin-bottom: 6px;
+}
+
+.b-similar-goods-item__pic-empty {
+	width: 80px;
+	height: 60px;
+	background: #dee2d4;
+}
+
+.b-similar-goods-item__pic {
+	display: block;
+}
+.b-similar-goods-item__title {
+	font-size: 12px;
+	line-height: 15px;
+	clear: both;
+	margin-top: 10px;
+}
+
+a.b-similar-goods-item__link-pic {
+	outline: none;
+	float: left;
+	position: relative;
+	display: block;
+	height: 78px;
+	width: 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.b-similar-goods-item_layout_in-table {
+	margin-bottom: 10px;
+	margin-top: 5px;
+	
+}
+
+.b-similar-goods-item_layout_in-table .b-similar-goods-item__pic {
+	margin-bottom: 7px;
+}
+
+.b-similar-goods-item__pic-domsdan {
+	display: block;
+	background: url(img/domsdan.png) repeat scroll 0 0 transparent;
+    height: 42px;
+    right: 5px;
+    position: absolute;
+    text-decoration: none;
+    top: 5px;
+    width: 40px;	
+}

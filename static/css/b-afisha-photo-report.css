@@ -1,0 +1,115 @@
+.b-afisha-photo-report {
+	background: #7c7c7c;
+	padding: 7px 10px 0;
+	font-size: 13px;
+}
+
+.b-afisha-photo-report__title {
+	font-size: 1.4em;
+	line-height: 1.2em;
+	margin-bottom: 0.65em;		
+}
+.b-afisha-photo-report__title a {
+	color: #fff;
+}
+
+.b-afisha-photo-report__main-pic {
+	display: block;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	position:relative;
+}
+
+.b-afisha-photo-report__main-pic__descr {
+	display: block;
+	position:absolute;
+	z-index: 100;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.b-afisha-photo-report__main-pic__descr__shadow {
+	position:absolute;
+	display: block;
+	width: 100%;
+	height: 200px;
+	background: #000;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	zoom: 1;
+}
+
+.b-afisha-photo-report__main-pic__descr__title {
+	display: block;
+	color: #fff;
+	font-size: 1.4em;
+	margin-bottom: 0.2em;
+}
+.b-afisha-photo-report__main-pic__descr__lead {
+	display: block;
+	color: #fff;
+}
+.b-afisha-photo-report__main-pic__descr__photo,
+.b-afisha-photo-report__icon_photo {
+	background: url(../img/b-photo-report.png) 0 0 no-repeat;
+	padding-left: 20px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #56b022;
+}
+
+
+.b-afisha-photo-report__main-pic__descr__pad {
+	display: block;
+	padding: 0.9em 10px 1.05em;
+	position:relative;
+}
+
+.b-afisha-photo-report__main-pic img {
+	width: 100%;
+	height: 200px;
+	position:relative;
+	z-index: 1;
+}
+
+.b-afisha-photo-report__main-pic__img {
+	display: block;
+	height: 200px;
+	position:relative;
+	background-image: url(../afisha/html/img/4.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.b-afisha-photo-report__small-pic {
+	display: block;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;	
+	margin: 0px 0 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.b-afisha-photo-report__small-pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.b-afisha-photo-report__small-container {
+	position:relative;
+}
+.b-afisha-photo-report__small-container__cnr {
+	position:absolute;
+	background: #7c7c7c;
+	width: 10px;
+	display: block;
+	height: 100%;
+	left: 100%;
+	margin-left: -5px;
+	top: 0px;
+}

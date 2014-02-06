@@ -1,0 +1,16 @@
+.b-list_scheme_cols {
+    margin-right: -20px;
+}
+
+.b-list_scheme_cols .b-list__item {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.b-list_scheme_cols .b-list__item_w_20 {
+	width: 17%;
+}
+
+.b-list_scheme_cols .b-list__item {
+	margin: 0 10px 10px 0px;
+}

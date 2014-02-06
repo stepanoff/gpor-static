@@ -1,0 +1,40 @@
+.b-afisha-time-line {
+    height: 105px;
+	overflow: hidden;
+	margin: 20px 0 26px;
+	position:relative;
+}
+
+.b-afisha-time-line__pad {
+	padding-top: 70px;
+	padding-bottom: 35px;
+	position: relative;
+}
+.b-afisha-time-line__line {
+	background: url(../img/b-afisha-time-line-line.png) 0 0 repeat-x;
+	height: 12px;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+}
+.b-afisha-time-line__event-container {
+	position: relative;
+	margin-top: -12px;
+}
+
+.b-afisha-time-line__line-overflow {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	z-index: 10;
+}
+
+
+
+
+
+
+
+

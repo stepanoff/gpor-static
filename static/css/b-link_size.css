@@ -1,0 +1,14 @@
+.b-link_size_small {
+	font-size: 11px;
+	line-height: 15px;
+}
+
+.b-link_size_big {
+	font-size: 21px;
+    line-height: 24px;
+}
+
+.context .b-link_size_medium {
+	font-size: 16px;
+    line-height: 21px;
+}

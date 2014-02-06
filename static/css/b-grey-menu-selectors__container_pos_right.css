@@ -1,0 +1,7 @@
+.b-grey-menu-selectors .b-grey-menu-selectors__container_pos_right {
+	float: right;
+}
+
+.b-grey-menu-selectors__container_pos_right .b-grey-menu-selectors__container__item_state_active {
+    background: #5a8410 url(../img/b-grey-menu-selectors-current-bg-green.png) 0 0 repeat-x;
+}

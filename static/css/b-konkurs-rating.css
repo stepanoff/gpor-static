@@ -1,0 +1,23 @@
+.b-konkurs-rating {
+    display: inline-block;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 20px;
+    margin-bottom: -8px;
+}
+
+.b-konkurs-rating__title {
+    background-color: #76a100;
+    line-height: 30px;
+    padding: 0 10px;
+    float: left;
+}
+
+.b-konkurs-rating__value {
+    background-color: #578400;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}

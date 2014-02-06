@@ -1,0 +1,10 @@
+.b-doska-place-ad {
+	background: #779F1A;
+	height: 78px;
+	padding: 10px 20px; 
+}
+
+.b-doska-place-ad__text {
+	margin-top: 2px;
+	text-align: right;
+}

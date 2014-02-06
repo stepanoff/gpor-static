@@ -1,0 +1,140 @@
+/**
+ * @package portal
+ */
+
+/**
+ * Правила для текста
+ *
+ * @subpackage typography
+ */
+
+/**
+ * Читабельный текст
+ */
+.readable {
+    line-height: 1.4;
+}
+
+/**
+ * Вертикальные отступы
+ * @section lines
+ */
+.double-line-top,
+.js_double-line-top {
+    margin-top: 2em;
+}
+
+.line-top,
+.js_line-top {
+    margin-top: 1em;
+}
+
+.half-line-top,
+.js_half-line-top {
+    margin-top: 0.5em;
+}
+
+.double-line-bottom,
+.js_double-line-bottom {
+    margin-bottom: 2em;
+}
+
+.line-bottom,
+.js_line-bottom {
+    margin-bottom: 1em;
+}
+
+.half-line-bottom,
+.js_half-line-bottom {
+    margin-bottom: 0.5em;
+}
+
+/**
+ * Горзионтальные отступы
+ * @section spaces
+ */
+
+/**
+ * Нужно вычислить размер пробела в Arial. Для этого напишем две буквы x (икс)
+ * слитно и две через пробел. Из расстояния между букв с пробелом вычтем
+ * расстояние между букв без пробела и получим шиирну в px, останется
+ * её перевсти в em
+ */
+.space-left {
+    margin-left: 0.333em;
+}
+
+.space-right {
+    margin-right: 0.333em;
+}
+
+/**
+ * В контенте нужно чтобы все теги отображались так, как «должны»
+ *
+ * @section content
+ */
+.content {
+    line-height: 1.4;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.mceContentBody p {
+	margin: 0px;
+}
+
+.content b, .content strong,
+.content b *, .content strong * {
+    font-weight: bold;
+}
+
+.content i, .content em,
+.content i *, .content em * {
+    font-style: italic;
+}
+
+.content u, .content u * {
+    text-decoration: underline;
+}
+
+.content s, .content strike,
+.content s *, .content strike * {
+    text-decoration: line-through;
+}
+
+
+.content ul,
+.content ol {
+	margin:0 0 12px;
+	padding:0;	
+}
+
+.content ol {
+	margin-left:20px;
+}
+
+.content ul li,
+.content ol li {
+	background:url(../img/list-marker.gif) 7px 7px no-repeat;
+	line-height:1.35em;
+	list-style:none outside none;
+	margin-bottom:0.275em;
+	padding-left:20px;
+	position:relative;
+}
+
+.content ol li {
+	padding-left: 0px;
+	background: none;
+	list-style: decimal;
+}
+
+
+.content blockquote {
+    border-left: 2px solid #D1D2CD;
+    font-size: 0.846em;
+    margin-left: 10px;
+    padding-left: 10px;
+}

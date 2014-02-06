@@ -1,0 +1,54 @@
+/**
+ * Admin mode switch button
+ */
+a.admin-switch-btn {
+    overflow: hidden;
+
+    -webkit-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.9), inset 0px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.9), inset 0px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.9), inset 0px 0px 0px rgba(0, 0, 0, 1);
+}
+
+a.admin-switch-btn:active {
+    -webkit-box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.9), inset 0px 0px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.9), inset 0px 0px 2px rgba(0, 0, 0, 1);
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.9), inset 0px 0px 2px rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+a.admin-switch-btn:active .text {
+    top: 3px;
+    left: 3px;
+    position: relative;
+}
+
+a.admin-switch-btn .info {
+    color: #fff;
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+}
+
+a.admin-switch-btn:active .info {
+    bottom: 0px;
+    left: 13px;
+}
+
+a.admin-switch-btn,
+a.admin-switch-btn .text,
+a.admin-switch-btn .info {
+    font-size: 11px;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+a.to-admin-btn {
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    left: 120px;
+    bottom: 3px;
+}

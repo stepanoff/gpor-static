@@ -1,0 +1,11 @@
+.b-announce__text__date {
+	color: #898989;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.b-list_layout_hide-cols .b-announce__text__date,
+.b-list_layout_hide-cols-main .b-announce__text__date {
+	display: block;
+	margin-top: 1px;
+}

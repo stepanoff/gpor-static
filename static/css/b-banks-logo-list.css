@@ -1,0 +1,18 @@
+.b-banks-logo-list {
+	position:relative;
+	top: -3px;
+	margin-bottom: 4px;
+}
+.b-banks-logo-list__item {
+	float: left;
+	background: #fff;
+	border-bottom: 1px solid #c6cbba;
+	margin: 10px;
+}
+.b-banks-logo-list__item img {
+	width: 110px;
+	height: 84px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+}

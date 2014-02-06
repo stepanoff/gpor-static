@@ -1,0 +1,73 @@
+.js-effect-play-button__shadow {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+	background: #000;
+	
+	left: 0px;
+	top: 0px;
+	position:absolute;
+	
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE 5.5+*/
+	-moz-opacity: 0.5; /* Mozilla 1.6 и ниже */
+	-khtml-opacity: 0.5; /* Konqueror 3.1, Safari 1.1 */
+	opacity: 0.5; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+	zoom: 1; /* для элемента в ИЕ, у которого не заданы width и height */	
+}
+
+.js-effect-play-button__zoom {
+	background: url(../img/js-effect-zoom-button-pic.png) 0 0 no-repeat;
+	width: 32px;
+	height: 32px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -16px;
+	margin-top: -16px;
+	display: none;
+}
+
+a:link .js-effect-play-button__zoom,
+a:visited .js-effect-play-button__zoom {
+	background-position: 0 0px;
+}
+a:hover .js-effect-play-button__zoom,
+.js-effect-play-button__zoom:hover {
+	background-position: 0 -35px;
+}
+a:active .js-effect-play-button__zoom,
+.js-effect-play-button__zoom:active,
+.js-effect-play-button_state_active:active .js-effect-play-button__zoom {
+	background-position: 0 -68px;
+}
+
+
+
+
+.js-effect-play-button_state_active .js-effect-play-button__zoom {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

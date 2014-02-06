@@ -1,0 +1,9 @@
+.b-blogs-list {
+	font-size: 11px;
+	background: none repeat scroll 0 0 #efefef; 
+	margin: 10px 0; 
+}
+
+.b-blogs-list_pad {
+	padding: 15px 10px 10px;
+}

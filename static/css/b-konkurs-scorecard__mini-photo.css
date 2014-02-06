@@ -1,0 +1,10 @@
+.b-konkurs-scorecard__mini-photo {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+	margin-top: 10px;
+}
+
+.b-konkurs-scorecard__mini-photo_state_last {
+	margin-right: 0px;
+}

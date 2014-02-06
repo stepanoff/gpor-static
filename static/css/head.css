@@ -1,0 +1,236 @@
+/**
+ * @package portal
+ */
+
+/**
+ * Шапка
+ *
+ * @subpackage head
+ */
+
+/**
+ * Меню
+ *
+ * @section menu
+ */
+
+/**
+ * Первый уровень
+ *
+ * @subsection first level
+ */
+#head {
+	position:relative;
+	z-index:980;
+}
+
+.head_menu {
+	height: 30px;
+	margin-left: 0px;
+	padding-top: 0;
+	clear: both;
+	width: 100%;
+	z-index:980;
+}
+
+.head_menu-top { height: 55px; position: relative; margin-bottom: 6px }
+.head_menu-top .head_menu-top-left { float: left; padding-top: 0px; overflow: hidden; position: relative; width: 55%; }
+.head_menu-top .head_menu-top-left .head_menu-top-logo { float: left; margin-left: 7px;}
+.head_menu-top .head_menu-top-left .head_menu-top-logo a { display: block; text-decoration: none; width: 93px; height: 54px; }
+
+.head_menu-top .head_menu-top-left .head_menu-top-section { top: 11px; }
+.head_menu-top .head_menu-top-left .head_menu-top-section { float: left; }
+.head_menu-top .head_menu-top-left .head_menu-top-section,
+.head_menu-top .head_menu-top-left .head_menu-top-section a { white-space: nowrap; position: absolute; white-space: nowrap; padding-top: 10px; margin-left: 7px; text-decoration: none; font-size: 25px; font-weight: bold; font-style: italic; color: white; }
+
+.head_menu-top .head_menu-top-right { float: right; }
+
+.head_menu-tomorrow-td,
+.head_menu-tomorrow-th { padding-left: 10px; }
+.head_menu-tomorrow-th .head_menu-tomorrow { padding-left: 1px; }
+
+
+.head_menu_item {
+	float: left;
+	font-size: 0.923em;
+	height: 30px;
+	margin-right: 1px;
+	position: relative;
+	z-index:981;
+}
+
+.head_menu_item-current { background: white; }
+li.head_menu_item-current a.head_menu_item_link { color: #fc8100; }
+
+.head_menu_item-begin { float: right; height: 23px; padding-top: 7px; }
+.head_menu_item-profile { float: right; height: 23px; padding-top: 4px; }
+
+.head_menu_item-begin .head_menu_item-enter { margin-right: 12px; text-decoration: none; border-bottom: 1px dashed white; color: white; font-size: 12px; font-family: arial; }
+.head_menu_item-begin .head_menu_item-registration { margin-right: 3px; text-decoration: none; border-bottom: 1px dashed white; color: white; font-size: 14px; font-weight: bold; font-family: arial; }
+
+.head_menu_item-profile .profile-logo { float: left; padding: 5px 13px 11px 11px; height: 7px; background: #d4eb9c; }
+.head_menu_item-profile .profile-logo .profile-nick-name { float: left; color: #627636; font-size: 12px; text-decoration: none; font-weight: bold; }
+.head_menu_item-profile .profile-logo .profile-nick-logout { float: left; width: 9px; height: 9px; margin-left: 12px; margin-top: 3px; background: url('../img/logout.png') 0 0 no-repeat; }
+
+.head_menu_item-profile .profile-chat { float: left; margin-right: 17px; }
+.head_menu_item-profile .profile-chat .profile-chat-a { display: block; width: 27px; height: 22px; background: url('../img/chat.png') 0 0 no-repeat; }
+
+.head_menu_item-profile  .profile-people { float: left; margin-right: 17px; }
+.head_menu_item-profile  .profile-people a { display: block; width: 26px; height: 23px; background: url('../img/people.png') 0 0 no-repeat; }
+
+.head_menu_item-profile .profile-logo .profile-service { padding-left: 20px; background-repeat: no-repeat; height: 16px; line-height: 16px; }
+.head_menu_item-profile .profile-logo .profile-service__vkontakte { background-image:url("../img/ico_auth_services.png");background-position: 0px -0px; }
+.head_menu_item-profile .profile-logo .profile-service__facebook { background-image:url("../img/ico_auth_services.png");background-position: 0px -32px; }
+.head_menu_item-profile .profile-logo .profile-service__twitter { background-image:url("../img/ico_auth_services.png");background-position: 0px -48px; }
+.head_menu_item-profile .profile-logo .profile-service__yandex { background-image:url("../img/ico_auth_services.png");background-position: 0px -288px; }
+.head_menu_item-profile .profile-logo .profile-service__lj { background-image:url("../img/ico_auth_services.png");background-position: 0px -256px; }
+
+
+.head_menu_item_link {
+	color: #FFFFFF;
+	display: block;
+	font-weight: bold;
+	padding: 9px 8px;
+	position: relative;
+	font-size: 11px;
+	font-family: arial, sans-serif;
+}
+
+.head_menu_item_link:hover {
+	text-decoration: none;
+}
+
+/**
+ * Активный (текущий) пункт меню
+ *
+ * Если комбинировать это правило со следующим
+ * то начнутся глюки в IE6 и IE7, поэтому разделим их
+ *
+ * @bugfix Глюки комбинирования активных и пассивных селекторов
+ * @affected IE6, IE7
+ */
+.head_menu_item-active .head_menu_item_link {
+	background-color: #FFFFFF;
+	color: #FC8100;
+}
+
+.head_menu_item-has-submenu:hover .head_menu_item_link {
+	background-color: #FFFFFF;
+	color: #FC8100;
+	min-height: 0;
+	text-decoration: none;
+}
+
+.head_menu_item #mailcount {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: Trebushet;
+    font-weight: bold;
+}
+
+/**
+ * Второй уровень
+ *
+ * @subsection second level
+ */
+.head_submenu {
+	background-color: #FFFFFF;
+	border: solid #5A7C0D;
+	border-width: 0 1px 1px;
+	margin: 0 -1px;
+	display: none;
+	padding: 3px 20px 15px;
+	padding-left: 15px;
+	position: absolute;
+	width: 140px;
+	z-index: 982;
+}
+
+/**
+ * Показываем подменю
+ */
+.head_menu_item:hover .head_submenu,
+	/**
+	 * @bugfix Поддержка :hover
+	 * @affected IE6
+	 * @css-for IE6
+	 */
+.head_menu_item_link:hover .head_submenu,
+.head_menu_item_link:hover .ie_head_submenu {
+	display: block;
+}
+
+/**
+ * Заодно не забываем вернуть line-height
+ *
+ * @bugfix Поддержка :hover
+ * @affected IE6
+ * @css-for IE6
+ */
+.head_menu_item_link .ie_head_submenu {
+	display: none;
+	left: -8px;
+	line-height: 1em;
+	position: absolute;
+	top: 32px;
+}
+
+/**
+ * @bugfix Поддержка :hover
+ * @affected IE6
+ * @css-for IE6
+ */
+.head_menu_item_link:hover .ie_head_submenu {
+	display: block;
+}
+
+.head_submenu_item,
+.head_subsubmenu_item {
+	margin-top: 6px;
+}
+
+.head_submenu_item_link,
+.head_subsubmenu_item_link {
+	display: block;
+	font-weight: bold;
+	position: relative;
+	line-height: 1.3;
+}
+
+.head_submenu_item_link:hover,
+.head_subsubmenu_item_link:hover {
+	background-color: #FC8100;
+	color: #FFFFFF;
+	margin: -3px -10px;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+
+/**
+ * Третий уровень
+ *
+ * @subsection third level
+ */
+.head_subsubmenu {
+	padding-bottom: 4px;
+}
+
+.head_subsubmenu_item {
+	margin-top: 4px;
+	font-size: 0.95em;
+
+}
+
+.head_subsubmenu_item_link {
+	font-weight: normal;
+	padding-left: 15px;
+}
+
+.head_subsubmenu_item_link:hover {
+	padding-left: 25px;
+}
+.admin_container { display: none; width: 100%; position: absolute; }
+.admin_container  form { position: relative; z-index: 99999; }

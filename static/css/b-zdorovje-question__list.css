@@ -1,0 +1,66 @@
+.b-zdorovje-question_head__list {
+	width: 100%;
+	overflow: hidden;
+	//padding-right: 1px;
+}
+
+.b-zdorovje-question_head__list li {
+	float: left;
+	font-size: 1.6em;
+	overflow: hidden;
+	width: 50%;
+}
+
+.b-zdorovje-question_head__list li.last {
+	float: right;
+}
+
+.b-zdorovje-question_head__list a {
+	display: block;
+	padding: 13px 50px 10px 20px;
+	text-decoration: none;
+	background: #e6f6da;
+	outline: none;
+	border-right: 2px solid #fff;
+	outline: none;
+}
+
+.b-zdorovje-question_head__list a ins {
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3;
+	position:relative;
+}
+
+.b-zdorovje-question_head__list a.b-zdorovje-question_head__item__toggle-link {
+	background: #648700 url(../img/b-zdorovje-question-ask-quest-inactive.png) 0 0 repeat-x;
+	color: #fff;
+	border-right: 1px solid #648700;
+	//border-right: none;
+	//position:relative;
+	//right: 1px;
+	outline: none;
+}
+
+.b-zdorovje-question_head__list .select a.b-zdorovje-question_head__item__toggle-link {
+	background: #648700 url(../img/b-zdorovje-question-ask-quest-active.png) 0 0 repeat-x;
+	border-right: none;
+}
+
+
+.b-zdorovje-question_head__list a.b-zdorovje-question_head__item__toggle-link ins {
+	border-bottom: 1px dashed #fff;
+}
+
+.b-zdorovje-question_head__item__toggle-link__pic {
+	position:absolute;
+	right: -20px;
+	top: 0.5em;
+	//top: 1.25em;
+	width: 11px;
+	height: 6px;
+	background: url(../img/b-zdorovje-question-ask-quest-arr.png) 0 0 no-repeat;
+}
+
+.select .b-zdorovje-question_head__item__toggle-link__pic {
+	background: url(../img/b-zdorovje-question-ask-quest-arr.png) 0 -6px no-repeat;
+}

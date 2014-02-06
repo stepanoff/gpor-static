@@ -1,0 +1,277 @@
+.b-voiting-content {
+	position: relative;
+	padding: 5px 10px 23px 20px;
+}
+
+.b-voiting__question {
+	position: relative;
+	padding-left: 65px;
+	margin-bottom: 13px;
+	font: 18px/24px Arial, Tahoma, Sans-Serif;
+}
+
+.b-voiting__question-label {
+	position: absolute;
+	left: 0px;
+	top: 5px;
+	font: 14px/18px Arial, Tahoma, Sans-Serif;
+}
+
+.b-voiting-var-listing {
+	margin:0px !important;
+	padding:0px !important;
+	padding-left: 45px !important;
+}
+
+.b-voiting-var-listing label
+{
+    cursor: pointer;
+}
+
+.b-voiting-content-result .b-voiting-var-listing {
+	padding-left: 0px !important;
+}
+
+.b-voiting-var-listing li {
+	position: relative;
+	list-style: none;
+	margin:0px !important;
+	padding:0px;
+	border-bottom: 1px solid #bdbdbd;
+	font: 14px/21px Arial, Tahoma, Sans-Serif !important;
+	padding-left: 20px;
+	padding-bottom: 8px;
+	padding-top: 5px;
+    background: none !important;
+}
+
+.b-voiting-var-listing li.b-voiting-var-listing__item-last {
+	border-bottom: none;
+}
+
+.b-voiting-var-listing li ins {
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	position: absolute;
+	left:0px;
+    padding:0;
+}
+
+.b-voiting-var-listing__item-inp,
+.b-voiting-var-listing__item-inp-check {
+	position: absolute;
+	width: 33px;
+	height: 25px;
+	background: url(../img/voiting-var-bg.gif) no-repeat;
+	left: -45px;
+	top: 4px;
+}
+
+.b-voiting-var-listing__item-inp-check {
+	background-position: 0 -25px;
+}
+
+.b-voiting-var-listing__item-inp input {
+	position: relative;
+	left: 3px;
+	top: 2px;
+    margin: 3px 0 0 5px;
+}
+
+.b-voiting__subm {
+	text-align: right;
+	font: 14px Arial, Tahoma, Sans-Serif;
+	position: relative;
+	top: 15px;
+}
+
+.b-voiting__subm a:link,
+.b-voiting__subm a:visited {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3;
+}
+
+.b-voiting__subm a:hover,
+.b-voiting__subm a:active {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3;
+}
+
+.b-user-last-comment__frame .button  {
+	position: absolute;
+	z-index: 100000;
+	left: 88px;
+	bottom: 4px;
+	padding: 8px 10px 10px;
+	background: #60830e url(../img/vote-pager.gif) 0 0 repeat-x;
+}
+
+.b-user-last-comment__frame .forms__submit {
+	width: 134px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Arial;
+    font-style: normal !important;
+	color:#3f3e3c;
+}
+
+.b-voiting-item__result-container {
+	margin-top: 3px;
+	margin-bottom: 3px;	
+	width: 80%;
+}
+
+.b-voiting-item__result {
+	position: relative;
+	z-index: 10;
+	height: 9px;
+	width: 100%;
+	background: url(../img/voiting-var-bg.gif) 0 -51px repeat-x;
+}
+
+.b-voiting-item__result-left {
+	position: absolute;
+	z-index: 20;
+	left: 0px;
+	top: 0px;
+	height: 9px;
+	width: 3px;
+	background: url(../img/voiting-var-l.png) 0 0 no-repeat;
+}
+
+.b-voiting-item__result-right {
+	position: absolute;
+	z-index: 20;
+	right: 0px;
+	top: 0px;
+	height: 9px;
+	width: 3px;
+	background: url(../img/voiting-var-r.png) 0 0 no-repeat;
+}
+
+.b-voiting-item__result-line {
+	position: absolute;
+	z-index: 15;
+	left: 0px;
+	top:0px;
+	height: 9px;
+	background: url(../img/voiting-var-bg.gif) 0 -61px repeat-x;
+}
+
+.b-voiting-item__result-line-right {
+	position: absolute;
+	right: 0px;
+	width: 6px;
+	height: 9px;
+	background: url(../img/voiting-var-bg.gif) 0px -71px no-repeat;
+}
+
+.b-voiting-item__result-count-link {
+	color:#506d0e;
+	font: bold 12px Arial, Tahoma, Sans-Serif;
+	position: absolute;
+	left: 83%;
+	white-space: nowrap;
+	bottom: 8px;
+}
+
+.b-voiting-content__subm input.forms_submit {
+    width: auto;
+    font-style: normal;
+    font-size: 14px;
+    padding: 5px 20px 3px;
+}
+
+/*for popup*/
+
+.js_popup_top-content-voiting {
+	font: 14px/21px Arial, Tahoma, Sans-Serif;
+	text-align: left;
+	margin-bottom:10px;
+	padding: 0 6px;
+}
+.js_popup_top-content-voiting p {
+	margin:0px;
+	margin-top:2px;
+	margin-bottom: 7px;
+}
+.js_popup_content-voiting-list {
+	position:relative;
+	margin-left: 23px;
+	margin-right: 0px;
+	margin-bottom: 7px;
+	text-align: left;
+	padding-left: 0px;
+	float: left;
+	width:42%;
+	color:#b2b2b2;
+	margin-top:-10px;
+	font: 10px Arial, Tahoma, Sans-Serif;
+}
+
+.js_popup_content-voiting-container {
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.js_popup_content-voiting-list-right {
+	margin-right: -100px;
+}
+
+.js_popup_content-voiting-list a {
+	font-size: 12px;
+}
+
+.js_popup_content-voiting-list li {
+	margin-bottom:3px;
+}
+
+.js_popup-vote .js_popup_content {
+	padding: 20px;
+	padding-bottom:18px;
+}
+
+.js_popup_content-voiting-pager {
+	padding:0px;
+	margin:0px;	
+	margin-top:10px;
+}
+.js_popup_content-voiting-pager li {
+	float: left;
+	list-style: none;
+	padding:0px;
+	margin:0px;
+	padding:2px 7px 2px 5px;
+	font: 12px Arial, Tahoma, Sans-Serif;
+	margin-right: 3px;
+}
+
+.js_popup_content-voiting-pager li.js_popup_content-voiting-pager__cur {
+	background: #60830e url(../img/vote-pager.gif) 0 0 repeat-x;
+	color:#fff;
+	font-weight: bold;
+	margin-right: 7px;
+}
+
+.js_popup-vote .js_popup_close {
+	top: 3px;
+	right: 4px;
+	width: 28px;
+	height: 28px;
+	background: url(../img/vote-popup-close.gif) 0 0 no-repeat;
+}
+.b-voiting-content__bottom, .b-voiting-content__bottom-no-center {
+    position: relative;
+    text-align: center;
+    top: 12px;
+}
+.b-voiting-content__bottom-no-center {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.b-voiting-content__bottom-no-center a:link, .b-voiting-content__bottom-no-center a:visited, .b-voiting-content__bottom-no-center a:hover, .b-voiting-content__bottom-no-center a:active {
+    border-bottom: 1px dotted #037DD3;
+    text-decoration: none;
+}

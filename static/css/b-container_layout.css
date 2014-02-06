@@ -1,0 +1,15 @@
+.context .b-container_layout_choose-auto {
+	border: 1px solid #dad4b4;
+	background-image: url(img/b-container_layout_choose-auto.jpg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	padding: 13px 120px 18px 10px;
+}
+
+.context .b-container_layout_green-plashka_button {
+	float: right;
+}
+
+.b-container_layout_form-under-tabs {
+	background: url(img/b-container_layout_form-under-tabs.png) 0 top repeat-x;
+}

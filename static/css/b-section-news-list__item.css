@@ -1,0 +1,11 @@
+.b-section-news_items-list li {
+	font-size: 1.15em;
+	line-height: 1.35em;
+	list-style: decimal;
+	margin-bottom: 1em;
+}
+
+.b-section-news_items-list li a {
+	border-bottom: 1px solid #037DD3;
+	text-decoration: none;
+}

@@ -1,0 +1,82 @@
+.context a.b-button-link_layout_green-big {
+	padding: 0 7px;
+	outline: none;
+	float: left;
+}
+
+.context a.b-button-link_layout_green-big .b-button-link-crn-left,
+.context a.b-button-link_layout_green-big .b-button-link-crn-right {
+    display: block;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+
+.context a.b-button-link_layout_green-big .b-button-link-crn-left {
+    background: url("../img/b-button-link_green.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+}
+.context a.b-button-link_layout_green-big .b-button-link-crn-right {
+    background: url("../img/b-button-link_green.png") no-repeat scroll 0 -43px transparent;
+    right: 0;
+}
+.context a.b-button-link_layout_green-big .b-button-link-bg-text {
+    background: url("../img/b-button-link_green.png") repeat-x scroll 0 -86px transparent;
+    display: block;
+    height: 42px;
+}
+.context a.b-button-link_layout_green-big .b-button-link__text {
+	color: #fff;
+	height: 42px;
+	line-height: 42px;
+	padding: 0 30px;
+    display: block;
+    font-size: 14px;
+    position: relative;
+    text-shadow: 1px 1px 0 #648200;
+    text-transform: uppercase;	
+}
+
+/**/
+
+.context a.b-button-link_layout_green-big-disabled {
+	padding: 0 7px;
+	outline: none;
+	cursor: default;
+	float: left;
+}
+
+.context a.b-button-link_layout_green-big-disabled .b-button-link-crn-left,
+.context a.b-button-link_layout_green-big-disabled .b-button-link-crn-right {
+    display: block;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+
+.context a.b-button-link_layout_green-big-disabled .b-button-link-crn-left {
+    background: url("../img/b-button-link_green-disabled.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+}
+.context a.b-button-link_layout_green-big-disabled .b-button-link-crn-right {
+    background: url("../img/b-button-link_green-disabled.png") no-repeat scroll 0 -43px transparent;
+    right: 0;
+}
+.context a.b-button-link_layout_green-big-disabled .b-button-link-bg-text {
+    background: url("../img/b-button-link_green-disabled.png") repeat-x scroll 0 -86px transparent;
+    display: block;
+    height: 42px;
+}
+.context a.b-button-link_layout_green-big-disabled .b-button-link__text {
+	color: #666666;
+	height: 42px;
+	line-height: 42px;
+	padding: 0 30px;
+    display: block;
+    font-size: 14px;
+    position: relative;
+    text-shadow: 1px 1px 0 #cccccc;
+    text-transform: uppercase;	
+}

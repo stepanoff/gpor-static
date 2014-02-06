@@ -1,0 +1,90 @@
+.b-button {
+	display: block;
+	float: left;
+	position:relative;
+	
+	/*top: 2px;	*/
+	height: 32px;
+	
+	padding: 0 8px;
+	outline: none;
+}
+
+.b-button:link,
+.b-button:visited {
+	text-decoration: none;
+}
+
+.b-button:hover,
+.b-button:active {
+	text-decoration: none;
+}
+
+.b-button-crn-left {
+	left: 0px;
+}
+
+.b-button-crn-right {
+	right: 0px;
+}
+
+
+.b-button .b-button-crn-left,
+.b-button:link .b-button-crn-left,
+.b-button:visited .b-button-crn-left {
+	background-position: 0 0px;
+}
+.b-button:hover .b-button-crn-left {
+	background-position: 0 -104px;
+}
+
+.b-button:active .b-button-crn-left {
+	background-position: 0 -211px;
+}
+
+.b-button .b-button-crn-right,
+.b-button:link .b-button-crn-right,
+.b-button:visited .b-button-crn-right {
+	background-position: 0 -35px;
+}
+.b-button:hover .b-button-crn-right {
+	background-position: 0 -138px;
+}
+
+.b-button:active .b-button-crn-right {
+	background-position: 0 -244px;
+}
+
+
+.b-button-crn-left,
+.b-button-crn-right {
+	width: 8px;
+	height: 32px;
+	position:absolute;
+	top: 0px;
+	display: block;
+	
+	background-image: url(../img/b-button_simple.png);
+	background-repeat: no-repeat;
+}
+
+
+.b-button .b-button-bg-text {
+	display: block;
+	background-color: transparent;
+	background-image: url(../img/b-button_simple.png);
+	background-repeat: repeat-x;
+}
+
+.b-button .b-button-bg-text,
+.b-button:link .b-button-bg-text,
+.b-button:visited .b-button-bg-text {
+	background-position: 0 -70px;
+}
+.b-button:hover .b-button-bg-text {
+	background-position: 0 -172px;
+}
+.b-button:active .b-button-bg-text {
+	background-position: 0 -277px;
+}
+

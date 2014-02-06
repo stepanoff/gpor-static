@@ -1,0 +1,12 @@
+.b-afisha-event-card {
+	width: 100%;
+}
+
+.b-afisha-event-card td {
+	vertical-align: top;
+}
+
+.b-afisha-event-card__pic {
+	width: 1%;
+	padding-right: 20px;
+}

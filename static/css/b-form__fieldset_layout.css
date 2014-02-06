@@ -1,0 +1,8 @@
+.b-form__fieldset_layout_vertical label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.b-form__fieldset_layout_vertical .b-form__fieldset__textarea {
+	width: 100%;
+}

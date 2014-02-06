@@ -1,0 +1,121 @@
+/*главные новости раздела - правая часть */
+.b-list_layout_main-news {
+    margin-left: 256px;
+	padding: 0px 0 10px 30px;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+	.b-list_layout_main-news {
+		margin-left: -20px;
+	}
+	
+	.b-list_layout_main-news .b-list__item_index_first {
+		clear: both;
+		overflow: hidden;
+	}
+	.b-list_layout_main-news .b-list__item_index_first .b-announce__pic {
+		float: left;
+		width: 200px;
+		margin-right: 20px;
+	}
+	
+	
+	.context .b-container .b-list__item_index_first {
+		float: none;
+		margin-left: 0px;
+		margin-top: 0px;
+		width: auto;
+	}
+	.b-list_layout_main-news .b-list__item__image {
+		float: left;
+		margin-right: 20px;
+	}
+	.b-list_layout_main-news li:nth-child(n+7) {
+		display: none;
+	}	
+}
+
+
+
+
+
+
+
+.b-list_layout_cols .b-list__item {
+	float: left;
+	vertical-align: top;
+}
+
+/**/
+
+.b-list_layout_pic-left .b-list__item__image {
+	float: left;
+	margin-right: 10px;
+}
+
+.b-list_layout_pic-left .b-list__item  {
+	margin-bottom: 0px;
+	margin-top: 16px;
+}
+
+.b-list_layout_pic-left .b-list__item__title {
+	font-size: 14px;
+	color: #000;
+}
+
+
+/**/
+
+.b-list_layout_news .b-list__item {
+	margin-bottom: 16px;
+}
+
+/**/
+
+.b-list_layout_hide-cols {
+	margin-right: -7%;
+}
+
+.b-list_layout_hide-cols .b-list__item {
+    display: block;
+    float: left;
+    margin: 0 20px 0px 0px;
+    top: 0;
+    width: 29%;
+}
+
+@media screen and (max-width: 1160px) {
+
+	.b-list_layout_hide-cols .b-list__item {
+		display: block;
+		float: left;
+		margin: 0 20px 0px 0px;
+		top: 0;
+		width: 45%;
+	}
+
+	.b-list_layout_hide-cols .b-list__item:nth-child(2) {
+		display: none;
+	}	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,274 @@
+/*fiz credits*/
+.banki-credit-form__canvas .content-block {
+	padding: 18px 20px 10px 20px;
+}
+
+.banki-credit-form__canvas-bot {
+	padding: 10px 20px;
+}
+
+.banki-credit-form__canvas .content-block h1 {
+	font: bold italic 24px/24px Arial, Tahoma, Sans-Serif;
+	margin-bottom: 6px;
+}
+
+.banki-credit-form__canvas .content-block ol {
+	margin: 0px;
+	padding: 0px;
+	padding-left:40px;
+}
+
+.banki-credit-form__canvas .content-block li {
+	margin-bottom: 4px;
+	list-style: decimal;
+	font: bold 12px/14px Arial, Tahoma, Sans-Serif;
+}
+
+.banki-credit-form__canvas .content-block li em {
+	font-weight: normal;
+}
+
+.banki-credit-form-table td label {
+	margin-right: 10px;
+}
+
+.banki-credit-form__row-accept {
+	margin-bottom: 6px;
+}
+
+.banki-credit-form__canvas {
+	background: #e9efdb;
+}
+
+.banki-credit-form__agreement {
+	overflow-y: scroll;
+	height: 100px;
+	border: 1px solid #D1D1D1;
+	padding: 5px;
+	overflow-x: auto;
+}
+
+.banki-credit-form {
+	padding: 20px;
+	padding-top: 5px;
+	position: relative;
+}
+
+.banki-credit-form input,
+.banki-credit-form select {
+	padding: 2px 2px;
+}
+
+.banki-credit-form select {
+	position: relative;
+	top: 1px;
+}
+
+
+input.banki-credit-form__subm {
+	font-size: 21px;
+	padding: 2px 15px 5px 15px;
+}
+
+.banki-credit-form-table .banki-credit-err th label {
+	color: red;
+}
+
+.banki-credit-form-table .banki-credit-err td input {
+	border: 1px solid red;
+}
+
+.banki-credit-form__row__controls .banki-credit-form__row__controls-radio input{
+	margin-right: -2px;
+}
+
+.banki-credit-form__row__controls-radio label {
+	margin-right: 15px;
+}
+
+.phone-pre-number {
+	position: absolute;
+	left: -5px;
+	top: 5px;
+	display: block;
+}
+
+.banki-credit-form__pad {
+	background: #fff;
+	padding: 15px 20px 15px 20px;
+}
+
+.banki-credit-form__row {
+	font: 13px/18px Arial, Tahoma, Sans-Serif;
+}
+
+.banki-credit-form__label {
+	position: relative;
+	margin-right: 35px;
+	text-align: right;
+	display: block;
+	top: 2px;
+}
+
+.banki-credit-form-table {
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	width: 100%;
+	position: relative;
+}
+
+.banki-credit-form__row th,
+.banki-credit-form__row td {
+	padding: 6px 0;
+	vertical-align: top;
+}
+
+.banki-credit-form__row-brd td {
+	padding: 0px;
+	margin: 0px;
+	padding: 7px 0;
+}
+
+.banki-credit-form__row-brd td div {
+	border-top: 1px solid #d1d1d1;
+}
+
+.banki-credit-form-errors {
+	margin: 10px 0;
+	text-align: center;
+	color: red;
+	display:block;
+}
+
+.credit-order-form-error {
+	margin: 7px 0px;
+	padding: 3px 7px;
+	text-align: left;
+	color: red;
+	display: none;
+	border: 1px solid #999;
+	border-radius: 3px;
+	box-shadow: 0px 0px 6px #666;
+}
+
+.banki-credit-form .banki-credit-form__align-bottom td,
+.banki-credit-form .banki-credit-form__align-bottom th {
+	vertical-align: bottom;
+}
+
+.banki-credit-form .banki-credit-form__align-middle td {
+	vertical-align: middle;
+}
+
+.banki-credit-form__align-bottom .banki-credit-form__label {
+	top: auto;
+	bottom: 0px;
+}
+
+.banki-credit-form__row th {
+	width: 32%;
+	text-align: right;
+}
+
+.banki-credit-form__row__controls {
+	position: relative;
+}
+
+.banki-credit-form__row-sep {
+	clear: both;
+	margin: 5px 0;
+}
+
+.banki-credit-form__row__controls input {
+	position: relative;
+	margin-right: 3px;
+	top: 1px;
+}
+
+.banki-credit-form__row__controls input.large {
+	width: 98%;
+}
+
+.banki-credit-form__row__controls textarea {
+	width: 98%;
+}
+
+.banki-credit-form__row-separator {
+	border-top: 3px solid #f17e00;
+	margin: 10px 0 5px 0;
+}
+
+.banki-credit-form__pad {
+ /* Для хороших браузеров */
+  -moz-border-radius: 5px; /* Firefox */
+  -webkit-border-radius: 5px; /* Safari, Chrome */
+  -khtml-border-radius: 5px; /* KHTML */
+  border-radius: 5px; /* CSS3 */
+  /* Для плохих IE */
+  /*behavior: url(border-radius.htc); *//* учим IE border-radius */
+
+ -moz-box-shadow: 0 0 10px 2px #ccd1c0; /* Firefox */
+  -webkit-box-shadow: 0 0 10px 2px #ccd1c0; /* Safari, Chrome */
+  box-shadow: 0 0 10px 2px #ccd1c0; /* CSS3 */
+  /*behavior: url(ie-css3.htc);*/
+}
+
+.congratulations {
+	font: 18px/24px Arial, Tahoma, Sans-Serif;
+	padding:10px 0;
+}
+
+
+/*fiz credits*/
+
+.banki-credit-form__italic {
+	font-style: italic;
+}
+
+input.banki-credit-form__long {
+	width: 60%;
+}
+
+.banki-credit-form-table .banki-credit-err .banki-credit-form__row-accept {
+    color: red;
+}
+
+.ajax_loader {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background : url(../img/indicator.gif) center center no-repeat;
+	margin: 0 5px;
+}
+
+.question_sign {
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid black;
+	height: 14px;
+	width: 10px;
+	padding-left: 4px;
+	cursor: pointer;
+	font-size: 12.75px;
+}
+
+.answer_tooltip {
+	display: none;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 3px 5px;
+	width: 180px;
+	left: 280px;
+	top: -30px;
+}
+
+#all_banks {
+	display: inline-block;
+	position: relative;
+	top: -3px;
+}
+
+

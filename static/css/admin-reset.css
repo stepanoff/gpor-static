@@ -1,0 +1,23 @@
+#frame  {
+	overflow-y: hidden;
+}
+
+.green-frame-right {
+	position: absolute;
+	width: 27%;
+	background: #e9efdb;
+	height: 1000000px;
+	right: -18px;
+	top:-20px;
+}
+
+.ishop-admin-content,
+.top_rabota-admin-content {
+	padding: 10px 10px;
+	padding-top:0px;
+	padding-right: 20px;
+}
+
+.ishop-right-panel {
+	margin: 0px -9px 0 4px;
+}

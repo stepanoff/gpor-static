@@ -1,0 +1,28 @@
+@import url(__item/b-form__item.css);
+@import url(__warning/b-form__warning.css);
+@import url(_layout/b-form_layout.css);
+
+
+
+
+.b-form__item-choice {
+	margin-bottom: 8px;
+}
+
+.b-form_layout_w100 {
+	width: 98%;
+	clear: both;
+}
+
+.b-form_layout_w100.b-form__item__label {
+	display: block;
+}
+
+.b-form__item__label {
+	margin: 0px 0 9px;
+	
+}
+
+.b-form__require-field {
+	position: relative;
+}

@@ -1,0 +1,14 @@
+.context .b-afisha-channels-grid__card__item_state_opened {
+	background: #f1f5e8;
+}
+.context .b-afisha-channels-grid__card__item_state_opened a:link,
+.context .b-afisha-channels-grid__card__item_state_opened a:visited,
+.context .b-afisha-channels-grid__card__item_state_opened a:hover,
+.context .b-afisha-channels-grid__card__item_state_opened a:active {
+	font-weight: bold;
+	border-bottom: 1px dashed #000000;
+	color: #000;
+}
+.context .b-afisha-channels-grid__card__item_state_opened .b-afisha-channels-grid__card__item__caption {
+	display: block;
+}

@@ -1,0 +1,11 @@
+/* список маркированный зеленый*/
+.b-list_style_green-marker .b-list__item {
+	background: url(../img/b-list_layout_sprite.png) -321px 9px no-repeat;
+	padding-left: 10px;
+}
+
+/*главные новости раздела - нумерованный список*/
+.b-list_style_numeric .b-list__item {
+	list-style: decimal;
+	color: #7d7d7d;
+}

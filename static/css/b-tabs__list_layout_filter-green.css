@@ -1,0 +1,15 @@
+.b-tabs_layout_filter-green .b-tabs__item__link {
+	color: #F1F5E8;
+}
+
+.context .b-tabs_layout_filter-green .b-tabs__list__item__link  .b-tabs__list__item__inner {
+	border-bottom: 1px dashed #F1F5E8;
+}
+
+.b-tabs_layout_filter-green .b-tabs__list__item_state_active {
+	background: #f1f5e8;
+}
+
+.b-tabs_layout_filter-green .b-tabs__list__item_state_active .b-tabs__item__link {
+	color: #000;
+}

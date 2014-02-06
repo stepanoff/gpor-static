@@ -1,0 +1,181 @@
+.b-markup {
+	font: 13px/18px Arial, Tahoma, Sans-Serif;
+	color: #000;
+}
+
+.b-markup p {
+	margin: 2px 0 21px 0;
+}
+
+.b-markup b, .b-markup strong {
+	font-weight: bold;
+}
+
+.b-markup i, .b-markup em {
+	font-style: italic;
+}
+
+.b-markup h1 {
+	margin: 21px 0 10px 0;
+	padding: 0px;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.b-markup h2 {
+	margin: 23px 0 12px 0;
+	padding: 0px;
+	font-size: 21px;
+	line-height: 24px;
+}
+
+.b-markup h3 {
+	margin: 6px 0 13px 0;
+	padding: 0px;
+	font-size: 18px;
+	line-height: 21px;	
+}
+
+.b-markup h4 {
+	margin: 23px 0 14px 0;
+	padding: 0px;
+	font-size: 16px;
+	line-height: 18px;		
+}
+
+.b-markup a {
+	outline: none;
+}
+
+.b-markup__pic-left {
+	float: left;
+	margin-right: 20px;
+	position:relative;
+	top: -5px;
+}
+
+.b-markup__pic-right {
+	float: right;
+	margin-left: 20px;
+	position:relative;
+	top: -5px;
+}
+
+.b-markup__color-box {
+	padding: 11px 20px 4px;
+	margin-top: 25px;
+}
+
+.b-markup__color-box h1, 
+.b-markup__color-box h2, 
+.b-markup__color-box h3,
+.b-markup__color-box h4 {
+	margin-top: 0px;
+}
+
+.b-markup__color-box_color_grey {
+	background: #898989;
+	color: #fff;
+}
+
+.b-markup__color-box_color_grey a {
+	color: #fff;
+}
+
+.b-markup__color-box h1 a, 
+.b-markup__color-box h2 a, 
+.b-markup__color-box h3 a,
+.b-markup__color-box h4 a {
+	text-decoration: none;
+	border-width: 1px;
+	border-style: solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.b-markup__color-box_color_grey h1,
+.b-markup__color-box_color_grey h2,
+.b-markup__color-box_color_grey h3,
+.b-markup__color-box_color_grey h4 {
+	border-color: #fff;
+}
+
+.b-markup hr {
+	zoom: 1;
+	margin: 0px;
+	padding: 0px;
+	height: 3px;
+	background: #898989;
+	border: none;
+	font-size: 0px;
+	margin-top: 26px;
+	margin-bottom: 21px;
+	margin-left: -20px;
+}
+
+.b-markup ul li {
+	margin-bottom: 10px;
+	margin-top: 13px;
+	background: url(../img/b-markup-li.gif) 1px 8px no-repeat;
+	list-style: none;
+	padding-left: 12px;
+}
+
+.b-markup ol {
+	padding-left: 21px;
+}
+
+.b-markup ol li {
+	margin-bottom: 10px;
+	margin-top: 13px;
+	background: none;
+	list-style: decimal;
+	padding-left: 0px;
+}
+
+.b-markup ul.simple,
+.b-markup ol.simple {
+	padding-left: 0px;
+}
+
+.b-markup ul.simple li,
+.b-markup ol.simple li {
+	background: none;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.b-markup table {
+	width: 100%;
+	margin: 21px 0 21px 0;
+}
+
+.b-markup table td,
+.b-markup table th {
+	padding-left: 20px;
+}
+
+.b-markup tr:nth-child(odd) td {
+	background: #ebebeb;
+}
+
+.b-markup table th {
+	background: #898989;
+	font-size: 11px;
+	line-height: 14px;
+	padding: 10px 0 10px 20px;
+	color: #fff;
+	text-align: left;
+}
+
+.b-markup table td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+

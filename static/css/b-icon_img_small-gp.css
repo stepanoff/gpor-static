@@ -1,0 +1,8 @@
+.context .b-icon_img_small-gp {
+	background: url(../img/b-icon-small-gp.png);
+	width: 11px;
+	height: 18px;
+	display: inline-block;
+	top: 5px;
+	margin-top: -5px;
+}

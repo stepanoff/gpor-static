@@ -1,0 +1,37 @@
+﻿.b-form-messages__error,
+.b-form-messages__warning {
+	position:relative;
+	padding: 13px 40px 17px;
+	margin: 8px 0;
+	font-size: 12px;
+}
+
+
+.b-form-messages__error {
+	background: #fef7d2;
+	color: #6d561b;
+}
+.b-form-messages__warning {
+	background: #8a8f7e;
+	color: #e7eadf;
+}
+
+.b-form-messages__error-ico,
+.b-form-messages__warning-ico {
+	background-image: url(../img/b-form-messages__ico.png);
+	background-repeat: no-repeat;
+	display: block;
+	position:absolute;
+	width: 16px;
+	height: 16px;
+	left: 15px;
+	top: 50%;
+	margin-top: -9px;
+}
+ 
+.b-form-messages__error-ico {
+	background-position: 0 -16px;
+}
+.b-form-messages__warning-ico {
+	background-position: 0 0;
+}

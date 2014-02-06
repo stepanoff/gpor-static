@@ -1,0 +1,123 @@
+/**
+ * @package portal
+ */
+
+/**
+ * Рейтинг
+ * @subpackage rating
+ */
+.js_rating, .js_rating-big, .js_rating-small {
+    cursor: default;
+    height: 18px;
+    line-height: 31px;
+    margin-top:-1px;
+    white-space: nowrap;
+}
+
+.rating_value_wrap {
+    margin: 0 -1px;
+    margin-left:12px;
+    margin-right:5px;
+    margin:0 5px;
+}
+
+.js_rating-big .js_rating_value,
+.js_rating_value {
+    background-color: #87B51E;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    height: 31px;
+    padding: 0 10px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.js_rating_value-negative {
+    background-color: #D0CCBD !important;
+}
+
+.rating_control {
+    background: transparent;
+    border: none;
+    color: #9A9895;
+    cursor: pointer;
+    font-size: 28px;
+    margin: -18px 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    top: -5px;
+    vertical-align: middle;
+}
+
+
+.js_rating-big .js_rating_down {
+	padding-left: 12px;
+}
+
+.js_rating-big {
+	margin-top:-8px;
+	height: 31px;
+    line-height: 31px;
+}
+
+.js_rating-small {
+	height: 18px;
+    line-height: 18px;
+}
+
+.js_rating-small .js_rating_value {
+	font-size: 14px;
+    font-weight: bold;
+    height: 18px;
+    padding: 0 8px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.comment_foot .js_rating-small .js_rating_value { padding: 0 13px; }
+.comment_foot .rating_value_wrap {
+    margin: 0 20px 0 31px;
+}
+
+.js_rating-small .rating_control {
+    background: transparent;
+    border: none;
+    color: #9A9895;
+    cursor: pointer;
+    font-size: 24px;
+    margin: -18px 0;
+    height:30px;
+    line-height:30px;
+    /*padding: 0 7px;*/
+    padding:0px;
+    position: relative;
+    text-decoration: none;
+    top: -2px;
+    vertical-align: middle;
+    text-align: center;
+    width: 16px;
+    position: absolute
+}
+
+.js_rating-small .js_rating_down {
+	top: 10px;
+    left: -2px;
+	padding-left:12px;
+}
+
+.js_rating-small .js_rating_up:hover { color: #41a200; }
+.js_rating-small .js_rating_down:hover { color: #ff0000; }
+
+.js_rating-small .js_rating_up {
+	top: 12px;
+    right: 0px;
+}
+
+.comment_foot-right-align {
+	float: right;
+    position: relative;
+}
+
+

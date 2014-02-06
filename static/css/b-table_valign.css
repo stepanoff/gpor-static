@@ -1,0 +1,7 @@
+.b-table_valign_bottom td {
+	vertical-align: bottom;
+}
+
+.b-table_valign_top td {
+	vertical-align: top;
+}

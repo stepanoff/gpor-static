@@ -1,0 +1,56 @@
+.theme-items-delete-button {
+    margin-bottom: 1em;
+}
+
+.theme-new-item-select {
+    padding-bottom: 10px;
+}
+
+.theme-new-item-image,
+.theme-new-item-flash,
+.theme-new-item-html {
+    background: #f0f0f0;
+    padding: 1em;
+}
+
+.js-theme-new-item label,
+.js-theme-list-table label {
+    min-width: 150px;
+}
+
+.theme-list-item-mark label {
+    min-width: initial;
+}
+
+.theme-list-item-textarea {
+    height: auto;
+}
+
+.theme-list-table {
+    width: 100%;
+}
+
+.theme-list-table .row-regular td,
+.theme-list-table .row-first td {
+    padding-bottom: 1em;
+    vertical-align: top;
+}
+
+.theme-list-table .row-regular td {
+    padding-top: 0.5em;
+}
+
+.theme-list-table .row-regular {
+    border-top: 1px dotted #c0c0c0;
+}
+
+.theme-list-item-mark label {
+    height: auto;
+    float: none;
+    border: 1px solid #c0c0c0;
+    background: #f0f0f0;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    display: inline-block;
+    box-shadow: 3px 3px 1px #888888;
+}

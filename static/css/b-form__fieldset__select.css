@@ -1,0 +1,15 @@
+.b-form select {
+	
+	background-image: url(../img/b-form__fieldset__textarea-bg.jpg);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	background-color: #FFFFFF;
+	border: none;
+	
+	outline: none;
+	padding: 3px;
+}
+
+.b-form select option {
+	
+}

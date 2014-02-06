@@ -1,0 +1,9 @@
+.b-form__caution {  
+	border-top: 1px solid #CC7300;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 14px;
+    padding: 8px 0;
+    text-align: center;
+	background: #FF9000;
+}

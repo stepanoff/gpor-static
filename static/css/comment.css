@@ -1,0 +1,10 @@
+.comment-item {margin-bottom:28px; min-height: 70px; _height: 70px;}
+.comment-item .comment-text {line-height: 18px; color: black; font-size: 13px; padding: 0 3px;}
+.comment-item .comment-panel {background: #f3f3f0; border: 1px solid #e8e8e5; color: #666666; font-size: 12px; padding: 4px 10px; margin-bottom: 10px;}
+.comment-item .comment-panel em {float:left; margin-right: 20px;}
+.comment-item .comment-panel span {float:left; margin-right: 20px; padding-top:1px;}
+.comment-item .comment-source {padding: 0 3px; color: #9f9f9f; font-size: 13px; margin-top: 10px;}
+.comment-item .comment-source a {color: #519000; font-size: 13px;}
+
+.comment-item .comment-item-left-col {width: 53px; position: absolute;}
+.comment-item .comment-item-right-col {margin-left: 53px;}

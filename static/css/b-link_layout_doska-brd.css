@@ -1,0 +1,16 @@
+a.b-link_layout_doska-brd,
+a.b-link_layout_doska-brd:link {
+	color: #037dd3;
+	text-decoration: none;
+	border-bottom: 1px solid #b3d8f2;
+}
+a.b-link_layout_doska-brd:visited {
+	color: #c45da1;
+	border-bottom: 1px solid #c45da1;
+}
+
+a.b-link_layout_doska-brd:hover,
+a.b-link_layout_doska-brd:active {
+	color: #7B0101;
+	border-bottom: 1px solid #7B0101;
+}

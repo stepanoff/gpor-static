@@ -1,0 +1,8 @@
+.b-form__body__inner__row__frame__textarea-box {
+	
+}
+.b-form__body__inner__row__frame__textarea {
+	border: none;
+	padding: 3px;
+	background: #fff url(../img/b-form__body__inner__textarea-bg.jpg) 0 0 repeat-x;
+}

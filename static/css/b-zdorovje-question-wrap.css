@@ -1,0 +1,39 @@
+.b-zdorovje-question_wrap__quest-list {
+	padding:  6px 10px 10px;
+	background: #e6f6da;
+}
+
+.b-zdorovje-question_wrap__quest-list li {
+	font-size: 1.2em;
+	background: url(../img/b-zdorovje-question-dot.gif) 0 bottom repeat-x;
+	padding: 10px 10px 16px;
+	line-height: 1.38em;
+}
+
+.b-zdorovje-question_wrap__quest-list li.last {
+	background: none;
+	margin-bottom: 0px;
+}
+
+.b-zdorovje-question_wrap__quest-list__link {
+	font-weight: bold;
+}
+ 
+.b-zdorovje-question_wrap__quest-list__link {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3;
+}
+ 
+.b-zdorovje-question__count {
+	font-size:0.75em;
+	color: #fff;	
+	line-height: 1em;
+	text-decoration: none;
+	padding: 0 2px 5px;
+	background: url(../img/b-zdorovje-question-count.jpg) 0 0 repeat-x;
+	font-family: Tahoma;
+	vertical-align: top;
+	position:relative;
+	top: 0.5em;
+	margin: 0 5px;
+}

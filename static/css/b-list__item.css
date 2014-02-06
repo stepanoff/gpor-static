@@ -1,0 +1,32 @@
+.b-list__item {
+	margin-bottom: 12px;
+	margin-top: 0px;
+	color: #000;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.b-list__item__date {
+	color: #7d7d7d;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.b-list_scheme_2levels .b-list__item {
+	margin: 0px;
+	color: #7d7d7d;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.b-list_scheme_2levels .b-list__item ul {
+	padding-left: 10px;
+	margin-top: -5px;
+}
+
+.b-list_scheme_2levels .b-list__item .b-list__item {
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 6px;
+}

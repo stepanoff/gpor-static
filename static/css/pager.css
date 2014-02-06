@@ -1,0 +1,221 @@
+/**
+ * CSS styles for CLinkPager.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright &copy; 2008-2010 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ * @version $Id: pager.css 1678 2010-01-07 21:02:00Z qiang.xue $
+ * @since 1.0
+ */
+
+.yiiPagerHeader
+{
+	font-size: 18px;
+}
+
+ul.yiiPagerPages
+{
+	display: block;
+	margin: 10px 0px 0px 0px;
+}
+ul.yiiPagerPages li
+{
+	display: inline;
+}
+ul.yiiPagerPages a:link,
+ul.yiiPagerPages a:visited
+{
+	padding: 1px 6px;
+	color: #0168bb;
+}
+ul.yiiPagerPages .page a
+{
+	font-weight: normal;
+	text-decoration: underline;
+}
+ul.yiiPagerPages a:hover
+{
+	text-decoration: none;
+}
+ul.yiiPagerPages .selected a
+{
+	background: #7E7E7E;
+	color: white !important;
+	text-decoration: none !important;
+}
+
+ul.yiiPager
+{
+	font-size:14px;
+	border:0;
+	margin:0 0 1em 0;
+	line-height:100%;
+	display:inline;
+	padding: 0px 0px 0px 30px;
+}
+
+ul.yiiPager li
+{
+	display: inline-block;
+}
+
+ul.yiiPager li .ctrl
+{
+	color: #5E5E5E;
+}
+
+ul.yiiPager a:link,
+ul.yiiPager a:visited
+{
+	padding:1px 6px;
+}
+
+ul.yiiPager .page a
+{
+	font-weight:normal;
+	text-decoration: underline;
+}
+
+ul.yiiPager a:hover
+{
+	text-decoration:none;
+}
+
+ul.yiiPager .selected a
+{
+	background:#2e6ab1;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+ul.yiiPager .hidden a
+{
+	/*color:#888888;*/
+	/*text-decoration: none;*/
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.yiiPager .first,
+ul.yiiPager .last
+{
+	display:none;
+}
+.yiiPager .previous a {
+    text-align: left;
+    display: block;
+    width:52px;
+    height:20px;
+    background: url('../img/pagination-arrows.png') no-repeat 0 0;
+    text-indent: -999px;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.yiiPager .next a {
+    text-align: left;
+    display: block;
+    width:52px;
+    height:20px;
+    background: url('../img/pagination-arrows.png') no-repeat 100% 0;
+    text-indent: -999px;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.browserChrome .yiiPager .next a, .browserChrome .yiiPager .previous a {
+    position:relative;
+    top:-2px;
+}
+.browserFirefox .yiiPager .next, .browserFirefox .yiiPager .previous {
+    position:relative;
+    bottom:-5px;
+}
+.yiiSitePagerHeader
+{
+	font-size: 18px;
+}
+
+ul.yiiSitePagerPages
+{
+	display: block;
+	margin: 10px 0px 0px 0px;
+}
+ul.yiiSitePagerPages li
+{
+	display: inline;
+}
+ul.yiiSitePagerPages a:link,
+ul.yiiSitePagerPages a:visited
+{
+	padding: 1px 6px;
+	color: #0168bb;
+}
+ul.yiiSitePagerPages .page a
+{
+	font-weight: normal;
+	text-decoration: underline;
+}
+ul.yiiSitePagerPages a:hover
+{
+	text-decoration: none;
+}
+ul.yiiSitePagerPages .selected a
+{
+	background: #f17e00;
+	color: white;
+	text-decoration: none;
+}
+
+ul.yiiSitePager
+{
+	font-size:14px;
+	border:0;
+	margin:0;
+	line-height:100%;
+	display:inline;
+	padding: 0px 0px 0px 30px;
+}
+
+ul.yiiSitePager li
+{
+	display: inline;
+}
+
+ul.yiiSitePager li .ctrl
+{
+	color: #5E5E5E;
+}
+
+ul.yiiSitePager a:link,
+ul.yiiSitePager a:visited
+{
+	padding:1px 6px;
+	color: #0168bb;
+}
+
+ul.yiiSitePager .page a
+{
+	font-weight:normal;
+	text-decoration: underline;
+}
+
+ul.yiiSitePager a:hover
+{
+	text-decoration:none;
+}
+
+ul.yiiSitePager .hidden a
+{
+	/*color:#888888;*/
+	/*text-decoration: none;*/
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.yiiSitePager .first,
+ul.yiiSitePager .last
+{
+	display:none;
+}

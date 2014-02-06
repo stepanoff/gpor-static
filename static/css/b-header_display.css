@@ -1,0 +1,6 @@
+.b-header_display_inline {
+    display: -moz-inline-stack;
+    display: inline-block;
+    //display: inline;
+    //zoom: 1;
+}

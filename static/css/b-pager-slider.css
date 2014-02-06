@@ -1,0 +1,19 @@
+.b-pager-slider {
+    margin: 0 30px;
+    position: relative;
+}
+
+.b-pager-slider__itemsWindow {
+    overflow: hidden;
+    position: relative;
+}
+
+.b-pager-slider__items {
+    width: 10000px;
+}
+
+.b-pager-slider__items::after {
+    content: '';
+    display: block;
+    clear: both;
+}

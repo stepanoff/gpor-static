@@ -1,1174 +1,384 @@
-.grid {
+/**
+ * @package portal
+ */
+
+/**
+ * Колоночная сетка
+ *
+ * @subpackage grid
+ */
+
+/**
+ * Контейнеры колонок
+ *
+ * Сначала нужно определить сколько колонок будет использоваться в сетке.
+ * Известно, что ширина фиксированных областей должна быть равна 240px,
+ * следовательно в эту ширину должно вписываться какое-либо количество колонок
+ * без отступов по краям. Сразу видно, что можно взять 5 колонок по 40px с
+ * расстояниями между ними 10px, что даст в итоге 240px (5 * 40px + 4 * 10px).
+ * Т.к. фиксированные области могут быть слева, справа, одновременно справа
+ * и слева, а могут и не быть будем использовать 20-колоночную сетку
+ * (4 * 5 колонок). Остаётся расчитать:
+ *
+ * 1 Сетку без фиксированных областей (20 резиновых колонок)
+ * 2 Сетку с одной фиксированной колонкой (15 резиновых колонок + 5 фиксированных)
+ * 3 Сетку с двумя фиксированными колонками (10 резиновых + 10 фиксированных)
+ *
+ * Для минимизации CSS, удобства позиционирования, удобства задания глобальных
+ * отступов и обхода непонимания Оперой десятичных дробей в размерах и маргинах
+ * используем следующий метод: уменьшим свободное пространство контейнеров так,
+ * чтобы в него помещалось 5 колонок, причём сделаем это с помощью правого
+ * паддинга, равного 100% - <ширина необходимого пространства>, в следствие
+ * чего ширина одной колонки с отступом будет равна 20% (100% / 5 колонок).
+ * Отступ равен 20% ширины одной колонки (10px / 50px * 100%) но т.к. маргины
+ * рассчитываются исходя из ширины родителя, то отступ относительно родителя
+ * будет равен 4%. Т.к. 4% — не очень красивая цифра, сделаем так, чтобы
+ * ширина свободного пространства была равен ширине не 5 колонок, а 4.
+ * Следовательно ширина колонки вместе с отступом будет равна 25%, 5% из которых
+ * — это отступ.
+ *
+ * В итоге получится так, что у нас правый край крайнего правого контейнера не
+ * будет совпадать с правым краем контейнера и будет отличаться на 5% из-за
+ * отступа. У нас возможны 4 вариант:
+ *
+ * 1 Отступ от края должен быть справа (когда фиксированная область справа)
+ * 2 Отступ от края должен быть слева (когда фиксированная область слева)
+ * 3 Отступ от края должен быть с обеих сторон (когда фиксированные области с
+ *   обеихсторон)
+ * 4 Отступов от края нет (когда нет фиксированных областей)
+ *
+ * Таким образом расстояние между резиновой и фиксированными областями будет
+ * резиновым.
+ *
+ * Изначально у нас сразу имеется правый отступ.
+ *
+ * Чтобы компенсировать правый отступ и получить 4 вариант необходимо увеличить
+ * ширину свободного пространства контейнера на размер отступа распределённый
+ * по всем колонкам, т.е. если у нас 20 колонок, то мы должны ширину свободного
+ * пространства разделить на 20 и взять от неё 20% (размер отступа относительно
+ * ширины колонки) — это и будет распределённая величина отступа, которую нам
+ * необходимо прибавить к ширине свободного пространства, т.е. вычесть из правого
+ * паддинга
+ *
+ * Чтобы получить левый отступ, нам необходимо сдвинуть свободное пространство
+ * вправо, но оставить его ширину неизменной. Чтобы получить размер сдвига
+ * нужно узнать размер отступа колонки относителбно ширины родителя контейнера
+ * (именно от него мы расчитываем ширину свободного пространства), для этого
+ * нужно ширину свободного пространства разделить на 100 и умножить на размер
+ * оступа относительно контейнера
+ *
+ * Чтобы сделать отступы с обеих сторон, необходимо сдвинуть свободное
+ * пространство вправо и при этом уменьшить его ширину на величину равную
+ * компенсации правого отступа
+ *
+ * Формулы расчёта:
+ *
+ * ширина с правым отступом = 100% / (количество колонок / 4 колонки)
+ *
+ * компенсация отступа = (ширина с правым отступом / количество колонок) *
+ *                       размер отступа относительно ширины колонки
+ *
+ * левый отступ = (ширина с правым отступом / 100%) * размер оступа
+ *                                                    относительно контейнера
+ *
+ * @section containers
+ */
+.grid-20, .grid-20-left, .grid-20-right, .grid-20-both,
+.grid-15, .grid-15-left, .grid-15-right, .grid-15-both,
+.grid-10, .grid-10-left, .grid-10-right, .grid-10-both,
+.grid-5, .grid-5-left, .grid-5-right, .grid-5-both,
+.page-grid, .page-grid-wrap {
 	position: relative;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding-right: 96.09%;
 }
 
-.grid:before,
-.grid:after {
-	display: block;
-	clear: both;
-	content: '';
+.grid-20 {
+	margin-right: 79.8%;
 }
 
-.grid__module_first_yes {
-	clear: left;
+.grid-20-left {
+	margin-right: 79%;
+	margin-left: 1%;
 }
 
-.grid__module {
+.grid-20-right {
+	margin-right: 80%;
+}
+
+.grid-20-both {
+	margin-right: 79.2%;
+	margin-left: 1%;
+}
+
+.grid-15 {
+	margin-right: 72.98%;
+}
+
+.grid-15-left {
+	margin-right: 72.01%;
+	margin-left: 1.33%;
+}
+
+.grid-15-right {
+	margin-right: 73.34%;
+}
+
+.grid-15-both {
+	margin-right: 72.37%;
+	margin-left: 1.33%;
+}
+
+.grid-10 {
+	margin-right: 59.2%;
+}
+
+.grid-10-left {
+	margin-right: 58%;
+	margin-left: 2%;
+}
+
+.grid-10-right {
+	margin-right: 60%;
+}
+
+.grid-10-both {
+	margin-right: 58.9%;
+	margin-left: 2%;
+}
+
+.grid-5 {
+	margin-right: 16.8%;
+}
+
+.grid-5-left {
+	margin-right: 16%;
+	margin-left: 4%;
+}
+
+.grid-5-right {
+	margin-right: 20%;
+}
+
+.grid-5-both {
+	margin-right: 19.2%;
+	margin-left: 4%;
+}
+
+/**
+* @section cols
+*/
+.col-1, .col-2, .col-3, .col-4, .col-5,
+.col-6, .col-7, .col-8, .col-9, .col-10,
+.col-11, .col-12, .col-13, .col-14, .col-15,
+.col-16, .col-17, .col-18, .col-19, .col-20,
+.page-col-1-span-5, .page-col-1-span-10, .page-col-1-span-15, .page-col-1-span-20,
+.page-col-6-span-5, .page-col-6-span-10, .page-col-6-span-15, .page-col-11-span-5,
+.page-col-11-span-10, .page-col-16-span-5 {
 	position: relative;
-	float: left;
+/**
+ * display: inline применённый к плавающему блоку помогает избавиться
+ * от двойных границ
+ * Нормальные браузеры это никак не затрагивает, т.к. по спецификации
+ * элементы с float не принимают значения display отличные от none
+ * Но если вдруг захочется убрать float у одного из таких элементов,
+ * то надо не забыть ему вернуть display: block
+ *
+ * @bugfix Двойное увеличение границ у плавающих блоков в IE<=7
+ * @affected IE6, IE7
+ */
+ display: inline;
+ float: left;
 }
 
-.grid__module_span_1 {
-	margin-right: -20%;
-	width: 20%;
+.col-1 { left: 0; }
+.col-2 { left: 25%; }
+.col-3 { left: 50%; }
+.col-4 { left: 75%; }
+.col-5 { left: 100%; }
+.col-6 { left: 125%; }
+.col-7 { left: 150%; }
+.col-8 { left: 175%; }
+.col-9 { left: 200%; }
+.col-10 { left: 225%; }
+.col-11 { left: 250%; }
+.col-12 { left: 275%; }
+.col-13 { left: 300%; }
+.col-14 { left: 325%; }
+.col-15 { left: 350%; }
+.col-16 { left: 375%; }
+.col-17 { left: 400%; }
+.col-18 { left: 425%; }
+.col-19 { left: 450%; }
+.col-20 { left: 475%; }
+
+/**
+* @section spans
+*/
+.span-1 { margin-right: -20%; width: 20%; }
+.span-2 { margin-right: -45%; width: 45%; }
+.span-3 { margin-right: -70%; width: 70%; }
+.span-4 { margin-right: -95%; width: 95%; }
+.span-5 { margin-right: -120%; width: 120%; }
+.span-6 { margin-right: -145%; width: 145%; }
+.span-7 { margin-right: -170%; width: 170%; }
+.span-8 { margin-right: -195%; width: 195%; }
+.span-9 { margin-right: -220%; width: 220%; }
+.span-10 { margin-right: -245%; width: 245%; }
+.span-11 { margin-right: -270%; width: 270%; }
+.span-12 { margin-right: -295%; width: 295%; }
+.span-13 { margin-right: -320%; width: 320%; }
+.span-14 { margin-right: -345%; width: 345%; }
+.span-15 { margin-right: -370%; width: 370%; }
+.span-16 { margin-right: -395%; width: 395%; }
+.span-17 { margin-right: -420%; width: 420%; }
+.span-18 { margin-right: -445%; width: 445%; }
+.span-19 { margin-right: -470%; width: 470%; }
+.span-20 { margin-right: -495%; width: 495%; }
+
+/**
+* Размеры блоков для основной разметки.
+* Зависят от класса у body, чтобы управлять внешним видом всех
+* основных колонок на странице в одном месте.
+*
+* Для экономии опишем только основные. Т.к. IE6 не поддерживает
+* .множественные.классы придётся склеить имена классов
+*
+* @section main
+*/
+
+/**
+* Контейнеры
+*
+* @see containers
+* @subsection containers
+*/
+.page-grid {
+	margin-right: 79.8%;
 }
 
-.grid__module_col_1 {
-	left: 0%;
+.page-fixed-left .page-grid {
+	margin-right: 72.01%;
+	margin-left: 1.33%;
 }
 
-.grid__module_span_2 {
-	margin-right: -40%;
-	width: 40%;
+.page-fixed-left .page-grid-wrap {
+	margin-left: 240px;
 }
 
-.grid__module_col_2 {
-	left: 20%;
+.page-fixed-right .page-grid {
+	margin-right: 73.34%;
 }
 
-.grid__module_span_3 {
-	margin-right: -60%;
-	width: 60%;
+.page-fixed-right .page-grid-wrap {
+	margin-right: 240px;
+	margin-bottom: 20px;
 }
 
-.grid__module_col_3 {
-	left: 40%;
+.page-fixed-both .page-grid {
+	margin-right: 58.9%;
+	margin-left: 2%;
 }
 
-.grid__module_span_4 {
-	margin-right: -80%;
-	width: 80%;
+.page-fixed-both .page-grid-wrap {
+	margin: 0 240px;
 }
 
-.grid__module_col_4 {
-	left: 60%;
+.page-fixed-right .page-grid-wrap_w-fluid {
+	margin-right: 20%;
 }
 
-.grid__module_span_5 {
-	margin-right: -100%;
-	width: 100%;
+/**
+* Положение резиновых блоков
+*
+* @see cols
+* @subsection fluidBlocksPositions
+*/
+.page-col-1-span-5, .page-col-1-span-10, .page-col-1-span-15, .page-col-1-span-20 {
+	left: 0;
 }
 
-.grid__module_col_5 {
-	left: 80%;
+.page-col-6-span-5, .page-col-6-span-10, .page-col-6-span-15 {
+	left: 125%;
 }
 
-.grid__module_span_6 {
+.page-fixed-left .page-col-6-span-5, .page-fixed-both .page-col-6-span-5,
+.page-fixed-left .page-col-6-span-10, .page-fixed-both .page-col-6-span-10,
+.page-fixed-left .page-col-6-span-15, .page-fixed-both .page-col-6-span-15 {
+	left: 0;
+}
+
+.page-col-11-span-5, .page-col-11-span-10 {
+	left: 250%;
+}
+
+.page-fixed-left .page-col-11-span-5, .page-fixed-both .page-col-11-span-5,
+.page-fixed-left .page-col-11-span-10, .page-fixed-both .page-col-11-span-10 {
+	left: 125%;
+}
+
+.page-col-16-span-5 {
+	left: 375%;
+}
+
+.page-fixed-left .page-col-16-span-5, .page-fixed-both .page-col-16-span-5 {
+	left: 250%;
+}
+
+/**
+* Размеры резиновых блоков
+*
+* @see spans
+* @subsection fluidBlocksSizes
+*/
+.page-col-1-span-5, .page-col-6-span-5, .page-col-11-span-5, .page-col-16-span-5 {
 	margin-right: -120%;
 	width: 120%;
 }
 
-.grid__module_col_6 {
-	left: 100%;
+.page-col-1-span-10, .page-col-6-span-10, .page-col-11-span-10 {
+	margin-right: -245%;
+	width: 245%;
 }
 
-.grid__module_span_7 {
-	margin-right: -140%;
-	width: 140%;
+.page-col-1-span-9, .page-col-6-span-9, .page-col-11-span-9 {
+	position: relative;
+	left: 250%;
+	display: inline;
+	float: left;
+	margin-right: -215%;
+	width: 215%;
+	/*background: #fef;*/
 }
 
-.grid__module_col_7 {
-	left: 120%;
+.page-col-1-span-15, .page-col-6-span-15 {
+	margin-right: -370%;
+	width: 370%;
 }
 
-.grid__module_span_8 {
-	margin-right: -160%;
-	width: 160%;
+/**
+* Размеры и положение фиксированных блоков
+*
+* @see spans
+* @see cols
+* @subsection fixedBlocks
+*/
+.page-fixed-left .page-col-1-span-5, .page-fixed-both .page-col-1-span-5 {
+	left: -5%;
+	margin-left: -240px;
+	width: 240px;
 }
 
-.grid__module_col_8 {
-	left: 140%;
+.page-fixed-right .page-col-16-span-5, .page-fixed-both .page-col-16-span-5 {
+	width: 240px;
 }
 
-.grid__module_span_9 {
-	margin-right: -180%;
-	width: 180%;
+.b-fluid-fixed__global {
 }
 
-.grid__module_col_9 {
-	left: 160%;
+.b-fluid-fixed__fluid {
+	margin-right: 250px;
 }
 
-.grid__module_span_10 {
-	margin-right: -200%;
-	width: 200%;
-}
-
-.grid__module_col_10 {
-	left: 180%;
-}
-
-.grid__module_span_11 {
-	margin-right: -220%;
-	width: 220%;
-}
-
-.grid__module_col_11 {
-	left: 200%;
-}
-
-.grid__module_span_12 {
-	margin-right: -240%;
-	width: 240%;
-}
-
-.grid__module_col_12 {
-	left: 220%;
-}
-
-.grid__module_span_13 {
-	margin-right: -260%;
-	width: 260%;
-}
-
-.grid__module_col_13 {
-	left: 240%;
-}
-
-.grid__module_span_14 {
-	margin-right: -280%;
-	width: 280%;
-}
-
-.grid__module_col_14 {
-	left: 260%;
-}
-
-.grid__module_span_15 {
-	margin-right: -300%;
-	width: 300%;
-}
-
-.grid__module_col_15 {
-	left: 280%;
-}
-
-.grid__module_span_16 {
-	margin-right: -320%;
-	width: 320%;
-}
-
-.grid__module_col_16 {
-	left: 300%;
-}
-
-.grid__module_span_17 {
-	margin-right: -340%;
-	width: 340%;
-}
-
-.grid__module_col_17 {
-	left: 320%;
-}
-
-.grid__module_span_18 {
-	margin-right: -360%;
-	width: 360%;
-}
-
-.grid__module_col_18 {
-	left: 340%;
-}
-
-.grid__module_span_19 {
-	margin-right: -380%;
-	width: 380%;
-}
-
-.grid__module_col_19 {
-	left: 360%;
-}
-
-.grid__module_span_20 {
-	margin-right: -400%;
-	width: 400%;
-}
-
-.grid__module_col_20 {
-	left: 380%;
-}
-
-.grid__module_span_21 {
-	margin-right: -420%;
-	width: 420%;
-}
-
-.grid__module_col_21 {
-	left: 400%;
-}
-
-.grid__module_span_22 {
-	margin-right: -440%;
-	width: 440%;
-}
-
-.grid__module_col_22 {
-	left: 420%;
-}
-
-.grid__module_span_23 {
-	margin-right: -460%;
-	width: 460%;
-}
-
-.grid__module_col_23 {
-	left: 440%;
-}
-
-.grid__module_span_24 {
-	margin-right: -480%;
-	width: 480%;
-}
-
-.grid__module_col_24 {
-	left: 460%;
-}
-
-.grid__module_span_25 {
-	margin-right: -500%;
-	width: 500%;
-}
-
-.grid__module_col_25 {
-	left: 480%;
-}
-
-.grid__module_span_26 {
-	margin-right: -520%;
-	width: 520%;
-}
-
-.grid__module_col_26 {
-	left: 500%;
-}
-
-.grid__module_span_27 {
-	margin-right: -540%;
-	width: 540%;
-}
-
-.grid__module_col_27 {
-	left: 520%;
-}
-
-.grid__module_span_28 {
-	margin-right: -560%;
-	width: 560%;
-}
-
-.grid__module_col_28 {
-	left: 540%;
-}
-
-.grid__module_span_29 {
-	margin-right: -580%;
-	width: 580%;
-}
-
-.grid__module_col_29 {
-	left: 560%;
-}
-
-.grid__module_span_30 {
-	margin-right: -600%;
-	width: 600%;
-}
-
-.grid__module_col_30 {
-	left: 580%;
-}
-
-.grid__module_span_31 {
-	margin-right: -620%;
-	width: 620%;
-}
-
-.grid__module_col_31 {
-	left: 600%;
-}
-
-.grid__module_span_32 {
-	margin-right: -640%;
-	width: 640%;
-}
-
-.grid__module_col_32 {
-	left: 620%;
-}
-
-.grid__module_span_33 {
-	margin-right: -660%;
-	width: 660%;
-}
-
-.grid__module_col_33 {
-	left: 640%;
-}
-
-.grid__module_span_34 {
-	margin-right: -680%;
-	width: 680%;
-}
-
-.grid__module_col_34 {
-	left: 660%;
-}
-
-.grid__module_span_35 {
-	margin-right: -700%;
-	width: 700%;
-}
-
-.grid__module_col_35 {
-	left: 680%;
-}
-
-.grid__module_span_36 {
-	margin-right: -720%;
-	width: 720%;
-}
-
-.grid__module_col_36 {
-	left: 700%;
-}
-
-.grid__module_span_37 {
-	margin-right: -740%;
-	width: 740%;
-}
-
-.grid__module_col_37 {
-	left: 720%;
-}
-
-.grid__module_span_38 {
-	margin-right: -760%;
-	width: 760%;
-}
-
-.grid__module_col_38 {
-	left: 740%;
-}
-
-.grid__module_span_39 {
-	margin-right: -780%;
-	width: 780%;
-}
-
-.grid__module_col_39 {
-	left: 760%;
-}
-
-.grid__module_span_40 {
-	margin-right: -800%;
-	width: 800%;
-}
-
-.grid__module_col_40 {
-	left: 780%;
-}
-
-.grid__module_span_41 {
-	margin-right: -820%;
-	width: 820%;
-}
-
-.grid__module_col_41 {
-	left: 800%;
-}
-
-.grid__module_span_42 {
-	margin-right: -840%;
-	width: 840%;
-}
-
-.grid__module_col_42 {
-	left: 820%;
-}
-
-.grid__module_span_43 {
-	margin-right: -860%;
-	width: 860%;
-}
-
-.grid__module_col_43 {
-	left: 840%;
-}
-
-.grid__module_span_44 {
-	margin-right: -880%;
-	width: 880%;
-}
-
-.grid__module_col_44 {
-	left: 860%;
-}
-
-.grid__module_span_45 {
-	margin-right: -900%;
-	width: 900%;
-}
-
-.grid__module_col_45 {
-	left: 880%;
-}
-
-.grid__module_span_46 {
-	margin-right: -920%;
-	width: 920%;
-}
-
-.grid__module_col_46 {
-	left: 900%;
-}
-
-.grid__module_span_47 {
-	margin-right: -940%;
-	width: 940%;
-}
-
-.grid__module_col_47 {
-	left: 920%;
-}
-
-.grid__module_span_48 {
-	margin-right: -960%;
-	width: 960%;
-}
-
-.grid__module_col_48 {
-	left: 940%;
-}
-
-.grid__module_span_49 {
-	margin-right: -980%;
-	width: 980%;
-}
-
-.grid__module_col_49 {
-	left: 960%;
-}
-
-.grid__module_span_50 {
-	margin-right: -1000%;
-	width: 1000%;
-}
-
-.grid__module_col_50 {
-	left: 980%;
-}
-
-.grid__module_span_51 {
-	margin-right: -1020%;
-	width: 1020%;
-}
-
-.grid__module_col_51 {
-	left: 1000%;
-}
-
-.grid__module_span_52 {
-	margin-right: -1040%;
-	width: 1040%;
-}
-
-.grid__module_col_52 {
-	left: 1020%;
-}
-
-.grid__module_span_53 {
-	margin-right: -1060%;
-	width: 1060%;
-}
-
-.grid__module_col_53 {
-	left: 1040%;
-}
-
-.grid__module_span_54 {
-	margin-right: -1080%;
-	width: 1080%;
-}
-
-.grid__module_col_54 {
-	left: 1060%;
-}
-
-.grid__module_span_55 {
-	margin-right: -1100%;
-	width: 1100%;
-}
-
-.grid__module_col_55 {
-	left: 1080%;
-}
-
-.grid__module_span_56 {
-	margin-right: -1120%;
-	width: 1120%;
-}
-
-.grid__module_col_56 {
-	left: 1100%;
-}
-
-.grid__module_span_57 {
-	margin-right: -1140%;
-	width: 1140%;
-}
-
-.grid__module_col_57 {
-	left: 1120%;
-}
-
-.grid__module_span_58 {
-	margin-right: -1160%;
-	width: 1160%;
-}
-
-.grid__module_col_58 {
-	left: 1140%;
-}
-
-.grid__module_span_59 {
-	margin-right: -1180%;
-	width: 1180%;
-}
-
-.grid__module_col_59 {
-	left: 1160%;
-}
-
-.grid__module_span_60 {
-	margin-right: -1200%;
-	width: 1200%;
-}
-
-.grid__module_col_60 {
-	left: 1180%;
-}
-
-.grid__module_span_61 {
-	margin-right: -1220%;
-	width: 1220%;
-}
-
-.grid__module_col_61 {
-	left: 1200%;
-}
-
-.grid__module_span_62 {
-	margin-right: -1240%;
-	width: 1240%;
-}
-
-.grid__module_col_62 {
-	left: 1220%;
-}
-
-.grid__module_span_63 {
-	margin-right: -1260%;
-	width: 1260%;
-}
-
-.grid__module_col_63 {
-	left: 1240%;
-}
-
-.grid__module_span_64 {
-	margin-right: -1280%;
-	width: 1280%;
-}
-
-.grid__module_col_64 {
-	left: 1260%;
-}
-
-.grid__module_span_65 {
-	margin-right: -1300%;
-	width: 1300%;
-}
-
-.grid__module_col_65 {
-	left: 1280%;
-}
-
-.grid__module_span_66 {
-	margin-right: -1320%;
-	width: 1320%;
-}
-
-.grid__module_col_66 {
-	left: 1300%;
-}
-
-.grid__module_span_67 {
-	margin-right: -1340%;
-	width: 1340%;
-}
-
-.grid__module_col_67 {
-	left: 1320%;
-}
-
-.grid__module_span_68 {
-	margin-right: -1360%;
-	width: 1360%;
-}
-
-.grid__module_col_68 {
-	left: 1340%;
-}
-
-.grid__module_span_69 {
-	margin-right: -1380%;
-	width: 1380%;
-}
-
-.grid__module_col_69 {
-	left: 1360%;
-}
-
-.grid__module_span_70 {
-	margin-right: -1400%;
-	width: 1400%;
-}
-
-.grid__module_col_70 {
-	left: 1380%;
-}
-
-.grid__module_span_71 {
-	margin-right: -1420%;
-	width: 1420%;
-}
-
-.grid__module_col_71 {
-	left: 1400%;
-}
-
-.grid__module_span_72 {
-	margin-right: -1440%;
-	width: 1440%;
-}
-
-.grid__module_col_72 {
-	left: 1420%;
-}
-
-.grid__module_span_73 {
-	margin-right: -1460%;
-	width: 1460%;
-}
-
-.grid__module_col_73 {
-	left: 1440%;
-}
-
-.grid__module_span_74 {
-	margin-right: -1480%;
-	width: 1480%;
-}
-
-.grid__module_col_74 {
-	left: 1460%;
-}
-
-.grid__module_span_75 {
-	margin-right: -1500%;
-	width: 1500%;
-}
-
-.grid__module_col_75 {
-	left: 1480%;
-}
-
-.grid__module_span_76 {
-	margin-right: -1520%;
-	width: 1520%;
-}
-
-.grid__module_col_76 {
-	left: 1500%;
-}
-
-.grid__module_span_77 {
-	margin-right: -1540%;
-	width: 1540%;
-}
-
-.grid__module_col_77 {
-	left: 1520%;
-}
-
-.grid__module_span_78 {
-	margin-right: -1560%;
-	width: 1560%;
-}
-
-.grid__module_col_78 {
-	left: 1540%;
-}
-
-.grid__module_span_79 {
-	margin-right: -1580%;
-	width: 1580%;
-}
-
-.grid__module_col_79 {
-	left: 1560%;
-}
-
-.grid__module_span_80 {
-	margin-right: -1600%;
-	width: 1600%;
-}
-
-.grid__module_col_80 {
-	left: 1580%;
-}
-
-.grid__module_span_81 {
-	margin-right: -1620%;
-	width: 1620%;
-}
-
-.grid__module_col_81 {
-	left: 1600%;
-}
-
-.grid__module_span_82 {
-	margin-right: -1640%;
-	width: 1640%;
-}
-
-.grid__module_col_82 {
-	left: 1620%;
-}
-
-.grid__module_span_83 {
-	margin-right: -1660%;
-	width: 1660%;
-}
-
-.grid__module_col_83 {
-	left: 1640%;
-}
-
-.grid__module_span_84 {
-	margin-right: -1680%;
-	width: 1680%;
-}
-
-.grid__module_col_84 {
-	left: 1660%;
-}
-
-.grid__module_span_85 {
-	margin-right: -1700%;
-	width: 1700%;
-}
-
-.grid__module_col_85 {
-	left: 1680%;
-}
-
-.grid__module_span_86 {
-	margin-right: -1720%;
-	width: 1720%;
-}
-
-.grid__module_col_86 {
-	left: 1700%;
-}
-
-.grid__module_span_87 {
-	margin-right: -1740%;
-	width: 1740%;
-}
-
-.grid__module_col_87 {
-	left: 1720%;
-}
-
-.grid__module_span_88 {
-	margin-right: -1760%;
-	width: 1760%;
-}
-
-.grid__module_col_88 {
-	left: 1740%;
-}
-
-.grid__module_span_89 {
-	margin-right: -1780%;
-	width: 1780%;
-}
-
-.grid__module_col_89 {
-	left: 1760%;
-}
-
-.grid__module_span_90 {
-	margin-right: -1800%;
-	width: 1800%;
-}
-
-.grid__module_col_90 {
-	left: 1780%;
-}
-
-.grid__module_span_91 {
-	margin-right: -1820%;
-	width: 1820%;
-}
-
-.grid__module_col_91 {
-	left: 1800%;
-}
-
-.grid__module_span_92 {
-	margin-right: -1840%;
-	width: 1840%;
-}
-
-.grid__module_col_92 {
-	left: 1820%;
-}
-
-.grid__module_span_93 {
-	margin-right: -1860%;
-	width: 1860%;
-}
-
-.grid__module_col_93 {
-	left: 1840%;
-}
-
-.grid__module_span_94 {
-	margin-right: -1880%;
-	width: 1880%;
-}
-
-.grid__module_col_94 {
-	left: 1860%;
-}
-
-.grid__module_span_95 {
-	margin-right: -1900%;
-	width: 1900%;
-}
-
-.grid__module_col_95 {
-	left: 1880%;
-}
-
-.grid__module_span_96 {
-	margin-right: -1920%;
-	width: 1920%;
-}
-
-.grid__module_col_96 {
-	left: 1900%;
-}
-
-.grid__module_span_97 {
-	margin-right: -1940%;
-	width: 1940%;
-}
-
-.grid__module_col_97 {
-	left: 1920%;
-}
-
-.grid__module_span_98 {
-	margin-right: -1960%;
-	width: 1960%;
-}
-
-.grid__module_col_98 {
-	left: 1940%;
-}
-
-.grid__module_span_99 {
-	margin-right: -1980%;
-	width: 1980%;
-}
-
-.grid__module_col_99 {
-	left: 1960%;
-}
-
-.grid__module_span_100 {
-	margin-right: -2000%;
-	width: 2000%;
-}
-
-.grid__module_col_100 {
-	left: 1980%;
-}
-
-.grid__module_span_101 {
-	margin-right: -2020%;
-	width: 2020%;
-}
-
-.grid__module_col_101 {
-	left: 2000%;
-}
-
-.grid__module_span_102 {
-	margin-right: -2040%;
-	width: 2040%;
-}
-
-.grid__module_col_102 {
-	left: 2020%;
-}
-
-.grid__module_span_103 {
-	margin-right: -2060%;
-	width: 2060%;
-}
-
-.grid__module_col_103 {
-	left: 2040%;
-}
-
-.grid__module_span_104 {
-	margin-right: -2080%;
-	width: 2080%;
-}
-
-.grid__module_col_104 {
-	left: 2060%;
-}
-
-.grid__module_span_105 {
-	margin-right: -2100%;
-	width: 2100%;
-}
-
-.grid__module_col_105 {
-	left: 2080%;
-}
-
-.grid__module_span_106 {
-	margin-right: -2120%;
-	width: 2120%;
-}
-
-.grid__module_col_106 {
-	left: 2100%;
-}
-
-.grid__module_span_107 {
-	margin-right: -2140%;
-	width: 2140%;
-}
-
-.grid__module_col_107 {
-	left: 2120%;
-}
-
-.grid__module_span_108 {
-	margin-right: -2160%;
-	width: 2160%;
-}
-
-.grid__module_col_108 {
-	left: 2140%;
-}
-
-.grid__module_span_109 {
-	margin-right: -2180%;
-	width: 2180%;
-}
-
-.grid__module_col_109 {
-	left: 2160%;
-}
-
-.grid__module_span_110 {
-	margin-right: -2200%;
-	width: 2200%;
-}
-
-.grid__module_col_110 {
-	left: 2180%;
-}
-
-.grid__module_span_111 {
-	margin-right: -2220%;
-	width: 2220%;
-}
-
-.grid__module_col_111 {
-	left: 2200%;
-}
-
-.grid__module_span_112 {
-	margin-right: -2240%;
-	width: 2240%;
-}
-
-.grid__module_col_112 {
-	left: 2220%;
-}
-
-.grid__module_span_113 {
-	margin-right: -2260%;
-	width: 2260%;
-}
-
-.grid__module_col_113 {
-	left: 2240%;
-}
-
-.grid__module_span_114 {
-	margin-right: -2280%;
-	width: 2280%;
-}
-
-.grid__module_col_114 {
-	left: 2260%;
-}
-
-.grid__module_span_115 {
-	margin-right: -2300%;
-	width: 2300%;
-}
-
-.grid__module_col_115 {
-	left: 2280%;
-}
-
-.grid__module_span_116 {
-	margin-right: -2320%;
-	width: 2320%;
-}
-
-.grid__module_col_116 {
-	left: 2300%;
-}
-
-.grid__module_span_117 {
-	margin-right: -2340%;
-	width: 2340%;
-}
-
-.grid__module_col_117 {
-	left: 2320%;
-}
-
-.grid__module_span_118 {
-	margin-right: -2360%;
-	width: 2360%;
-}
-
-.grid__module_col_118 {
-	left: 2340%;
-}
-
-.grid__module_span_119 {
-	margin-right: -2380%;
-	width: 2380%;
-}
-
-.grid__module_col_119 {
-	left: 2360%;
-}
-
-.grid__module_span_120 {
-	margin-right: -2400%;
-	width: 2400%;
-}
-
-.grid__module_col_120 {
-	left: 2380%;
-}
-
-.grid__module_span_121 {
-	margin-right: -2420%;
-	width: 2420%;
-}
-
-.grid__module_col_121 {
-	left: 2400%;
-}
-
-.grid__module_span_122 {
-	margin-right: -2440%;
-	width: 2440%;
-}
-
-.grid__module_col_122 {
-	left: 2420%;
-}
-
-.grid__module_span_123 {
-	margin-right: -2460%;
-	width: 2460%;
-}
-
-.grid__module_col_123 {
-	left: 2440%;
-}
-
-.grid__module_span_124 {
-	margin-right: -2480%;
-	width: 2480%;
-}
-
-.grid__module_col_124 {
-	left: 2460%;
-}
-
-.grid__module_span_125 {
-	margin-right: -2500%;
-	width: 2500%;
-}
-
-.grid__module_col_125 {
-	left: 2480%;
-}
-
-.grid__module_span_126 {
-	margin-right: -2520%;
-	width: 2520%;
-}
-
-.grid__module_col_126 {
-	left: 2500%;
-}
-
-.grid__module_span_127 {
-	margin-right: -2540%;
-	width: 2540%;
-}
-
-.grid__module_col_127 {
-	left: 2520%;
-}
-
-.grid__module_span_128 {
-	margin-right: -2560%;
-	width: 2560%;
-}
-
-.grid__module_col_128 {
-	left: 2540%;
+.b-fluid-fixed__fixed {
+	float: right;
+	width: 240px;
 }

@@ -1,0 +1,51 @@
+/**/
+.b-dropdown {
+	padding: 0 0 0px 0px;
+	position:relative;
+	vertical-align: top;
+}
+
+.b-dropdown__current-link__pad {
+	color: #fff;
+	font-size: 12px;
+	display: block;
+	position:relative;
+	padding: 4px 30px 8px 10px;
+}
+
+a.b-dropdown__current-link {
+	position: relative;
+	left: -2px;
+	outline: none;
+	text-decoration: none;
+	background: #5a8410 url(../img/green-bg.png) 0 0 repeat-x;
+    display: inline-block;
+	z-index: 102;
+}
+
+.b-dropdown__current-link__ico {
+	background: url(../img/b-afisha-date-sprite.png) -1px -17px no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 10px;
+	top: 0.45em;
+	display: block;
+}
+
+.b-dropdown__current-link__drop {
+	background: url(../img/b-afisha-date-sprite.png) -1px -17px no-repeat;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	right: 7px;
+	top: 50%;
+	margin-top: -7px;
+	display: block;
+}
+
+
+.b-dropdown__bubble-container {
+	position:relative;
+}
+

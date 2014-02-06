@@ -1,0 +1,11 @@
+.context .b-link-user_status_online {
+	background-position: -8px -235px; 
+}
+
+.context .b-link-user_status_online.b-link-user_gender_male {
+	background-position: -40px 4px; 
+}
+
+.context .b-link-user_status_online.b-link-user_gender_female {
+	background-position: -24px -115px; 
+}

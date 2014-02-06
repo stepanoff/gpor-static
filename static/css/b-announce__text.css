@@ -1,0 +1,9 @@
+.b-announce__text {
+	margin-top: 10px;
+	color: #000;
+	
+}
+
+.b-announce__text_bottom_zero p {
+	margin-bottom: 0px;
+}

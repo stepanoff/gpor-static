@@ -1,0 +1,8 @@
+.b-form__fieldset__input input {
+	border: none;
+	width: 100%;
+	font-size: 14px;
+	padding: 7px 0;
+	text-indent: 3px;
+	background: #fff url(../img/b-form__fieldset__textarea-bg.jpg) 0 0 repeat-x;
+}

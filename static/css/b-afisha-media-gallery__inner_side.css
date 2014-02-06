@@ -1,0 +1,9 @@
+.b-afisha-media-gallery__inner_side_left {
+	float: left;
+	position: relative;
+	width: 410px;	
+}
+.b-afisha-media-gallery__inner_side_right {
+	overflow: hidden;
+	position: relative;
+}

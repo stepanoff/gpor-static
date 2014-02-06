@@ -1,0 +1,77 @@
+/**
+ * @package portal
+ */
+
+/**
+ * @subpackage forms
+ */
+.forms_text, .js_forms_text,
+.forms_password, .js_forms_password,
+.forms_textarea, .js_forms_textarea,
+.forms_select, .js_forms_select {
+    padding: 0.385em 4px;
+}
+
+.js_comment_form-pad .forms_textarea { padding: 3px 0; width: 100%; text-indent: 3px;}
+.js_comment_form-pad p {
+    width: 100%;
+    display: block;
+}
+/**
+ * @bugfix Вертикальное выравнивание в IE
+ * @affected IE
+ * @css-for IE
+ */
+#ie_all .forms_text, #ie_all .js_forms_text,
+#ie_all .forms_password, #ie_all .js_forms_password,
+#ie_all .forms_select, #ie_all .js_forms_select,
+#ie_all .forms_textarea, #ie_all .js_forms_textarea {
+    line-height: 1.231em;
+    vertical-align: middle;
+}
+
+/**
+ * @bugfix Высота select в Opera 9
+ * @affected Opera
+ * @css-for Opera
+ */
+*|html[xmlns*=""] .forms_select,
+*|html[xmlns*=""] .js_forms_select {
+    height: 2.308em;
+}
+
+/**
+ * @bugfix Высота select в Safari
+ * @affected Safari
+ */
+.forms_select, .js_forms_select {
+    line-height: 2em;
+}
+
+/**
+ * @bugfix Лишние отступы внутри кнопок
+ * @affected IE6, IE7
+ * @css-for IE6, IE7
+ */
+
+.forms_wide-text_wrap, .js_forms_wide-text_wrap,
+.forms_wide-password_wrap, .js_forms_wide-password_wrap,
+.forms_wide-textarea_wrap, .js_forms_wide-textarea_wrap,
+.forms_wide-select_wrap, .js_forms_wide-select_wrap {
+    display: block;
+    padding-right: 10px;
+}
+
+.forms_wide-text, .js_forms_wide-text,
+.forms_wide-password, .js_forms_wide-password,
+.forms_wide-textarea, .js_forms_wide-textarea,
+.forms_wide-textarea_wrap .mceEditor, .js_forms_wide-textarea_wrap .mceEditor,
+.forms_wide-textarea_wrap .mceLayout, .js_forms_wide-textarea_wrap .mceLayout,
+.forms_wide-select, .js_forms_wide-select {
+    margin-right: -10px;
+    width: 100% !important;
+}
+
+.forms_wide-label, .js_forms_wide-label {
+    display: block;
+}

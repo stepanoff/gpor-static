@@ -1,0 +1,107 @@
+.b-doska-other-rubrics {
+	margin-left: 6px;
+	display: inline-block;
+}
+
+a.b-doska-other-rubrics__link {
+	color: #000;
+	text-decoration: none;
+	position: relative;
+	z-index: 160;
+	padding: 0 5px 0 9px;
+	outline: none;
+}
+
+.b-doska-other-rubrics__dwn {
+	position:absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -5px;
+	background: url(../img/b-doska-other-rubrics-icons.png) 0 -13px no-repeat;
+	width: 12px;
+	height: 12px;
+	display: block;
+	
+}
+
+
+
+
+
+
+.b-doska-other-rubrics__link-cnr-l,
+.b-doska-other-rubrics__link-cnr-r {
+	position: absolute;
+	background: url(../img/b-doska-other-rubrics-active-cnr.png) 0 0 no-repeat;
+	width: 9px;
+	height: 31px;	
+	display: none;
+}
+
+
+.b-doska-other-rubrics__link-cnr-l {
+	background-position: 0 0;
+	left: 0px;
+
+} 
+.b-doska-other-rubrics__link-cnr-r {
+	background-position: 0 -33px;
+	right: 0px;
+	
+}
+.b-doska-other-rubrics__link-text {
+	display: inline-block;
+	height: 31px;
+	line-height: 31px;
+	padding: 0 25px 0 10px;
+	background: none;
+	
+}
+
+.b-doska-other-rubrics__link-text-brd {
+	text-decoration: none;
+	border-bottom: 1px dashed #000;
+}
+
+
+
+
+
+.b-doska-other-rubrics_state_opened .b-doska-other-rubrics__dwn {
+	background-position: 0 0;
+}
+
+
+.b-doska-other-rubrics_state_opened .b-doska-other-rubrics__link-cnr-l,
+.b-doska-other-rubrics_state_opened .b-doska-other-rubrics__link-cnr-r {
+	display:inline-block;
+}
+
+.b-doska-other-rubrics_state_opened .b-doska-other-rubrics__link-text {
+	background: url(../img/b-doska-other-rubrics-active-cnr.png) 0 -65px repeat-x;
+}
+
+
+/**/
+
+.b-doska-other-rubrics__wrap {
+	position: relative;
+}
+
+.b-doska-other-rubrics_state_opened .b-doska-other-rubrics__popup {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

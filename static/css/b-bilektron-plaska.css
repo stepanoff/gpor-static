@@ -1,0 +1,31 @@
+.b-bilektron-plaska {
+	background: #fef7d2;
+	font-size: 13px;
+	border-bottom: 1px solid #e5e5e5;
+	margin: 0 0 0.7em 0;
+}
+.b-bilektron-plaska__pad {
+	padding: 0.65em 10px 0.6em;
+	vertical-align: middle;
+}
+.b-bilektron-plaska p {
+	margin: 0px;
+	padding: 0px;
+	font-size: 0.95em;
+}
+.b-bilektron__ico {
+	background: #ffe2a3 url(../img/b-bilektron__ico.png) center center no-repeat;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	position:relative;
+	top: -1px;
+	margin: 0 5px;
+}
+
+.b-bilektron-plaska a:link,
+.b-bilektron-plaska a:visited,
+.b-bilektron-plaska a:hover,
+.b-bilektron-plaska a:active {
+	color: #007bd6;
+}

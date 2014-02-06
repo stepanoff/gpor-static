@@ -1,0 +1,9 @@
+.b-photoreport-preview__list {
+	overflow: hidden;
+	margin-right: -20px;
+}
+
+.b-photoreport-preview__list-pad {
+	width: 100%;
+}
+

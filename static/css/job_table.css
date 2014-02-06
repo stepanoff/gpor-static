@@ -1,0 +1,112 @@
+.wrap_table h3 { font-size: 18px; margin-bottom: -2px; font-family: arial, sans-serif; }
+table.job_table { width: 100%; font-family: arial, sans-serif; }
+.job_table tr th { padding-left: 12px; text-align: center;  }
+.job_table tr td { padding: 8px 0 6px 12px; }
+.job_table tr.job_nodd td { background: #f0f0f0; }
+.job_table th { font-size: 11px; color: #a8a8a8; padding-bottom: 3px; }
+.job_table td.ratings { text-align: center; }
+.job_table td.common-ratings { text-align: center; }
+.job_table td a { font-size: 14px; color: #037dd3; }
+.job_table td a.rating { color: #62870e; font-weight: bold; }
+.job_table td span { font-size: 14px; color: #606060; }
+
+.job_menus { margin: -4px 0 8px 0; }
+.job_menus noindex { display: block; }
+/*.job_menus a { ifont-size: 14px; font-family: arial, sanf-serif; }
+.job_menus .menus_thumbed_item { color: #037DD3; float: left; margin: 0 5px; padding: 4px 0 5px 0; border: none; }
+.job_menus .job_menu-item-current { background-color: #F17E00; margin: 0 3px; padding: 4px 10px 5px; }
+.job_menus .menus_thumbed_item .menus_thumbed_item_link { padding: 5px 2px; }*/
+
+.job_send-resume { background-color: #F1F5E8; padding: 20px 25px; font-family: arial, sans-serif; }
+.job_send-resume h2 { font-size: 24px; margin-bottom: 11px; }
+.job_send-resume .job_send-resume-left { background-color: white; padding: 20px 21px; }
+.job_send-resume h3 { font-size: 18px; margin-bottom: -5px; }
+.job_send-resume form label { font-size: 13px; font-weight: bold; margin: 20px 0 5px 0; }
+.job_send-resume form .job_label-common { display: block; }
+.job_send-resume form .job_set_checkbox { margin-bottom: 5px; }
+.job_send-resume form .button { margin-top: 18px; }
+.job_send-resume form .forms_text { height: 25px; padding: 0; }
+.job_send-resume .contact { padding-left: 16px; }
+.job_send-resume .company { margin-bottom: 18px; }
+.job_send-resume .company a { font-size: 14px; color: #0066cc; }
+.job_send-resume  h4 { margin-bottom: 7px; }
+.job_send-resume  h3 { font-size: 18px; margin-bottom: 6px; }
+
+.job_send-resume-window { background-color: #FFFFFF; padding: 0;}
+.job_send-resume-window form label { margin: 10px 0 5px 0; }
+
+.job_send-resume form .job_text-fio,
+.job_send-resume form .job_text-textarea { width: 85%; }
+.job_send-resume form .job_text-phone,
+.job_send-resume form .job_text-email { width: 60%; }
+.job_send-resume form .job_send { margin-bottom: 17px; }
+.job_send-resume form .job_mode { margin: 0; margin-top: 20px; }
+.job_send-resume form .job_mode .forms_radio,
+.job_send-resume form .job_mode .forms_label   { }
+.job_send-resume form .job_resume_none { text-decoration: none; border-bottom: 1px dashed #0066cc; font-weight: bold; font-size: 13px; }
+.job_send-resume form .job_send-text textarea { padding: 0; }
+.job_send-resume form .job_mode-file,
+.job_send-resume form .job_mode-text { margin-bottom: 20px; }
+.job_send-resume form .job_mode-file .forms_error ,
+.job_send-resume form .job_mode-text .forms_error  { width: 81%; }
+
+.job_send-resume form .forms_error { margin-top: 7px; padding: 7px 2%; background-color:#FFD6BF; border: 1px solid #DE4713; color: #A32D05; }
+
+.job_send-resume form .job_field-fio .forms_error,
+.job_send-resume form .job_send-text .forms_error { width: 81%; }
+.job_send-resume form .job_field-phone .forms_error,
+.job_send-resume form .job_field-email .forms_error,
+.job_send-resume form .job_send-file .forms_error { width: 56%; }
+
+.job_send-resume-my { border-top: 3px solid #f17e00; padding-top: 15px; margin-top: -3px; position: relative; }
+.job_send-resume-my h2 { font-size: 24px; margin-bottom: 11px; width: 60%; margin-left: 11px; }
+.job_table-jobs thead .update { width: 12%; text-align: center; }
+.job_table-jobs thead .rezume { width: 50%; }
+.job_send-resume-my .job_table-jobs tbody td.first-column { padding: 0; width: 12%; }
+.job_send-resume-my .job_table-jobs tbody td.first-column .first-column-offset { padding: 0; text-align: center; }
+.job_send-resume-my .job_table-jobs .city-edit { width: 20%; }
+.job_send-resume-my .job_table-jobs .city-delete { width: 18%; }
+
+.job_send-resume-add { background: #fef8de; border: 1px solid #fddeb5; }
+.job_send-resume-add .job_send-resume-add-in { padding: 18px 20px 19px 20px; }
+.job_send-resume-add .job_send-resume-add-in h2 { margin-left: 1px; font-size: 24px; margin-bottom: -4px; }
+.job_send-resume-add-in form .job_label-common { display: block; width: 100%; margin-bottom: 2px; margin-top: 9px; }
+.job_send-resume-add-in form fieldset .forms_text { padding: 0; height: 25px; width: 95%; }
+.job_send-resume-add-in form fieldset .forms_textarea { padding: 5px; height: 140px; width: 95%; }
+.job_send-resume-add-in form fieldset select { width: 95%; height: 28px; padding-top: 4px; }
+.job_send-resume-add-in form .job_set_checkbox { margin-top: 15px; }
+.job_send-resume-add-in form .buttons_wrap { margin-top: 25px; *margin-top: 22px; }
+.job_send-resume-add-in-left,
+.job_send-resume-add-in-right { float: left; width: 50%; _width: 49%; }
+.job_send-resume-add-in form .js_popup_button-higlited { padding: 3px 30px; width: 300px; }
+.job_send-resume-add-in form .job_set_checkbox input { margin-right: 6px; *position: relative; *top: -2px; }
+.job_send-resume-add-in-left .job_send { margin-bottom: 2px; margin-top: 11px; }
+.job_send-resume-add-in form .job_field-fio { margin-bottom: 2px; }
+.job_send-resume-add-in form .job_field-phone { margin-bottom: 2px; margin-top: 2px; }
+.job_send-resume-add-in form .job_field-fio .job_label-common,
+.job_send-resume-add-in form .job_field-phone .job_label-common,
+.job_send-resume-add-in form .job_field-email .job_label-common,
+.job_send-resume-add-in form .job_send .job_label-common { margin-bottom: 4px; }
+.job_send-resume-add-in form .job_set_checkbox  .job_guser { display: block; margin-top: 3px; margin-left: 23px; }
+
+.job_send-resume-add-in-right .job_send-file .job_send-file-download { margin-top: 6px; }
+.job_send-resume-add-in-right .job_send-file a { font-weight: bold; font-size: 13px; color: #037dd3; }
+.job_send-resume-add-in-right p { color: #454545; font-size: 13px; }
+.job_send-resume-add-in-right p a { color: #037dd3; font-size: 13px; }
+.job_send-resume-add-in-right .job_toprabota-logo { margin-bottom: 12px; display: block; width: 122px; height: 20px; background: none; }
+.job_send-resume-add-in-right .job_top_rabota-f { margin-bottom: 9px; line-height: 1.4; margin-top: 31px; }
+.job_send-resume-add-in-right .job_top_rabota-s { margin-bottom: 23px; line-height: 1.4; }
+.job_send-resume-add-in-right .job_top_rabota-t { line-height: 1.4; margin-bottom: 75px; }
+.job_send-resume-add-in-right .job_top_rabota-size { font-size: 13px; font-style: italic; margin-bottom: 5px; color: black; }
+.job_send-resume-add form fieldset .forms_error { padding: 7px 2%; margin-top:7px; color:#A32D05; background-color:#FFD6BF; width: 91%; border: 1px solid #DE4713; }
+.job_send-resume-add-in-right .job_send-resume-add-in-right-in { padding-left: 23px; }
+.job_send-file-download { margin-left: 1px; }
+
+
+
+
+
+
+
+
+

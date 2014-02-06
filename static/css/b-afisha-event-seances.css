@@ -1,0 +1,16 @@
+.b-afisha-event-seances {
+	width: 100%;
+	border-collapse: collapse;
+    margin: 10px 0 10px 0;
+}
+
+.b-afisha-booking-ico {
+	position:relative;
+	width: 11px;
+	height: 16px;
+	top: 4px;
+	background: url(../img/booking-ico.png) 0 0 no-repeat;
+	margin: 0 10px;
+	display: inline-block;
+}
+

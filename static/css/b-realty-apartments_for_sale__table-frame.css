@@ -1,0 +1,140 @@
+.b-realty-apartments_for_sale__table-frame__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0px 0 0px;
+}
+
+.b-realty-apartments_for_sale__table-frame__table th {
+	text-align: left;
+	background: #f1f5e8;
+	font-size: 11px;
+	color: #808080;
+	padding: 6px 10px 3px;
+	text-align: left;
+}
+
+.b-realty-apartments_for_sale__table-frame__table td {
+	padding: 0;
+	line-height: 18px;
+	padding: 0px 10px 0px;
+	vertical-align: top;
+}
+
+/**/
+
+.b-realty-apartments_for_sale__table__pad {
+	padding-top: 8px;
+	padding-bottom: 0px;
+}
+
+.b-realty-apartments_for_sale__table__col-2 .b-realty-apartments_for_sale__table__pad {
+	padding-bottom: 8px;
+	padding-right: 20px;
+}
+
+.col5 .b-realty-apartments_for_sale__table__pad {
+	padding-bottom: 8px;
+}
+
+.b-realty-apartments_for_sale__table__agency-div {
+	padding-bottom: 9px;
+}
+
+.b-realty-apartments_for_sale__table-frame__table td a {
+	position:relative;
+}
+
+.b-realty-apartments_for_sale__table-frame__table td.col1 {
+	width: 25%;
+}
+.b-realty-apartments_for_sale__table-frame__table td.col2 {
+	width: 25%;
+}
+.b-realty-apartments_for_sale__table-frame__table td.col3 {
+	width: 25%;
+}
+.b-realty-apartments_for_sale__table-frame__table td.col4 {
+	width: 25%;
+}
+.b-realty-apartments_for_sale__table-frame__table td.col5 {
+	width: 230px;
+}
+
+.b-realty-apartments_for_sale__table-frame__table .b-realty-apartments_for_sale__table__item-has-links td {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.b-realty-apartments_for_sale__table-frame__table img {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+	max-height: 15px;
+}
+
+.b-realty-apartments_for_sale__table__inner__ico {
+	position:relative;
+}
+
+td.b-realty-apartments_for_sale__table__col-1,
+td.b-realty-apartments_for_sale__table__col-2 {
+	padding: 0px;;
+}
+
+td.b-realty-apartments_for_sale__table__col-2 {
+	width: 25%;
+}
+
+.b-realty-apartments_for_sale__table__inner {
+	width: 100%;
+}
+
+.b-realty-apartments_for_sale__table__pad__hypo {
+	position: relative;
+}
+
+.b-realty-apartments_for_sale__table__pad__hypo_balloon {
+	position: absolute;
+	visibility: hidden;
+	padding: 7px 10px;
+	border: 1px solid #999;
+	background: white;
+	z-index: 9999;
+	border-radius: 3px;
+	box-shadow: 0px 0px 6px #666;
+	top: 40px;
+}
+.b-realty-apartments_for_sale__table__pad__hypo_balloon:after, .b-realty-apartments_for_sale__table__pad__hypo_balloon:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.b-realty-apartments_for_sale__table__pad__hypo_balloon:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: white;
+	border-width: 10px;
+	left: 50%;
+	margin-left: -10px;
+}
+.b-realty-apartments_for_sale__table__pad__hypo_balloon:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #999;
+	border-width: 11px;
+	left: 50%;
+	margin-left: -11px;
+}
+
+.b-realty-apartments_for_sale__table__pad__hypo:hover .b-realty-apartments_for_sale__table__pad__hypo_balloon {
+	visibility: visible;
+
+}
+
+.realty-table-block__hypo__contextblock {
+	display: none;
+}

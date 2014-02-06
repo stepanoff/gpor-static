@@ -1,0 +1,86 @@
+.b-afisha-film-annonce {
+	font-size: 13px;
+	margin-bottom: 0.85em;
+}
+
+.b-afisha-film-annonce__title {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	margin: 0px;
+	margin-left: 10px;
+	padding: 0px;
+}
+.b-afisha-film-annonce__title-more {
+	margin-left: 10px;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: normal;
+	position:relative;
+	top: -2px;
+	margin-bottom: 1.05em;
+}
+
+.b-afisha-film__table {
+	width: 100%;
+}
+
+.b-afisha-film__table td {
+	vertical-align: top;
+}
+
+.b-afisha-film__table__pic {
+	width: 290px;
+}
+
+.b-afisha-film__table__text {
+	padding-left: 10px;
+}
+
+
+
+.b-afisha-film__short-annonce {
+	font-size: 13px;
+}
+
+.b-afisha-film__short-annonce td,
+.b-afisha-film__short-annonce th {
+	font-size: 85%;
+	line-height: 1.65em;
+	padding-bottom: 0.2em;
+}
+
+.b-afisha-film__short-annonce th {
+	font-weight: bold;
+	text-align: left;
+}
+.b-afisha-film__short-annonce td {
+	padding-left: 20px;
+}
+
+.b-afisha-film__annonce {
+	margin-top: 18px;
+}
+
+.b-afisha-film__annonce p {
+	font-size: 105%;
+	line-height: 1.47em;
+	padding-bottom: 0.2em;	
+}
+
+.b-afisha-film-annonce-head {
+	position: relative;
+	padding-right: 210px;
+}
+
+.b-afisha-film-annonce-head-pannel {
+	position:absolute;
+	right: 0px;
+	top: 0.5em;
+}
+
+.b-afisha-film-annonce-bottom-pannel {
+	position:relative;
+	overflow: hidden;
+	margin: 20px 0;
+}

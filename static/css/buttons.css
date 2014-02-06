@@ -1,0 +1,170 @@
+/**
+ * @package portal
+ */
+
+/**
+ * Общие кнопки
+ *
+ * @subpackage buttons
+ */
+
+/**
+ * @see portal.common.inlineBlocks
+ * @see portal.buttonsIe
+ */
+
+.button {
+    display: inline-block;
+}
+
+/**
+ * Основные кнопки
+ *
+ * @section common
+ */
+.buttons_common {
+    background: #759E17 url('../img/backgrounds-x.png') repeat-x 0 -90px;
+}
+
+.buttons_common {
+    padding: 4px 8px;
+}
+
+.buttons_common,
+.buttons_common * {
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/**
+ * Обёртка кнопок
+ */
+.buttons_wrap,
+.buttons_wrap-grey {
+    background: #759E17 url('../img/backgrounds-x.png') repeat-x 0 -120px;
+    padding: 10px;
+}
+
+.button_wrap-width-link {
+	background: #759E17 url('../img/background_width-link-x.png') repeat-x 0 0px;
+	padding:5px 10px;
+	color: #fff;
+}
+
+.buttons_wrap-grey {
+	background:#ebe6d1;
+}
+
+
+/**
+ * Маленькие квадратненькие иконки
+ * @section small
+ * @see portal.buttonsIe.small
+ */
+.buttons_edit_small,
+.buttons_remove_small,
+.buttons_remove2_small,
+.buttons_anchor_small,
+.buttons_report_small,
+.buttons_union_small {
+    background: url('../img/icons.png') no-repeat;
+    border: none !important;
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    overflow: hidden;
+    text-indent: -999px;
+    vertical-align: middle;
+    width: 14px;
+}
+
+.buttons_remove2_small.buttons_normal {
+	width: auto !important; 
+	text-indent: 0 !important;
+	padding-left: 16px;
+}
+
+.buttons_edit_small.buttons_normal {
+	width: auto !important; 
+	text-indent: 0 !important;
+	padding-left: 16px;
+}
+
+* html .buttons_edit_small,
+* html .buttons_remove_small,
+* html .buttons_remove2_small,
+* html .buttons_anchor_small,
+* html .buttons_report_small,
+* html .buttons_union_small {
+    background-image: url('../img/icons.ie.png');
+}
+
+.buttons_edit_small {
+    background-position:  -117px -1047px;
+}
+
+.buttons_remove_small {
+    background-position:  -103px -1111px;
+}
+
+.buttons_remove2_small {
+    background-position:  -266px -353px;
+}
+
+.buttons_anchor_small {
+    background-position:  -25px -1441px;
+}
+
+.buttons_report_small {
+    background-position:  -11px -1505px;
+}
+
+.buttons_union_small {
+    background-position:  -224px -594px;
+    margin-left: 5px;
+}
+
+/**
+ * Кнопка, которая выглядит как ссылка
+ * @section link
+ */
+.buttons_link {
+    background: transparent;
+    border: none;
+	color: #037DD3;
+    cursor: pointer;
+    padding: 0;
+	text-decoration: underline;
+}
+
+.edit-button_icon,
+.delete-button_icon,
+.uploaderStatus__delete-button_icon  {
+	background: url("../img/icons.png") no-repeat scroll -131px -982px transparent;
+	padding-left: 18px;	
+}
+
+.delete-button_icon,
+.uploaderStatus__delete-button_icon  {
+	background-position: -258px -410px;
+}
+
+.page-grid .button_wrap-width-link a {
+	font-size: 0.85em;
+}
+
+.button_wrap-width-link a:link,
+.button_wrap-width-link a:visited {
+	color: #fff;
+}
+.button_wrap-width-link a:hover,
+.button_wrap-width-link a:active {
+	color: #fff
+}
+
+
+
+
+

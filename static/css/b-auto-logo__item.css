@@ -1,0 +1,12 @@
+.b-auto-logo__item {
+    display: block;
+    padding-top: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+a.b-auto-logo__item {
+	outline: none;
+}

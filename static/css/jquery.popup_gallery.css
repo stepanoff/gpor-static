@@ -1,0 +1,27 @@
+.j-popup-gallery-photoblock { margin-bottom: 14px; }
+.j-popup-gallery-photoblock__header { font-size: 18px; margin-bottom: 15px; }
+.j-popup-gallery-photoblock {/* margin-left: -8px;*/ }
+.j-popup-gallery-photoblock .j-popup-gallery-preview { overflow: hidden; }
+.j-popup-gallery-photoblock .j-popup-gallery-preview .j-popup-gallery-preview-item { float: left; margin: 0 10px 10px 0; }
+.j-popup-gallery-photoblock { float:left; margin-right:-15px; width:260px; }
+
+.j-gallery li { width: 75px; height: 75px; float: left; margin: 0 10px 10px 0; cursor:pointer; }
+.j-gallery li a { display: block; width: 75px; height: 75px; }
+
+.i-rooms_content-item-left .j-popup-gallery-photoblock { float: none; width: auto; margin-right: 0; }
+
+
+.i-rooms_content .j-popup-gallery-preview .preview-item { width: 75px; height: 75px; }
+.j-popup-gallery { display: none; }
+.popup-gallery { overflow: hidden; left: -400px; top: 0; background: white; z-index: 99999; width: 680px; }
+.popup-gallery .j-popup-gallery-thumbs-item { float: left; margin: 0 4px; }
+.popup-gallery .j-popup-gallery-thumbs-item a { border: 1px solid white; display: block; outline: none; width: 75px; height: 75px; background-position: 0 0; background-repeat: no-repeat; }
+.popup-gallery .j-popup-gallery-thumbs-item-current a { border: 1px solid black; }
+.popup-gallery .popup-gallery-prev-next { text-align: center; }
+.popup-gallery .popup-gallery-prev-next .popup-gallery-prev { margin-right: 60px; margin-bottom: 13px; font-size: 18px; color: #037DD3; font-family: arial; }
+.popup-gallery .popup-gallery-prev-next .popup-gallery-next { margin-bottom: 13px; font-size: 18px; color: #037DD3; font-family: arial; }
+.popup-gallery .popup-gallery-prev-next span.popup-gallery-prev,
+.popup-gallery .popup-gallery-prev-next span.popup-gallery-next { color: gray; }
+.popup-gallery .j-popup-gallery-images { display: none; border:1px solid green; }
+.popup-gallery .j-popup-gallery-image-view { width: 680px; overflow: hidden; }
+.popup-gallery .j-popup-gallery-thumbs { margin: 0 auto 10px; width: 680px; }

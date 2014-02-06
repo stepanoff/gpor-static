@@ -1,0 +1,96 @@
+.b-complaint-popup {
+	position:absolute;
+	width:145px;
+	top:0px;
+	float:left;
+	z-index: 120;
+	display: none;
+	
+	
+}
+.b-complaint-popup__text {
+	background: #eef2de;
+	padding: 4px 0;
+}
+.b-complaint-popup__frame{
+	position:relative;
+	overflow:hidden;
+	padding: 22px 0 16px 0;
+}
+.b-complaint-popup__content {
+	padding: 0px 20px 0 22px;
+	position:relative;
+	overflow:hidden;
+	z-index:10;
+}
+.b-complaint-popup__frame .b-complaint-popup__blc-cn{
+	position:absolute;
+	width: 25px;
+	height:16px;
+	left:-25px;
+	top:0px;
+}
+.b-complaint-popup__frame .b-complaint-popup__blc-cn.b-complaint-popup__blc-tr, 
+.b-complaint-popup__frame .b-complaint-popup__blc-cn.b-complaint-popup__blc-br {
+	margin-left:100%;
+}
+.b-complaint-popup__frame .b-complaint-popup__blc-cn.b-complaint-popup__blc-bl, 
+.b-complaint-popup__frame .b-complaint-popup__blc-cn.b-complaint-popup__blc-br {
+	top:auto;
+}
+.b-complaint-popup__frame .b-complaint-popup__blc-cn{
+	background:url(../img/b-complaint-star2.png);
+}
+.b-complaint-popup__frame .b-complaint-popup__blc-cn.b-complaint-popup__blc-tl, 
+.b-complaint-popup__frame .b-complaint-popup__blc-cn.b-complaint-popup__blc-bl {
+	width:100%;
+}
+.b-complaint-popup__frame .b-complaint-popup__blc-tr {
+	background-position: left bottom;
+	height: 22px;
+}
+.b-complaint-popup__frame .b-complaint-popup__blc-cn.b-complaint-popup__blc-tl {
+	background-position: 0 bottom;
+	height: 22px;
+}
+.b-complaint-popup__frame .b-complaint-popup__blc-cn.b-complaint-popup__blc-bl {
+	background-position: 0 top;
+} 
+.b-complaint-popup__left-line {
+	background:url(../img/b-complaint-star2-l.png);
+	position:absolute;
+	right:1px;
+	top:0px;
+	width:23px;
+	height:800px;
+}
+.b-complaint-popup__right-line {
+	background:url(../img/b-complaint-star2-r.png);
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:23px;
+	height:800px;
+}
+
+a.b-complaint-popup__close-link {
+	outline: none;
+	background: url(../img/b-complaint-close.png) 0 0 no-repeat;
+	display: block;
+	position:absolute;
+	right: 11px;
+	top: 10px;
+	width: 8px;
+	height: 8px;
+	z-index: 100;
+}
+
+.b-complaint-popup__text__list {
+	margin-bottom: -7px;
+	padding-top: 6px;
+}
+
+.b-complaint-popup__text__list li {
+	margin-bottom: 7px;
+}
+

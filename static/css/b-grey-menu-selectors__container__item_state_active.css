@@ -1,0 +1,25 @@
+.b-grey-menu-selectors__container__item_state_active {
+	background: #fdba45 url(../img/b-grey-menu-selectors-current-bg.png) 0 0 repeat-x;
+    border: none;
+    color: #fff;
+}
+
+/*.b-grey-menu-selectors__container__item_state_active:hover {
+	background-position: 0 -35px;
+}*/
+
+/*.b-grey-menu-selectors__container__item_state_active:active,
+.context .b-grey-menu-selectors__container__item_state_active_pushed {
+	background-position: 0 -70px;
+}*/
+
+
+.b-grey-menu-selectors__container__item_state_active a {
+	color: #fff;
+	outline: none;
+}
+
+.b-grey-menu-selectors__container__item_state_active a ins {
+	color: #fff;
+    border: none;
+}

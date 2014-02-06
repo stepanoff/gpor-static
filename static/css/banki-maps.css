@@ -1,0 +1,27 @@
+.found_body .found_body_left,
+.found_body .found_body_right { width: 50%; float: left; }
+.found_body .found_body_left { padding-top: 13px; }
+.found_body .found_body_right-in { padding-left: 10px; }
+.found_body .item_offer { margin-bottom: 10px; }
+.found_body .work-clock { font-weight: bold; margin-bottom: 1em; }
+.found_body .landmark,
+.found_body .phones { margin-bottom: 0.55em; margin-top: 1em; }
+.item_offer_active {background: #E5EFCC !important; overflow: hidden; }
+
+.banki-balloon .banki-address {
+    margin-top:1em;
+    margin-bottom:1em;
+}
+.banki-balloon .banki-landmark,
+.banki-balloon .banki-phones
+{
+    margin-bottom:1em;
+}
+.banki-balloon .banki-worktime-title {
+    font-size:0.9em;
+    color:#666;
+    margin-bottom: 0.3em;
+}
+.banki-balloon .banki-worktime {
+    margin-bottom: 0.5em;
+}

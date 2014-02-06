@@ -1,0 +1,14 @@
+.display_show_0 {
+	display: none;
+}
+
+.display_show_1 {
+	display: block;
+}
+
+.display_layout_inline-block {
+    display: -moz-inline-stack;
+    display: inline-block;
+    //display: inline;
+    //zoom: 1;
+}

@@ -1,0 +1,24 @@
+.b-dashed-sep {
+	background: url(../img/b-dashed-sep.gif) 0 center repeat-x;
+	padding: 10px 0;
+}
+
+.b-dashed-sep-20 {
+	background: url(../img/b-dashed-sep.gif) 0 center repeat-x;
+	padding: 20px 0;
+}
+
+.b-dashed-sep-30 {
+	height: 30px;
+	background: url(../img/b-dashed-sep.gif) 0 center repeat-x;
+}
+
+.b-sep-10 {
+	margin: 9px 0 10px;
+	height: 1px
+}
+
+.b-sep-20 {
+	margin: 20px 0;
+	height: 1px
+}

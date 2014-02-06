@@ -1,0 +1,7 @@
+.context .b-events-list-cards__col__item_type_green {
+	background: #e6f6da;
+}
+
+.b-events-list-cards__col__item_type_green .b-events-list-cards__col__item__pad {
+	/*padding-bottom: 0px;*/
+}

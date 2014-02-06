@@ -1,0 +1,93 @@
+.b-doska-card {
+	margin-top: 15px;
+	border-bottom: 3px solid #ff8f00;
+	padding-bottom: 13px;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+
+.b-doska-card__wrap {
+	padding-right: 260px;
+}
+
+.b-doska-card__wrap__content {
+	float: left;
+	padding-right: 10px;
+}
+
+.b-doska-card__social {
+	height: 20px;
+	position:relative;
+	top: -3px;
+}
+
+.b-doska-card__title {
+	font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 3px;	
+}
+
+.b-doska-card__details {
+	color: #898989;
+	margin-bottom: 15px;	
+}
+
+.b-doska-card__details em {
+	color: #000;
+}
+
+.b-doska-card__wrap__contacts {
+	position:relative;
+	float: right;
+	width: 260px;
+	margin-right: -260px;
+}
+
+.b-doska-card__wrap-box {
+	
+	
+	
+	background: #eef3dd;
+	padding: 17px 20px 20px;
+	position:relative;
+	top: 0px;
+}
+
+.b-doska-card__wrap__contacts__cost {
+	font-size: 30px;
+	font-weight: bold;
+}
+.b-doska-card__wrap__contacts__button {
+	margin: 20px 0 16px;
+	
+}
+.b-doska-card__wrap__contacts__title {
+	font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 5px;
+	
+}
+.b-doska-card__wrap__contacts__phones {
+	font-size: 18px;
+    
+    line-height: 22px;
+    margin-bottom: 4px;	
+}
+
+.b-doska-card__wrap__contacts__phones .b-link {
+	font-size: 13px;
+}
+
+
+.b-doska-card__wrap__contacts-virtual {
+	font-size: 14px;
+    line-height: 26px;
+    margin-top: 11px;
+}
+.b-doska-card__wrap__contacts__events {
+	margin-top: 10px;
+}
+.b-doska-card__wrap__contacts__events li {
+	margin-bottom: 7px;
+	position:relative;
+}

@@ -1,0 +1,126 @@
+.b-subscriber__container  {
+	padding: 15px 20px 17px;
+	position:relative;
+}
+
+.b-subscriber .b-btn {
+	margin-right: -2px;
+}
+
+
+.b-subscriber__cnr {
+	display: none;
+}
+
+@media screen and (max-width: 1100px) {
+	.b-subscriber__container__capture {
+		float: none;
+		margin-left: 30px;
+	}
+	.b-subscriber .b-link-ico_img_toggle-arr-dwn,
+	.b-subscriber .b-link-ico_img_toggle-arr-up {
+		margin-bottom: 20px;
+	}
+	.b-btn__text {
+		padding: 0 10px;
+	}	
+	.context .b-btn {
+		min-width: 20px;
+	}
+}
+
+
+/*_color*/
+.b-subscriber__container_color_dark-green {
+	background: #779f1a;
+}
+
+.b-subscriber__container_color_soft-green {
+	background: #eef2de;
+}
+.b-subscriber__container_color_soft-green .b-subscriber__container__cnr	{
+	background-position: 0px 0;
+}
+
+.b-subscriber__container_color_footer-green  {
+	background: #d2deb8;
+}
+
+.b-subscriber__container_color_footer-green .b-subscriber__container__cnr {
+	background-position: -20px 0;
+}
+
+
+
+/*__title*/
+.b-subscriber__container__title {
+	font-size: 21px;
+	color: #fff;	
+	margin-bottom: 4px;
+}
+
+/*__descr*/
+.b-subscriber__container__descr {
+	color: #d6e2bb;
+	margin-bottom: -2px;
+}
+
+/*__table*/
+.b-subscriber__container__table {
+	width: 100%;
+	margin: -5px 0 -7px;
+}
+.b-subscriber__container__table__cell {
+	vertical-align: middle;
+	padding: 0 10px;
+	white-space: nowrap;
+}
+.b-subscriber__container__table__cell.short {
+	width: 1%;
+	padding: 0px;
+}
+
+	/*__input*/
+	.b-subscriber__container__table input[type="text"] {
+		
+		font-size: 13px;
+		text-indent: 5px;
+		width: 100%;
+		height: 30px;
+		
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;  	
+	}
+
+	/*__label*/
+	.b-subscriber__container__table__label {
+		font-size: 14px;
+	}
+
+/*__list*/
+.b-subscriber__container__list {
+	padding-left: 20px;
+	position: relative;
+	margin-top: 13px;
+	overflow: hidden;
+	margin-bottom: -15px;
+}
+.b-subscriber__container__list__item__title {
+	position: relative;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+.b-subscriber__container__list__item__title input[type="checkbox"] {
+	position: absolute;
+	left: -20px;
+	top: 3px;
+}
+.b-subscriber__container__list__item__descr {
+	color: #8a8f7e;
+	margin-bottom: 15px;
+}
+
+.b-subscriber__container-relative {
+	position:relative;
+}

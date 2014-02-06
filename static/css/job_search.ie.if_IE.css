@@ -1,0 +1,14 @@
+.job_search { *padding: 9px 0 10px 0; _padding-bottom: 9px; }
+.job_search .job_top .job_prof { height: 21px; *height: 18px; padding-top: 2px; *padding-top: 6px; width: 67%; border: 1px solid #abadb3; }
+.job_search .job_top .ie6-fix { height: 28px; }
+div.job_result .job_bottom select.job_set-city { float: right; margin-right: 9px; _margin-top: 4px; _margin-right: 11px; }
+div.job_result .job_bottom { margin-left: 129px; width: 67%; padding-bottom: 0; _padding-left: 129px; *padding-top: 5px; }
+div.job_result .job_bottom .job_in-sity { float: right; _margin-top: 8px; }
+.job_middle .section { _margin-top: -1px; *margin-top: -2px; }
+.job_middle .section-text { margin-top: 2px; _margin-top: 5px; }
+.job_search .job_top .job_submit { height: 28px; *position: relative; *top: 6px; _position: relative; _top: 6px; }
+.onejob-right-bottom .br-left { *margin-left: 7px; _margin-left: 10px; }
+.onejob-right-bottom .br-right { *margin-right: 13px; _margin-right: 0; }
+.job_top-menu { margin-left: -3px; }
+.job_search_main { padding-bottom: 7px; }
+.job_banners .job_banner_one a { *text-decoration: underline; *position: relative; }

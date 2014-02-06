@@ -1,0 +1,54 @@
+.b-form__item__control-box {
+	background: #fff url(img/b-form__input-bg.gif) 0 0 repeat-x; 
+	/*border: 1px solid #dfdfdf;
+	border-bottom: none;*/
+	border-radius: 2px 2px 2px 2px;
+	overflow: hidden;
+	width: 100%;
+	padding: 2px 0;
+}
+
+.b-form__item__control-box_layout_short {
+	width: auto;
+	float: left;
+}
+
+.b-form__item__control-box_layout_error {
+	border: 2px solid #ff9d00; 
+	position: relative; 
+	top: -2px;
+}
+
+.b-form__item__control-input,
+.b-form__item__control-select {
+	font-size: 12px;
+	border: none;
+	height: 22px;
+	
+	display: block;
+	padding: 2px 0 1px;
+	
+}
+
+.b-form__item__control-textarea {
+	font-size: 12px;
+	border: none;
+	display: block;
+	padding: 2px 0 1px;
+}
+
+.b-form__item__control-select {
+	float: right;
+	margin-right: 2px;
+}
+
+.b-form__item__control-choice {
+	position: relative;
+	top: 2px;
+	margin-right: 3px;
+}
+
+
+.b-form__item__control-input {
+	text-indent: 5px;
+}

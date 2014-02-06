@@ -1,0 +1,72 @@
+a.b-read-more-link {
+    display: block;
+    height: 31px;
+    margin-bottom: 0px;
+    position: relative;
+	background: url(../img/readmore-green.png) 0 0 repeat-x;
+	outline: none;
+}
+
+.context a.b-read-more-link_state_deployed {
+	background: url(../img/readmore-orange.png) 0 0 repeat-x;
+}
+
+a.b-read-more-link ins {
+    text-decoration: none;
+}
+
+.b-read-more-link__text {
+    font-size: 13px;
+    height: 31px;
+    left: 10px;
+	top: 3px;
+    position: relative;
+	float: left;
+    text-align: center;
+	color: #fff;
+	padding-right: 0px;
+	padding-left: 0px;
+	line-height: 26px;
+	white-space: nowrap;
+}
+
+.b-read-more-link__text_color_green {
+	background: url("../img/readmore.png") repeat-x scroll 0 -32px transparent;
+}
+.b-read-more-link__text_icon_green-dwn ins {
+	background: url("../img/readmore.png") right 0px no-repeat;
+	display: block;
+	height: 31px;
+	padding-left: 10px;
+	padding-right: 32px;
+}
+
+.b-read-more-link__text_color_orange {
+	background: url("../img/readmore.png") repeat-x scroll 0 -96px transparent;
+}
+.b-read-more-link__text_icon_orange-up ins {
+	background: url("../img/readmore.png") right -64px no-repeat;
+	display: block;
+	height: 31px;
+	padding-left: 10px;
+	padding-right: 32px;
+}
+.b-read-more-link__text_icon_arrow-up ins {
+	background: url("../img/readmore.png") -10px -136px no-repeat;
+	display: block;
+	height: 31px;
+	padding-left: 16px;
+	padding-right: 10px;
+}
+
+a.b-read-more-link .b-read-more-link__text_color_orange {
+    display: none;
+}
+a.b-read-more-link_state_deployed .b-read-more-link__text_color_green {
+    display: none;
+}
+a.b-read-more-link_state_deployed .b-read-more-link__text_color_orange {
+    display: block;
+}
+
+

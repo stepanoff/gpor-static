@@ -1,0 +1,105 @@
+.b-rating {
+	position:relative;
+	background: #efefef;
+	height: 20px;
+	padding: 0 20px;
+	float: left;
+	margin: 0 10px 0px 0;
+}
+
+
+.b-rating__control {
+	background: url(../img/b-rating-sprite.png) 0 0 no-repeat;
+}
+
+a.b-rating__control,
+a.b-rating__control:link,
+a.b-rating__control:visited {
+	outline: none;
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	text-decoration: none;
+	
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	
+}
+
+a.b-rating__control img {
+	display: block;
+	width: 20px;
+	height: 20px;
+	color: #757575;
+}
+
+a.b-rating__minus {
+	left: 0px;
+	background-position: 5px 9px;
+}
+
+a.b-rating__minus:hover,
+a.b-rating__minus:active {
+	background-position: -25px 9px;
+}
+
+a.b-rating__plus {
+	right: 0px;
+	background-position: 5px -17px;
+}
+
+a.b-rating__plus:hover,
+a.b-rating__plus:active {
+	background-position: -25px -17px;
+}
+
+.js-b-rating-disabled a.b-rating__minus:link,
+.js-b-rating-disabled a.b-rating__minus:visited,
+.js-b-rating-disabled a.b-rating__minus:hover,
+.js-b-rating-disabled a.b-rating__minus:active {
+	background-position: 5px -87px;
+	cursor: default;
+}
+
+.js-b-rating-disabled a.b-rating__plus:link,
+.js-b-rating-disabled a.b-rating__plus:visited,
+.js-b-rating-disabled a.b-rating__plus:hover,
+.js-b-rating-disabled a.b-rating__plus:active {
+	background-position: -25px -87px;
+	cursor: default;
+}
+
+.b-rating__value {
+	background: #498106 url(../img/b-rating-sprite.png) 0 -52px repeat-x;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	font-weight: bold;
+	padding: 0 0px;
+	width: 40px;
+	text-align: center;
+}
+
+.js-b-rating__value-negative {
+	background: #414141 url(../img/b-rating-sprite.png) 0 -122px repeat-x;
+}
+
+.b-rating__value-sign {
+	text-decoration: none;
+	width: 8px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 12px;
+}
+
+.b-rating__value-sign-minus {
+	background: url(../img/b-rating-sprite.png) 0 -145px no-repeat;
+}
+.b-rating__value-sign-plus {
+	background: url(../img/b-rating-sprite.png) -8px -145px no-repeat;
+}
+
+

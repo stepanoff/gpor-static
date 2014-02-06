@@ -1,0 +1,84 @@
+.pic-with-repo {
+	float: left;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	clear: both;
+}
+
+.pic-with-repo span {
+	display: block;
+}
+
+.pic-with-repo__text {
+	font: 14px/21px Arial, Tahoma, Sans-Serif;	
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+    padding: 18px 0px;
+    background: url(../img/repobg.png) 0 0 no-repeat;
+}
+
+.news_single_content a.pic-with-repo:link,
+.news_single_content a.pic-with-repo:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+.news_single_content a.pic-with-repo:hover,
+.news_single_content a.pic-with-repo:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.pic-with-repo  img {
+	font-size: 1px;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+
+.pic-with-repo__text-pad {
+    margin-left: 130px;
+    padding-right: 20px;
+}
+
+.pic-with-repo__text-pad span {
+    margin-bottom: 3px;
+}
+
+* html .pic-with-repo__text-pad {
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/repobg.png', sizingMethod='crop');
+} 
+
+.pic-with-repo__text p,
+div.news-single div.content .pic-with-repo__text p {
+	margin: 0px;
+	margin-bottom: 6px;
+    _height: expression(this.scrollHeight > 40 ? "40px" : "auto");
+    max-height: 40px;		
+    overflow: hidden;
+}
+
+.pic-with-repo__count {
+	font: 18px/24px Arial, Tahoma, Sans-Serif;
+}
+
+.pic-with-repo__button {
+	width: 85px;
+	height: 53px;
+    left: 20px;
+	float: left;
+	position: relative;
+	background: url(../img/repobut.png) 0 0 no-repeat;
+}
+
+* html .pic-with-repo__button {
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/repobut.png', sizingMethod='crop');
+} 
+

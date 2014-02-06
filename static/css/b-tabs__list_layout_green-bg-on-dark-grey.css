@@ -1,0 +1,42 @@
+.b-tabs_layout_green-bg-on-dark-grey {}
+.b-tabs_layout_green-bg-on-dark-grey ul {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.b-tabs_layout_green-bg-on-dark-grey .b-tabs__list__item {
+	background: #b8bbac;
+	border-right: 1px solid #8a8f7e;
+	font-size: 11px;
+}
+.b-tabs_layout_green-bg-on-dark-grey .b-tabs__list__item.b-tabs__list__item_state_active {
+	background: #eef3dd;
+}
+.b-tabs_layout_green-bg-on-dark-grey .b-tabs__list__item.b-tabs__list__item_state_innactive {
+	background: #a1a595;
+}
+.b-tabs_layout_green-bg-on-dark-grey .b-tabs__list__item a.b-tabs__list__item__link {
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+.b-tabs_layout_green-bg-on-dark-grey .b-tabs__list__item__inner {
+	color: #fff;
+	border-bottom: 1px dashed #fff;
+	font-weight: bold;
+}
+.b-tabs_layout_green-bg-on-dark-grey .b-tabs__list__item.b-tabs__list__item_state_active .b-tabs__list__item__inner {
+	color: #000;
+	border-bottom: none;
+	font-weight: bold;
+}
+.b-tabs_layout_green-bg-on-dark-grey .b-tabs__list__item.b-tabs__list__item_state_innactive .b-tabs__list__item__inner {
+	color: #d0d2ca;
+	border-bottom: none;
+	font-weight: bold;
+}
+.b-tabs_layout_green-bg-on-dark-grey .b-tabs__list__item__inner span {
+	font-weight: bold;
+}
+
+.b-tabs__list__item_state_innactive .b-tabs__list__item__link {
+	cursor: default
+}

@@ -1,0 +1,8 @@
+@import url(__item/b-feed-logo__item.css);
+
+.context .b-feed-logo {
+	padding: 0 5px;
+    width: 10%;		
+}
+
+

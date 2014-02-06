@@ -1,0 +1,21 @@
+.b-exclusive__item_col_3 {
+	width: 33%;
+}
+
+.b-exclusive__item.b-exclusive__item_col_3__sep {
+	display: none;
+}
+
+@media screen and (max-width: 1100px) {
+	
+	.b-exclusive__item_col_3 {
+		width: 100%;
+		display: block;
+		float: left;
+	}
+	
+	.b-exclusive__item.b-exclusive__item_col_3__sep {
+		display: none;
+	}
+	
+}

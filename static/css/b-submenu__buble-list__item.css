@@ -1,0 +1,21 @@
+.b-submenu__buble-list__item {
+	border-top: 1px solid transparent;
+	padding: 3px 10px 8px 10px;
+}
+
+.b-submenu__buble-list__item:hover {
+	background: #ffa900;
+	border-top: 1px solid #e59800;
+}
+
+.b-submenu__buble-list__item:hover a.b-submenu-bubles__list__item__link {
+	color: #fff;
+	text-decoration: none;
+	border: none;
+}
+
+a.b-submenu__buble-list__item__link {
+	text-decoration: none;
+	border-bottom: 1px solid #037dd3;
+	outline: none;
+}

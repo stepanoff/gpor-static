@@ -1,0 +1,12 @@
+.b-read-more__control__text {
+	margin-left: 30px;
+	position: relative;
+	top: 7px;
+	float: left;
+}
+.b-read-more__text_display_none {
+	display: none;
+}
+.b-read-more__text {
+    padding: 0 20px;
+}

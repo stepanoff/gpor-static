@@ -1,0 +1,92 @@
+body .hotels_wrap_hotel-bottom-booking .fio_guest input,
+body .hotels_wrap_hotel .hotels_wrap_hotel-bottom-booking .date_picker input,
+body .hotels_wrap_hotel-bottom-booking .choise_number input,
+body .hotels_wrap_hotel-bottom-booking .client_data .choise_number-top-pay,
+body .hotels_wrap_hotel-bottom-booking .client_data input,
+body .hotels_wrap_hotel .hotels_wrap_hotel-bottom-booking .date_picker input { height: 17px; padding: 3px 0; }
+
+
+body .hotels_wrap_hotel-bottom-booking .other .js_popup_button-higlited { *width: 200px; }
+body .hotels_siearch-bottom .hotels_rating-after .forms_submit { top: 0; margin-top: 0; }
+body .hotels_search .hotels_search-top #hotels-search-form_price_to { height: 15px; }
+body .hotels_siearch-bottom .hotels_rating-after #hotels-search-form_address { height: 15px; }
+body .hotels_siearch-bottom .hotels_rating-after .forms_submit { top: 2px; }
+body .hotels_siearch-bottom .hotels_rating-after .hotels_short-addr { position: relative; top: 1px; }
+body .hotels_siearch-bottom .hotels_rating-after .hotels_poiner-area { position: relative; top: 1px; }
+body .rating { margin-top: 0; position: relative; top: 1px; }
+body .hotels_search .raions { top: 0; }
+
+
+* html .hotels_pray .hotels_pray-r,
+* html .hotels_pray .hotels_pray-b,
+* html .hotels_pray .hotels_pray-l { 
+	height: 0; 
+}
+	
+* html .hotels_pray .hotels_pray-tt,
+* html .hotels_pray .hotels_pray-rr,
+* html .hotels_pray .hotels_pray-bb,
+* html .hotels_pray .hotels_pray-bb *,
+* html .hotels_pray .hotels_pray-ll,
+* html .hotels_pray .hotels_pray-ll * {
+	display: block;
+	position: absolute;
+	left: 0; top: 0;
+}
+
+* html .hotels_pray .hotels_pray-tt {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hotels/pray-t.png', sizingMethod='crop');
+}
+
+* html .hotels_pray .hotels_pray-rr {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hotels/pray-r.png',sizingMethod='crop');
+}
+
+* html .hotels_pray .hotels_pray-tt,
+* html .hotels_pray .hotels_pray-bb {
+	width: expression( parentNode.offsetWidth ); 
+	height: 30px;
+}
+
+* html .hotels_pray .hotels_pray-rr,
+* html .hotels_pray .hotels_pray-ll {
+	width: 30px; 
+	height: expression( parentNode.offsetHeight );
+}
+
+* html .hotels_pray .hotels_pray-bb,
+* html .hotels_pray .hotels_pray-ll {
+	overflow: hidden;
+}
+
+* html .hotels_pray .hotels_pray-bb * {
+	width: 3000px; 
+	height: 30px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hotels/pray-b.png',sizingMethod='crop');
+}
+
+* html .hotels_pray .hotels_pray-ll * {
+	width: 30px; 
+	height: 3000px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hotels/pray-l.png',sizingMethod='crop');
+}
+
+/* Исправляем неправильный расчет позиции при "нечетной ширине" */
+* html .hotels_pray .hotels_pray-rr,
+* html .hotels_pray .hotels_pray-bb * { 
+	right: expression( this.parentNode.offsetWidth % 2 ? -1 : 0 ); 
+	left: auto; 
+}
+
+* html .hotels_pray .hotels_pray-ll,
+* html .hotels_pray .hotels_pray-ll *,
+* html .hotels_pray .hotels_pray-bb,
+* html .hotels_pray .hotels_pray-bb * { 
+	bottom: expression( this.parentNode.offsetHeight % 2 ? -1 : 0 ); 
+	top: auto; 
+}
+
+.hotels_pray {
+	//cursor: pointer;
+}
+	

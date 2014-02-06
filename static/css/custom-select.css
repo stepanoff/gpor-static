@@ -1,0 +1,96 @@
+select.g-custom-control-select__zdorovje {
+	opacity: 0;
+	z-index: 1000 !important;
+	height: 30px !important;
+}
+
+/**/
+
+span.g-custom-control__zdorovje { 
+	font-size:11px; 
+	background-color: #f5f0de; 
+	color:#7c7c7c; 
+	padding:5px 7px; 
+	border:1px solid #e7dab0; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px 5px; 
+}
+
+span.g-custom-control__zdorovje.changed { 
+	background-color: #f0dea4; 
+}
+
+span.g-custom-control__zdorovje .customStyleSelectBoxInner { 
+	background:url(img/canvas-list-nav-item-arrow-.gif) no-repeat center right; 
+}
+
+/**/
+
+span.g-custom-control-select__zdorovje { 
+	font-size:1.4em; 
+	font-family: Arial;
+	background: #fff url(img/top-brd-zdor.gif) 0 0 repeat-x; 
+	color:#000; 
+	padding:0px 0 0px 5px; 
+	border-top:1px solid #9f9f9f; 
+	
+}
+
+span.g-custom-control-select__zdorovje.changed { 
+	background-color: #FFF; 
+}
+
+span.g-custom-control-select__zdorovje .customStyleSelectBoxInner { 
+	background:url(img/zdor-arr.png) no-repeat top right; 
+	margin-top: -1px;
+	height: 1.5em;
+	padding-top: 0.45em;
+	padding-right: 25px;
+}
+
+/**/
+
+
+select.g-custom-control-select__zdorovje-search {
+	width: 100%;
+}
+
+span.g-custom-control-select__zdorovje-search {
+	font-size:1.1em; 
+	font-family: Arial;
+	background: #fff url(img/top-brd-zdor.gif) 0 0 repeat-x; 
+	color:#000; 
+	padding:0px 0 0px 5px; 
+	border-top:1px solid #9f9f9f; 
+	
+	
+}
+
+span.g-custom-control-select__zdorovje-search.changed {
+	background-color: #FFF; 
+}
+
+span.g-custom-control-select__zdorovje-search .customStyleSelectBoxInner {
+	background:url(img/zdor-find-arr.png) no-repeat top right; 
+	margin-top: -1px;
+	height: 1.25em;
+	padding-top: 0.25em;
+	padding-right: 10px;
+}
+
+span.g-custom-control-select__zdorovje-search .customStyleSelectBoxInner {
+	padding-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

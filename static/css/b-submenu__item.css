@@ -1,0 +1,28 @@
+.b-submenu__item {
+	display: inline-block;
+	//display: block;
+	//float: left;
+	color: #7d7d7d;
+	font-size: 12px;
+	
+	margin-bottom: 5px;
+	margin-right: 5px;	
+	padding: 4px 10px 8px 10px;
+}
+
+.b-submenu__item,
+.b-submenu__item a {
+	font-weight: bold;
+}
+
+.b-submenu__item .b-icon {
+	margin: 0px;
+	position:relative;
+	top: 2px;
+	
+	background-color: #4f7197; 
+	-webkit-box-shadow: 0 0 2px 2px rgba(255,255,255,.45); 
+	-moz-box-shadow: 0 0 2px 2px rgba(255,255,255,.45); 
+	box-shadow: 0 0 2px 2px rgba(255,255,255,.45);	
+	
+}

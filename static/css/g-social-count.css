@@ -1,0 +1,13 @@
+.g-social-count {
+	font-size:0.75em;
+	color: #fff;	
+	line-height: 1em;
+	text-decoration: none;
+	padding: 0 2px 5px;
+	background: url(../img/g-social-count__count.jpg) 0 0 repeat-x;
+	font-family: Tahoma;
+	vertical-align: top;
+	position:relative;
+	top: 0.5em;
+	margin: 0 5px;
+}

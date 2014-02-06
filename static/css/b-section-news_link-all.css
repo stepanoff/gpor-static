@@ -1,0 +1,21 @@
+.b-section-news_link-all {
+	padding-left: 20px;
+}
+
+.b-section-news__link-all {
+	font-size: 1.1em;
+	border-bottom: 1px solid #037DD3;
+	text-decoration: none;
+	position: relative;
+}
+
+.b-section-news__link-all__pic {
+	position: absolute;
+	right: -9px;
+	top: 0.45em;
+	
+	width: 3px;
+	height: 5px;
+	
+	background: url(../img/b-section-news-ico.gif) 0 0 no-repeat;
+}

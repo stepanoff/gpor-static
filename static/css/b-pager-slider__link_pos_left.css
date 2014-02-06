@@ -1,0 +1,9 @@
+.b-pager-slider .b-pager-slider__link_pos_left {
+    left: -30px;
+    background-image: url('../img/b-pager-slider__link_pos.png');
+    background-position: left center;
+}
+
+.b-pager-slider .b-pager-slider__link_pos_left:hover {
+    background-position: -30px center;
+}

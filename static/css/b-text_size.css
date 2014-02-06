@@ -1,0 +1,22 @@
+.context .b-text_size_small {
+	font-size: 11px;
+	line-height: 15px;
+}
+
+.context .b-text_size_mini {
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.context .b-text_size_big {
+	font-size: 21px;
+    line-height: 24px;
+}
+
+.context .b-text_size_medium {
+	font-size: 16px;
+}
+
+.context .b-text_size_18 {
+	font-size: 18px;
+}

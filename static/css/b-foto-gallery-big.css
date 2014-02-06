@@ -1,0 +1,31 @@
+.b-foto-gallery-big__pic {
+	position: relative;
+	background-repeat: no-repeat;
+	background-color: #efefef;
+}
+
+.b-foto-gallery-big__pic:hover .b-foto-gallery-big__shadow {
+	background: #000;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+	cursor: hand;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.b-foto-gallery-big__pic:hover .b-foto-gallery-big__zoom__link {
+	display: block;
+	background: url(../img/b-foto-gallery-big-zoom.png) 0 0 no-repeat;
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	margin-left: -26px;
+	margin-top: -26px;
+}

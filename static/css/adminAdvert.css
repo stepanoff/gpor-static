@@ -1,0 +1,27 @@
+.advert-tables td, 
+.advert-tables th {
+	padding: 10px;
+}
+
+.advert-tables th {
+	font-weight: bold;
+	text-align: center;
+	background: #CCCCCC;
+}
+
+.advert-tables th.advert-tables-type-cover {
+	color: #FFFFFF;
+	background: #CB0000;
+}
+
+.advert-tables th.advert-tables-type-cover a {
+	color: #FFFFFF;
+}
+
+.advert-tables th span {
+	font-weight: bold;
+}
+
+.advert-tables-addRowContainer, .advert-tables-addRowTypeContainer, .advert-tables-addTableContainer {
+	display: none;
+}

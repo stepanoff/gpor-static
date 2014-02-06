@@ -1,0 +1,15 @@
+.b-afisha-event-card__info__rows td,
+.b-afisha-event-card__info__rows th {
+	font-size: 13px;
+	line-height: 1.65em;
+	padding-bottom: 0.2em;
+}
+
+.b-afisha-event-card__info__rows th {
+	font-weight: bold;
+	text-align: left;
+	width: 1%;
+}
+.b-afisha-event-card__info__rows td {
+	padding-left: 20px;
+}

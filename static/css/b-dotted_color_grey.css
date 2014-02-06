@@ -1,0 +1,16 @@
+.b-dotted_color_grey-top {
+	background: url(img/b-dotted_color_grey.gif) 0 0 repeat-x;
+}
+
+.b-dotted_color_grey-bottom {
+	background: url(img/b-dotted_color_grey.gif) 0 bottom repeat-x;
+}
+
+.b-dotted_color_grey-center {
+	background: url(img/b-dotted_color_grey.gif) 0 center repeat-x;
+}
+
+.b-dashed_color_orange {
+	height: 3px;
+	background: #f17e00;
+}

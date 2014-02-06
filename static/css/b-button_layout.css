@@ -1,0 +1,25 @@
+.b-button_layout_green-big {}
+
+.b-button_layout_green-big .b-button-crn-left,
+.b-button_layout_green-big .b-button-crn-right {
+    display: block;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    width: 8px;
+}
+
+.b-button_layout_green-big .b-button-crn-left {
+    background: url("../img/b-popup-subscribe_sb-left-cnr.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+}
+.b-button_layout_green-big .b-button-crn-right {
+    background: url("../img/b-popup-subscribe_sb-right-cnr.png") no-repeat scroll 0 0 transparent;
+    right: 0;
+}
+.b-button_layout_green-big .b-button-bg-text {
+    background: url("../img/b-popup-subscribe_sb-bg.png") repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 42px;
+}
+.b-button_layout_green-big .b-button__text {}

@@ -1,0 +1,14 @@
+.context .b-photoreport-preview__second__list_layout_simple-gallery {
+	height: auto;
+}
+
+.b-photoreport-preview__second__list_layout_simple-gallery .b-photoreport-preview__second__list__item {
+	margin: 0 10px 10px 0;
+	width: 175px;
+}
+
+@media screen and (max-width: 1180px) {
+	.b-photoreport-preview__second__list_layout_simple-gallery .b-photoreport-preview__second__list__item {
+		width: 130px;
+	}
+}

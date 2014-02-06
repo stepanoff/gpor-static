@@ -1,0 +1,53 @@
+.b-doska-rubrics {
+	font-size: 14px;
+	line-height: 18px;
+	overflow: hidden;
+}
+
+/*.b-doska-rubrics a {
+	outline: none;
+}*/
+
+
+
+
+
+.context .b-doska-rubrics__title {
+	font-size: 21px;
+	line-height: 26px;
+	margin-bottom: 3px;
+}
+.b-doska-rubrics__list {
+	margin-bottom: 21px;
+	
+}
+.b-doska-rubrics__list li {
+	margin-bottom: 6px;
+	float: left;
+	clear: both;
+	
+}
+
+.b-doska-other-rubrics .b-doska-rubrics__list li {
+	padding: 0 20px;
+}
+
+.b-doska-rubrics__count {
+	font-size: 11px;
+	color: #8a8f7e;
+	margin-left: 4px;
+}
+
+
+.b-doska-other-rubrics__popup .b-doska-rubrics {
+	margin-bottom: -13px;
+}
+
+.b-doska-other-rubrics .b-doska-rubrics__list__item_state_current {
+	background: #F38500;
+	color: #fff;
+}
+
+.b-doska-other-rubrics .b-doska-rubrics__list__item_state_current .b-doska-rubrics__count {
+	color: #cfcfcf;
+}

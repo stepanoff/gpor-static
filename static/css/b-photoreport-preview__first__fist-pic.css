@@ -1,0 +1,83 @@
+a.b-photoreport-preview__first__first-pic:link,
+a.b-photoreport-preview__first__first-pic:visited,
+a.b-photoreport-preview__first__first-pic:hover,
+a.b-photoreport-preview__first__first-pic:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+.b-photoreport-preview__first__first-pic {
+	position:relative;
+	overflow: hidden;
+	height: 250px;
+    width: 410px;
+	display: block;
+	float: left;
+}
+.b-photoreport-preview__first__first-pic__pic {
+	display: block;
+	width: 410px;
+	height: 285px;
+	position: absolute;
+	background-color: #000000;
+}
+.b-photoreport-preview__first__first-pic__text {
+	display: block;
+	position:absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	color: #fff;
+}
+.b-photoreport-preview__first__first-pic__shadow {
+	background: #000;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0px;
+	height: 100%;
+	width: 100%;
+	display: block;
+	left: 0px;
+	z-index: 1;
+}
+.b-photoreport-preview__first__first-pic__pad {
+	display: block;
+	position: relative;
+	z-index: 10;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 110px;
+	padding-right: 10px;
+}
+.b-photoreport-preview__first__first-pic__play-ico {
+	background: url(../img/b-photoreport-preview-play-pic.png) 0 0 no-repeat;
+	width: 72px;
+	height: 52px;
+	display: block;
+	left: 20px;
+	top: 50%;
+	margin-top: -26px;
+	position:absolute;
+}
+
+a.b-photoreport-preview__first__first-pic:link,
+a.b-photoreport-preview__first__first-pic:visited .b-photoreport-preview__first__first-pic__play-ico {
+	background-position: 0 0;
+}
+a.b-photoreport-preview__first__first-pic:hover .b-photoreport-preview__first__first-pic__play-ico {
+	background-position: 0 -54px;
+}
+a.b-photoreport-preview__first__first-pic:active .b-photoreport-preview__first__first-pic__play-ico {
+	background-position: 0 -108px;
+}
+
+.b-photoreport-preview__first__first-pic__text p {
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0 0 10px;
+}
+.b-photoreport-preview__first__first-pic__text p.b-photoreport-preview__first__first-pic__text__total {
+	font-size: 18px;
+	font-weight: normal;
+	color: #898989;
+}

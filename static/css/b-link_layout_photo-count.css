@@ -1,0 +1,9 @@
+.b-link_layout_photo-count {
+	background: url(../img/b-link_layout_sprite.png) -112px -27px no-repeat;
+	color: #379510;
+	text-decoration: none;
+	padding-left: 19px;
+	font-size: 12px;
+	margin: 0 5px 0 0;
+	outline: none;
+}

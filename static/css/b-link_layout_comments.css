@@ -1,0 +1,9 @@
+.b-link_layout_comments {
+	background: url(../img/b-link_layout_sprite.png) -130px -8px no-repeat;
+	color: #379510;
+	text-decoration: none;
+	padding-left: 12px;
+	font-size: 12px;
+	margin: 0 5px 0 0;
+	outline: none;
+}

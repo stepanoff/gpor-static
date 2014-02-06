@@ -1,0 +1,113 @@
+.b-toggle-visible {
+	position: relative;
+}
+
+a.b-toggle-visible__label {
+	float: left;
+	height: 30px;
+	color: #fff;
+	position: relative;
+	top: 0px;
+	left: -10px;
+	background-image: url(../img/b-toggle-visible_spr.png);
+	background-repeat: repeat-x;
+	padding-left: 10px;
+	padding-right: 33px;
+	text-decoration: none;
+	line-height: 28px;
+	outline: none;
+}
+
+.context .b-toggle-visible__label_layout_arrow-up {
+	padding-left: 38px;
+	padding-right: 23px;
+}
+
+.b-toggle-visible__label ins {
+	position: absolute;
+	right: 0px;
+	background-image: url(../img/b-toggle-visible_spr-control.png);
+	background-repeat: repeat-x;
+	width: 15px;
+	height: 15px;
+	display: block;
+	right: 9px;
+	top: 50%;
+	margin-top: -7px;
+}
+
+a.b-toggle-visible__label_layout_closed:link ins,
+a.b-toggle-visible__label_layout_closed:visited ins {
+	background-position: 0 -15px;
+}
+a.b-toggle-visible__label_layout_closed:hover ins {
+	background-position: -17px -15px;
+}
+a.b-toggle-visible__label_layout_closed:active ins {
+	background-position: -34px -15px;
+}
+/**/
+a.b-toggle-visible__label_layout_opened:link ins, 
+a.b-toggle-visible__label_layout_opened:visited ins {
+	background-position: 0 0;
+}
+a.b-toggle-visible__label_layout_opened:hover ins {
+	background-position: -17px 0;
+}
+a.b-toggle-visible__label_layout_opened:active ins {
+	background-position: -34px 0;
+}
+/**/
+.b-toggle-visible__label_layout_innactive ins {
+	background-position: 0 -30px;
+}
+.b-toggle-visible__label_layout_innactive {
+	background-position: 0 -64px;
+}
+/**/
+a.b-toggle-visible__label_layout_closed:link,
+a.b-toggle-visible__label_layout_closed:visited {
+	background-position: 0 0;
+}
+a.b-toggle-visible__label_layout_closed:hover {
+	background-position: 0 -124px;
+}
+a.b-toggle-visible__label_layout_closed:active {
+	background-position: 0 -155px;
+}
+/**/
+a.b-toggle-visible__label_layout_opened:link,
+a.b-toggle-visible__label_layout_opened:visited {
+	background-position: 0 -32px;
+}
+a.b-toggle-visible__label_layout_opened:hover {
+	background-position: 0 -186px;
+}
+a.b-toggle-visible__label_layout_opened:active {
+	background-position: 0 -217px;
+}
+/**/
+.context .b-toggle-visible__label_layout_arrow-up ins {
+	right: auto;
+	background: url(../img/b-toggle-visible_spr-control.png) 0 -45px no-repeat;
+	width: 14px;
+	height: 8px;
+	left: 18px;
+	top: 50%;
+	margin-top: -5px;
+}
+
+.b-toggle-visible_state_close .b-toggle-visible__label_layout_closed,
+.b-toggle-visible_state_open .b-toggle-visible__label_layout_opened,
+.b-toggle-visible_state_innactive .b-toggle-visible__label_layout_innactive {
+	display: block;
+}
+
+.b-toggle-visible_state_close .b-toggle-visible__label_layout_opened,
+.b-toggle-visible_state_close  .b-toggle-visible__label_layout_innactive,
+.b-toggle-visible_state_open .b-toggle-visible__label_layout_closed,
+.b-toggle-visible_state_open .b-toggle-visible__label_layout_innactive,
+.b-toggle-visible_state_innactive .b-toggle-visible__label_layout_closed,
+.b-toggle-visible_state_innactive .b-toggle-visible__label_layout_opened {
+	display: none;
+}

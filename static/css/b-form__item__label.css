@@ -1,0 +1,19 @@
+.b-form_size_small {
+	font-size: 11px;
+	color: #434445;
+}
+
+.b-form__item__label-strictly {
+	color: #ff9000;
+	font-size: 14px;
+}
+
+.b-form__item__label-choice {
+	font-size: 12px;
+}
+
+.b-form__item__label-descr {
+	color: #7d7d7d;
+	font-size: 12px;
+}
+

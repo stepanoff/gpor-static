@@ -1,0 +1,20 @@
+.b-afisha-event-seances__row__th {
+	text-align: left;
+	
+	
+	
+    font-size: 13px;
+	
+    line-height: 16px;
+    padding: 10px;
+	padding-left: 20px;
+    text-align: left;
+    vertical-align: top;
+    width: 18%;	
+}
+
+.b-afisha-event-seances__row__th a {
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom: 1px solid #037DD3;
+}

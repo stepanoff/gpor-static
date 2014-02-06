@@ -1,0 +1,18 @@
+.b-form label {
+	font-size: 14px;
+	color: #434445;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.b-form__fieldset__label__remark {
+	color: #7D7D7D;
+    font-size: 12px;
+}
+
+.b-form__fieldset__label__remark sup {
+	color: #7D7D7D;
+    font-size: 7px;
+	top: -4px;
+	position:relative;
+}

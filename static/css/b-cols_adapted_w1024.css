@@ -1,0 +1,24 @@
+.js-cols-afisha-main-adapted,
+.js-cols-afisha-events-adapted {
+	margin-right: -7%;
+}
+
+.js-cols-afisha-main-adapted.b-cols_adapted_w1024 .b-cols__item.b-cols__item_state_first {
+    margin-right: 0;
+    padding-right: 40px;
+    width: 94%;
+} 
+
+.js-cols-afisha-main-adapted.b-cols_adapted_w1024 .b-cols__item {
+	width: 45%;
+	float: left;
+	margin-right: 20px;
+}
+
+.js-cols-afisha-events-adapted.b-cols_adapted_w1024 .b-cols__item {
+	width: 45%;
+	margin-right: 20px;
+}
+.js-cols-afisha-events-adapted.b-cols_adapted_w1024 .b-cols__item_state_last {
+	display: none;
+}

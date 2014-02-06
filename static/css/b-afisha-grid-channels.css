@@ -1,0 +1,129 @@
+.b-afisha-channel-grid {
+	margin-top: 14px;
+}
+.b-afisha-channel-grid__pad {
+	
+	position:relative;
+}
+.b-afisha-channel__item {
+	position:relative;
+	background: url(../img/b-afisha-channel__item-brd.gif) 0 bottom repeat-x;
+	padding-left: 300px;
+	padding-bottom: 22px;
+	margin-bottom: 14px;
+	min-height: 77px;
+}
+.b-afisha-channel__item-last {
+	background: none;
+}
+
+.b-afisha-channel__item__pad {}
+.b-afisha-channel__item__title {
+	position:absolute;
+	left: 20px;
+	top: 10px;
+	font-size: 16px;
+	line-height: 16px;
+	outline: none;
+}
+.b-afisha-channel__item__title img {
+	display: block;
+}
+.b-afisha-channel__item__title ins {
+	display: block;
+	margin-top: 15px;
+	text-decoration: none;
+}
+.b-afisha-channel__item dl {
+	font-size: 12px;
+	line-height: 14px;
+	padding-top: 10px;
+	position:relative;
+	margin-bottom: 6px;
+}
+.b-afisha-channel__item dl.oppened {
+	background: #f1f5e8;
+}
+
+.b-afisha-channel__item dl a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #000000;
+	outline: none;
+}
+
+.b-afisha-channel__item dl a:link,
+.b-afisha-channel__item dl a:visited {
+	border-bottom: 1px dashed transparent
+}
+.b-afisha-channel__item dl a:hover,
+.b-afisha-channel__item dl a:active {
+	border-bottom: 1px dashed #000000;
+}
+
+.b-afisha-channel__item dl.old a:link,
+.b-afisha-channel__item dl.old a:visited {
+	color: #B7B7B7;
+	border-bottom: 1px dashed transparent
+}
+.b-afisha-channel__item dl.old a:hover,
+.b-afisha-channel__item dl.old a:active {
+	color: #B7B7B7;
+	border-bottom: 1px dashed #B7B7B7;
+}
+
+.b-afisha-channel__item dl.oppened a:link,
+.b-afisha-channel__item dl.oppened a:visited,
+.b-afisha-channel__item dl.oppened a:hover,
+.b-afisha-channel__item dl.oppened a:active {
+	font-weight: bold;
+	border-bottom: 1px dashed #000000;
+	color: #000;
+}
+
+.b-afisha-channel__item dl.old,
+.b-afisha-channel__item dl.old dt {
+	color: #b7b7b7;
+}
+.b-afisha-channel__item dt {
+	position:absolute;
+	left: -109px;
+	width: 100px;
+	text-align: right;
+	color: #959595;
+}
+
+.b-afisha-channel__item dd {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.b-afisha-channel__item dd a {}
+
+.b-afisha-channel__item-text
+.b-afisha-channel__item-text__pad {
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.b-afisha-channel__item-text img {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	margin-top: 6px;
+}
+.b-afisha-channel__item-text p.lead {
+	font-size: 11px;
+	color: #393939;
+	margin-bottom: 9px;
+}
+.b-afisha-channel__item-text p {
+	margin-top: 10px;
+	color: #000;
+}
+
+.b-afisha-channel__item-text {
+	display: none;
+}
+
+.oppened .b-afisha-channel__item-text {
+	display: block;
+}

@@ -1,0 +1,234 @@
+.b-bank-item-miniCard {
+	position:relative;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	background: #fff;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#CCCCCC')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#CCCCCC');
+}
+
+
+
+.b-bank-item-miniCard:before {
+	position: absolute;
+	top: 60%;
+	right: 40px;
+	bottom: 0;
+	left: 40px;
+	z-index: -2;
+	display: block;
+	border-radius: 100px 100px 100px 100px / 10px 10px 10px 10px;
+	box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.6);
+	content: '';
+}
+
+.b-bank-item-miniCard_without-shadow {
+	-ms-filter: none;
+	filter: none;
+
+}
+
+.b-bank-item-miniCard_without-shadow:before {
+	box-shadow: none;
+}
+
+.b-bank-item-miniCard__logo {
+	display: block;
+	width: 80%;
+}
+
+.b-bank-item-miniCard-table {
+	width: 100%;
+}
+.b-bank-item-miniCard-table__cell {
+	padding-right: 20px;
+	vertical-align: top;
+}
+.b-bank-item-miniCard-table__cell_logo {
+	padding-right: 0px;
+	width: 180px;
+	text-align: center;
+}
+
+
+.b-bank-item-miniCard__logo { }
+.b-bank-item-miniCard__title {
+	margin-bottom: 12px;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+}
+.b-bank-item-miniCard__adress {
+	margin-bottom: 12px;
+	font-size: 14px;
+	line-height: 21px;
+}
+.b-bank-item-miniCard__adress a { }
+.b-bank-item-miniCard__phones {
+	margin-bottom: 12px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+
+.b-bank-item-miniCard-table__cell_courses {
+	padding-right: 0px;
+	width: 25%;
+	border-left: 1px solid #ccc;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+@media only screen and (max-width: 1100px) {
+	.b-bank-item-miniCard-table__cell_courses {
+		display: none;
+	}
+
+	.b-bank-item-miniCard-table__cell {
+		padding-right:0px;
+	}
+}
+
+
+
+.b-bank-item-miniCard-table__cell__courses__title-date {
+	color: #84a830;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.b-bank-item-miniCard__courses__table {
+	margin-top: 10px;
+	margin-bottom: 12px;
+}
+.b-bank-item-miniCard__courses__table__header {
+	color: #84a830;
+	font-size: 12px;
+
+}
+.b-bank-item-miniCard__courses__table__body {
+	padding: 2px 12px 2px;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.b-bank-item-miniCard__courses__title {
+	margin-bottom: 5px;
+	padding: 10px 5px 8px 20px;
+	border-bottom: 1px solid #ccc;
+	line-height: 17px;
+}
+
+.b-bank-item-miniCard__courses__body {
+	padding-left: 20px;
+}
+
+.b-bank-item-miniCard__courses__table__body:nth-child(3) {
+	padding-left: 0 !important;
+}
+
+
+.b-bank-item-miniCard__courses__table__body_first {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.b-bank-item-miniCard__courses__links {
+	font-size: 11px;
+	line-height: 13px;
+}
+
+
+.b-bank-item-miniCard__courses__label {
+	color: #84a830;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/**/
+
+.b-bank-item-miniCard_layout_1 {
+	padding-bottom: 15px;
+
+	.b-bank-item-miniCard-table__cell {
+		vertical-align: middle;
+
+	}
+
+	.b-bank-item-miniCard-table__cell_logo {
+		padding-left: 20px;
+		width: 220px;
+		vertical-align: middle;
+
+		.b-bank-item-miniCard__logo {
+			width: auto;
+		}
+	}
+
+	.b-bank-item-miniCard__title, .b-bank-item-miniCard__phones {
+		display: inline-block;
+		margin: 0px;
+		font-size: 14px;
+	}
+
+}
+
+.b-bank-item-miniCard_layout_1:after {
+	position:absolute;
+	bottom: -5px;
+	left: 220px;
+	z-index: 100;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	content: '';
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+}
+
+.b-bank-item-miniCard__courses__dynamic {
+	position: relative;
+	float: left;
+	padding-right: 10px;
+	color: #808080;
+	white-space:nowrap;
+	font-size: 14px;
+}
+
+.b-bank-item-miniCard__courses__dynamic:after {
+	position: absolute;
+	right: 0px;
+	display:block;
+	width: 7px;
+	height: 7px;
+	content:"";
+}
+
+.b-bank-item-miniCard__courses__dynamic_down:after {
+	top: 7px;
+	background-image: url(../css/less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
+	background-position: 0 -9px;
+	background-repeat: no-repeat;
+}
+.b-bank-item-miniCard__courses__dynamic_up:after {
+	top: 4px;
+	background-image: url(../css/less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
+	background-position: 0 0px;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+

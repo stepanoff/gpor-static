@@ -1,0 +1,56 @@
+.b-events-list-cards__col {
+	background: #efefef;
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.b-events-list-cards__col__head {
+	padding: 12px 20px 12px;
+}
+
+.b-events-list-cards__col__head em {
+	font-size: 18px;
+	line-height: 22px;
+	color: #fff;
+	display: block;
+	margin-bottom: 3px;
+}
+.b-events-list-cards__col__head ins {
+	color: #e1e1e1;
+	display: block;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.b-events-list-cards__col__head ins a {
+	color: #dbdbdb;
+}
+
+.b-events-list-cards__col__body {
+	/*height: 700px;*/
+	position:relative;
+}
+.b-events-list-cards__col__body-pad {
+	padding: 0px 10px 10px;
+}
+.b-events-list-cards__col__body-pad:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.b-events-list-cards__col__hidden-popup-shadow {
+	background: #000;
+	opacity: 0.5;
+	position:absolute;
+	top: -10px;
+	left: 0px;
+	width: 1000px;
+	height: 10000px;
+	display: none;
+	z-index: 10;
+}
+
+
+
