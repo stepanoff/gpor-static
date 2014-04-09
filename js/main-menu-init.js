@@ -1,70 +1,75 @@
 (function($) {
 	$(function() {
-		var	domHeader = $('body').first(),
-			domMenu = domHeader.find('.main-menu').first(),
-			domElems = domMenu.find('.main-menu__elem'),
-			domMore = domMenu.find('.main-menu__more'),
-			domGlobalWidthSubs = domMenu.find('.main-menu__sub_width_global'),
-			domMoreSubElems = $('.flat-sub__elem'),
+		var	$header = $('.l-header-wrap').first(),
+			$menu = $header.find('.main-menu').first(),
+			$elems = $menu.find('.main-menu__elem'),
+			$more = $menu.find('.main-menu__more'),
+			$globalWidthSubs = $menu.find('.main-menu__sub_width_global'),
+			$moreSubElems = $('.flat-sub__elem'),
 
 			menuWidth, moreWidth,
-			widths = [], classes = {};
+			widths = [], classes = {},
+
+			SUBMENU_DELAY = 250;
 
 		classes.currentElem = 'main-menu__elem_current';
 		classes.menuNoJs = 'main-menu_js_no';
 
-		function activate(row) {
-			var $this = $(row);
-			$this.addClass(classes.currentElem);
-		}
-
-		function deactivate(row) {
-			var $this = $(row);
-			$this.removeClass(classes.currentElem);
-		}
-
 		function getElemWidths() {
-			domElems.each(function() {
+			$elems.each(function() {
 				widths.push($(this).outerWidth());
 			});
 		}
 
 		function getMenuWidth() {
-			menuWidth = domMenu.width();
+			menuWidth = $menu.width();
 		}
 
 		function initMenu() {
-			domMenu.removeClass(classes.menuNoJs);
-			moreWidth = domMore.outerWidth() + 11; // + arrow image width
+			$menu.removeClass(classes.menuNoJs);
+			moreWidth = $more.outerWidth() + 11; // + arrow image width
 		}
 
 
 		function setMenuLength() {
 			var curWidth = moreWidth;
 
-			domElems.each(function(i) {
+			$elems.each(function(i) {
 				var $this = $(this);
 				curWidth += $this.width();
 
-				if (i + 1 == domElems.length) { return; }
+				if (i + 1 == $elems.length) { return; }
 
 				if (curWidth > menuWidth) {
 					$this.hide();
-					domMoreSubElems.eq(i).show();
+					$moreSubElems.eq(i).show();
 				} else {
 					$this.show();
-					domMoreSubElems.eq(i).hide();
+					$moreSubElems.eq(i).hide();
 				}
 			});
 		}
 
-
 		function setGlobalsWidths() {
-			domGlobalWidthSubs
-				.width(domHeader.width())
-					.css({left: -domMenu.offset().left});
+            if ($menu.length > 0)
+			$globalWidthSubs
+				.width($header.width())
+					.css({left: -$menu.offset().left});
 		}
 
+		function closeSub() {
+			$elems.removeClass(classes.currentElem);
+		}
+
+		function setSubmenuTimeout(fun) {
+			$menu.data('timer', setTimeout(fun, SUBMENU_DELAY));
+		}
+
+		jQuery.extend(jQuery.fn, {
+			within: function(pSelector) {
+				return $(this).closest(pSelector).length;
+			}
+		});
 
 		initMenu();
 		getMenuWidth();
@@ -72,15 +77,41 @@
 		setMenuLength();
 		setGlobalsWidths();
 
-		domMenu.menuAim({
-			activate: activate,
-			deactivate: deactivate,
-		});
-
 		$(window).on('resize', function() {
 			getMenuWidth();
 			setMenuLength();
 			setGlobalsWidths();
+		});
+
+
+		$elems
+			.on('mouseenter', function() {
+				var $this = $(this);
+
+				clearTimeout($menu.data('timer'));
+
+				setSubmenuTimeout(function() {
+					closeSub();
+					$this.addClass(classes.currentElem);
+				});
+			})
+			.on('mouseleave', function() {
+				clearTimeout($menu.data('timer'));
+			});
+
+		$menu.on('mouseleave', function(e) {
+			var x = e.clientX, y = e.clientY,
+				$elementMouseIsOver = $(document.elementFromPoint(x, y));
+
+			// Submenu should disappear with delay when mouse is still on the header...
+			if ($elementMouseIsOver.within($header)) {
+				setSubmenuTimeout(function() {
+					closeSub();
+				});
+			// ...but it should disappear instantly when mouse moves on page content.
+			} else {
+				closeSub();
+			}
 		});
 	});
 })(jQuery);

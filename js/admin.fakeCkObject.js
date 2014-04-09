@@ -44,9 +44,17 @@ var fakeCkObject =
 		}
 	},
 
-	insertImage: function(editorId, collectionId, imageSrc)
+	insertImage: function(editorId, collectionId, imageSrc, width, height)
 	{
-		return fakeCkObject._insert('image', editorId, collectionId, imageSrc);
+		var attributes = '';
+        if (width) {
+        	attributes = 'width="' + width + '"';
+    	}
+        if (height) {
+        	attributes = attributes + ' height="' + height + '"';
+    	}
+
+		return fakeCkObject._insert('image', editorId, collectionId, imageSrc, attributes);
 	},
 
 	insertVideo: function(editorId, collectionId)
@@ -84,7 +92,7 @@ var fakeCkObject =
 		}
 	},
 
-	_insert: function(type, editorId, collectionId, imageSrc)
+	_insert: function(type, editorId, collectionId, imageSrc, attributes)
 	{
 		if (CKEDITOR && CKEDITOR.instances[editorId]) {
 			try {
@@ -108,7 +116,7 @@ var fakeCkObject =
                 }
                 else
                 {
-				    CKEDITOR.instances[editorId].insertHtml('<fake_object object_id="' + collectionId + '"' + foAttr + ' />');
+				    CKEDITOR.instances[editorId].insertHtml('<fake_object object_id="' + collectionId + '"' + foAttr + ' ' + attributes + ' />');
                 }
 				return true;
 			}

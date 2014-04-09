@@ -1,93 +1,107 @@
 (function($){
-	$('document').ready(function() {
-		$('#comments div.comments-list').delegate('a.comment-item__quote','click', function () {
-			$(this).hide().siblings('span.comment-item__quote').show();
-			return false;
-		});
+    function isGuest() {
+        return !$(document).data('portal.user.loggedIn');
+    }
 
-		var isGuest = function() {
-			// воспринимаем забаненного как гостя
-			if($(document).data('portal.user.isInGlobalBan'))
-				return true;
+    var prevForm = false;
+    var prevReplyBtn = false;
 
-			return(!$(document).data('portal.user.uid'));
-		};
+    $(document).ready( function()
+    {
+        $('.m-comment, .m-authorize').hide();
 
-		var $commentForm = $('#message').clone().attr('id','');
-		var commentTypeCode = $(document).data('portal.commentTypeCode');
-		$commentForm.find('input[name=objectType]').val(commentTypeCode);
-		if (isGuest()) {
-			var setLocationBeforeSend = function() {
-				$(this).find('input[name=location]').val(location.href);
-			};
-			$('#message').find('form').bind('submit', setLocationBeforeSend);
-			$commentForm.find('form').bind('submit', setLocationBeforeSend);
-		} else {
-			var postCommentFunction = function() {
-				var $form = $(this);
-				$form.css('opacity','.5').find('input[type=submit]').attr('disabled','disabled');
-				var answerOnComment = $form.find('input[name=objectType]').val() == commentTypeCode;
-				$.ajax({
-					type: 'post',
-					url: $form.attr('action'),
-					data: $form.serialize(),
-					dataType: 'json',
-					success: function(result) {
-						$form.css('opacity',1).find('input[type=submit]').attr('disabled','');
-						if (!result) {
-							alert("Ошибка при отправке комментария");
-							return;
-						}
-						if (result.error) {
-							$form
-								.find('div.comment-form__row').addClass('error')
-								.find('div.orange-hint__ico').text(result.error).parent().show();
-							return;
-						}
-						var $comment = $(result.html);
-						if (answerOnComment) {
-							$commentForm.hide();
-							$commentForm.after($comment);
-						} else {
-							$('#comments div.comments-list').append($comment);
-						}
-						location.hash = '#'+$comment.attr('id');
-						$form
-							.find('div.comment-form__row').removeClass('error')
-							.find('div.orange-hint').hide();
-						$form.find('textarea').val('');
-					},
-					error: function () {
-						$form.css('opacity',1).find('input[type=submit]').attr('disabled','');
-						alert("Во время отправки комментария произошла ошибка");
-					}
-				});
-				return false;
-			};
-			$('#message').find('form').bind('submit', postCommentFunction);
-			$commentForm.find('form').bind('submit', postCommentFunction);
-		}
+        $('#js-show-comments').on('click', function(ev) {
+            var $this = $(this);
+            ev.preventDefault();
+            $this.addClass('m-button_activated');
+            $('.m-comment, .m-authorize').show();
+        });
 
-		// Кнопка Ответ
-		$('#comments div.comments-list').delegate('a.comment-btn-answ', 'click', function() {
-			$commentForm
-				.detach().show()
-				.find('div.comment-form__row').removeClass('error')
-				.find('div.orange-hint').hide();
-			$commentForm.find('textarea').val('');
-			$(this).parents('div.comment-item').after($commentForm);
-			$commentForm.find('input[name=objectId]').val( $(this).attr('href').replace(/[^#]+#c/,'') );
-			$commentForm.find('input:first, textarea:first').focus();
+        function clickCommentBtn(thisEl, formEl, bHide)
+        {
+            if (prevForm !== false)
+                prevForm.hide();
+            prevForm = false;
 
-			return false;
-		});
+            if (prevReplyBtn !== false) {
+                prevReplyBtn.removeClass('m-button_activated');
+                prevReplyBtn.show();
+            }
+            prevReplyBtn = false;
 
-		// Кнопка Комментировать
-		$('#comment-button').bind('click', function (){
-			$( $(this).attr('href') ).find('input:first, textarea:first').focus();
+            if (formEl.length) {
+                formEl.show();
+                if (bHide)
+                    thisEl.hide();
+                else
+                    thisEl.addClass('m-button_activated');
+                prevForm = formEl;
+                prevReplyBtn = thisEl;
+            }
+        }
 
-			return false;
-		});
+        // Нажатие кнопки "ответить"
+        $('.m-comment__reply').click( function(ev) {
+            var thisEl = $(ev.target);
+            var formEl = thisEl.closest('.m-comment').parent().find('#js-comment-form');
+            clickCommentBtn(thisEl, formEl, true);
+            return false;
+        });
 
-	});
+        // Нажатие кнопки "оставить комментарий"
+        $('#js-comment-form-btn').click( function(ev) {
+            var thisEl = $(ev.target);
+            var formEl = thisEl.closest('#js-comment-form-root').find('#js-comment-form');
+            clickCommentBtn(thisEl, formEl, false);
+            return false;
+        });
+
+        // Нажатие на кнопке "отправить"
+        var isSendClick = false;
+        $('.m-new-comment__button').click( function(ev) {
+            if (isSendClick)
+                return false;
+            isSendClick = true;
+            var thisEl = $(ev.target);
+            thisEl.addClass('m-button_activated');
+            return true;
+        });
+
+        // Открываем главную форму ввода комментария
+        $('#js-comment-form-root').find('#js-comment-form-btn').trigger('click');
+
+        // Если пришла страница с якорем и он есть на странице, то скроллим туда
+        var idx = location.href.indexOf("#");
+        if (idx != -1) {
+            var hrefAnchor = location.href.substring(idx+1);
+
+            // Ищем в якоре индикатор открытия формы
+            var isOpenForm = false;
+            var idxReply = hrefAnchor.indexOf('_reply');
+
+            if (idxReply != -1) {
+                isOpenForm = true;
+                hrefAnchor = hrefAnchor.substring(0, idxReply);
+            }
+
+            var insEl = $('#'+hrefAnchor);
+            if (insEl.length) {
+                $('#js-show-comments').trigger('click');
+
+                // Открываем форму ввода комментария
+                if (isOpenForm) {
+                    var formEl = insEl.find('.m-comment__reply');
+                    if (formEl.length)
+                        formEl.trigger('click');
+                }
+            }
+        }
+
+        var commentsCount = $(document).data('portal.commentsCount');
+        if (commentsCount < 1) {
+            // Скрываем кнопку "комментарии" и открываем форму комментирования 
+            $('#js-show-comments').trigger('click');
+            $('#js-show-comments').hide();
+        }
+    });
 })(jQuery);

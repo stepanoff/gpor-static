@@ -13,6 +13,9 @@ $(document).ready(function() {
         'resultCurrencySelector': '#resultCurrency',
         'currencyUpdateUrl': $('#updateCurrencyRatesUrl').val()
     });
+    converter.sourceCurrencyWrapper = $('#sCurrencyList').parent('div.b-valute-converter-more');
+    converter.resultCurrencyWrapper = $('#rCurrencyList').parent('div.b-valute-converter-more');
+    
     var current_bank_id = $('.bank-selector li.b-more__elem_cur a').attr('rel');
     converter.updateCurrencyRates(current_bank_id ? current_bank_id : 0);
 

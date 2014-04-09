@@ -3,13 +3,7 @@
 	<a href="{{ _item.link|raw }}" class="main-menu__link">
 	{{ _item.caption|raw }}</a>
 {% if _item.customHtml %}<div class="main-menu__sub main-menu__sub_width_global submenu">
-	<div class="layout">
-	<div class="layout__base">
-	<div class="grid">
 	{{ _item.customHtml|raw }}</div>
-</div>
-</div>
-</div>
 {% endif %}{% if _item.linkList %}<div class="main-menu__sub main-menu__sub_width_global submenu">
 	<div class="layout">
 	<div class="layout__base">

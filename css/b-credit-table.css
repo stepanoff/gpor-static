@@ -60,6 +60,7 @@
 .b-credit-table__sort_asc,
 .b-credit-table__sort_desc {
 	color: #779e00;
+	white-space: nowrap;
 }
 
 .b-credit-table__sort_asc:after {

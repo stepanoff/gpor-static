@@ -3,6 +3,15 @@
 	margin-right: -7%;
 }
 
+.js-cols-afisha-main-adapted .b-cols__item {
+	height: 220px;
+	overflow: hidden;
+}
+
+.js-cols-afisha-main-adapted .b-cols__item.b-cols__item_state_first {
+	height: auto;
+}
+
 .js-cols-afisha-main-adapted.b-cols_adapted_w1152 .b-cols__item.b-cols__item_state_first {
 	float: left;
 	width: 61%;

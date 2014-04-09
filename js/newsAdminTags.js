@@ -8,6 +8,7 @@ newsAdminTags = function(opts) {
         'editTagUrl' : '',
         'unionTagUrl': '',
         'tags' : {},
+        'postTags' : {},
         'tagStatusPlot' : '',
 
         'tagPlotClass' : 'tags__tagRow_status_plot',
@@ -42,7 +43,7 @@ newsAdminTags = function(opts) {
     input.attr("value", '');
     container.append(input);
     var autoCompleteInput = container.find('input[name="tags__autocomplete"]');
-    container.append('<a class="addTag" title="Добавить" href="#"><span class="icon-add poll-add-handler"></span></a>');
+    container.append('&nbsp;<a class="addTag btn" title="Добавить" href="#"><i class="icon-plus"></i></a>');
 
     var addTag = function (attributes) {
         var input = $('<input>');
@@ -54,7 +55,11 @@ newsAdminTags = function(opts) {
         div.append(input);
         div.append('<span class="tags__tagRow__value"></span>');
 
-        var btns = '<div class="tags__tagRow__btns"><a href="#" class="editTag buttons_edit_small">Правка</a><a href="#" class="removeTag buttons_remove_small">Удалить</a><a href="#" class="unionTag buttons_union_small" title="Объединить">&nbsp;</a></div>';
+        var btns = '<div class="tags__tagRow__btns  switch_widget_btn" style="font-size:inherit;">' +
+                        '<a class="editTag" href="#" title="Изменить"><i class="icon-edit edit"></i></a> ' +
+                        '<a class="removeTag" href="#" title="Удалить"><i class="icon-remove delete"></i></a> ' +
+                        '<a class="unionTag" href="#" title="Объединить"><i class="icon-link"></i></a>' +
+                    '</div>';
         div.append(btns);
 
         updateTag(div, attributes);
@@ -114,7 +119,7 @@ newsAdminTags = function(opts) {
     var editTag = function (el) {
         currentTag = $(el).closest(".tags__tagRow");
         var input = currentTag.find("input");
-        $.popup.show({ title: 'Редактирование тега', content: '<div id="editTagForm"></div>', width: 600, height: 400, overflow: "auto" });
+        $.popup.show({ title: 'Редактирование тега', content: '<style type="text/css">#editTagForm .module .row {margin:0;}</style><div id="editTagForm"></div>', width: 600, height: 440, overflow: "auto" });
         $("#editTagForm").delegate('input[type="submit"]', 'click', function(){ sendForm($(this)); return false; });
         $.ajaxCallback(o.editTagUrl, {'tag': input.val()});
     }
@@ -150,6 +155,17 @@ newsAdminTags = function(opts) {
             }
         }
 
+        // добавляем еще не сохраненные теги
+        if (o.postTags) {
+            var i = 0;
+            for (i in o.postTags) {
+                var el = {
+                    'value' : o.postTags[i],
+                    'data' : [0, 0]
+                };
+                addValue(el);
+            }
+        }
         // добавление тега
         container.delegate("."+o.addTagClass, 'click', function(){
             var el = {

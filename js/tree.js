@@ -53,7 +53,7 @@
         autoOpenNode : true,
         usePopup : true,
         title: 'выберите город',
-        mainCityNodeId: false
+        defaultNodeId: false
     };
 
     var Tree = function(obj, o, instance_id){
@@ -358,9 +358,9 @@
                 });
             }
             
-            // Auto select need city
-            if (o.mainCityNodeId) {
-                var el = $(this.treeObject).find('#'+o.mainCityNodeId);
+            // Auto select default node
+            if (o.defaultNodeId) {
+                var el = $(this.treeObject).find('#'+o.defaultNodeId);
                 el.attr('checked','cheched');
                 checkCheckbox(el.get());
             }

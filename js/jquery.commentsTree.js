@@ -17,7 +17,7 @@ function isGuest () {
 }
 
 (function($){
-	var self;
+    var self;
 
     $.fn.commentsTree = function (options) {
         var self = this;
@@ -29,11 +29,11 @@ function isGuest () {
     var commentsTree = {
         wrap: false,
         form: false,
-	    sending: false,
+        sending: false,
         replyObjectId: false,           // ID объекта, для которого открыта форма отправки коммента
         prevReplyLink: false,           // Здесь запоминается ссылка на кнопку "ответить", чтобы при нажатии на другой, вернуться текст обратно
-	    displayedFillProfilePopup: false, // Отображал уже окно с просьбой заполнить профиль
-	    displayedFillUserEmailPopup: false, // Отображал уже окно с просьбой заполнить email
+        displayedFillProfilePopup: false, // Отображал уже окно с просьбой заполнить профиль
+        displayedFillUserEmailPopup: false, // Отображал уже окно с просьбой заполнить email
         options: {
             phrase: 'Комментировать',
             phraseAdd: 'Добавить комментарий',
@@ -65,22 +65,22 @@ function isGuest () {
             this.wrap.find('div#jsCommentsOpinionLinkTop').children('span.js_comment-to-object')
                 .text(this.options.phrase)
                 .click(function () {
-					if (self._isCommentsTreeClose() && self._checkAuthorization()) {
-						self.wrap.find('div#comments-toggle-all').trigger('click');
-					}
-					self.openCommentForm( self.wrap.find('div#jsCommentsOpinionLinkBottom').parent(), self.options.objectId, self.options.objectType, false );
-					if (self.form.offset().top < ($('body').scrollTop() || $('html').scrollTop()) ||
-						self.form.offset().top > ($('body').scrollTop() || $('html').scrollTop())+$(window).height())
-					self._scrollToElement(self.form);
+                    if (self._isCommentsTreeClose() && self._checkAuthorization()) {
+                        self.wrap.find('div#comments-toggle-all').trigger('click');
+                    }
+                    self.openCommentForm( self.wrap.find('div#jsCommentsOpinionLinkBottom').parent(), self.options.objectId, self.options.objectType, false );
+                    if (self.form.offset().top < ($('body').scrollTop() || $('html').scrollTop()) ||
+                        self.form.offset().top > ($('body').scrollTop() || $('html').scrollTop())+$(window).height())
+                    self._scrollToElement(self.form);
                 });
             this.wrap.find('div#jsCommentsOpinionLinkBottom').children('span.js_comment-to-object')
                 .text(this.options.phrase)
                 .click(function () {
-					if (self._isCommentsTreeClose()) {
-						self.wrap.find('div#comments-toggle-all').trigger('click');
-					}
-					self.toggleCommentForm( self.wrap.find('div#jsCommentsOpinionLinkBottom').parent(), self.options.objectId, self.options.objectType, false );
-				});
+                    if (self._isCommentsTreeClose()) {
+                        self.wrap.find('div#comments-toggle-all').trigger('click');
+                    }
+                    self.toggleCommentForm( self.wrap.find('div#jsCommentsOpinionLinkBottom').parent(), self.options.objectId, self.options.objectType, false );
+                });
 
             // Инициализируем все комменты
             this.wrap.delegate('a.show_bad_comment','click', this.toggleBadComment);
@@ -104,10 +104,10 @@ function isGuest () {
             $(document).ready( function() {
                 self.wrap.find('div#comments-toggle-all').click(self.toggleCommentsTree);
                 if (document.location.hash == '#comments' || document.location.hash.match("^#c")) {
-					self.wrap.find('div#comments-toggle-all').trigger('click');     // Вызываем через так, чтобы внутри обработчика this был корректный
+                    self.wrap.find('div#comments-toggle-all').trigger('click');     // Вызываем через так, чтобы внутри обработчика this был корректный
                     if (self.options.numOfComments > self.options.minCommentsForBottomCommentButton)
                         self.wrap.find('div#jsCommentsOpinionLinkBottom').show();
-					self._scrollToElement($(document.location.hash));
+                    self._scrollToElement($(document.location.hash));
                 }
 //              добавляем функционал следующий новый
                 self.gotoNextNewComment(self.wrap.find('div#comments-tree'));
@@ -209,12 +209,12 @@ function isGuest () {
                 self.prevReplyLink.text('ответить');
             
             if( !(self.replyObjectId && self.replyObjectId == objectId) ) {
-				self.replyObjectId = objectId;
-				$placeholder.append( self.form );
-				self.form.children('input[name="objectId"]').val(objectId).end()
-					.children('input[name="objectType"]').val(objectType).end()
-					.show();
-				$("#Comment_content").focus();
+                self.replyObjectId = objectId;
+                $placeholder.append( self.form );
+                self.form.children('input[name="objectId"]').val(objectId).end()
+                    .children('input[name="objectType"]').val(objectType).end()
+                    .show();
+                $("#Comment_content").focus();
             }
         },
         
@@ -238,7 +238,7 @@ function isGuest () {
                 self.form.children('input[name="objectId"]').val(objectId).end()
                     .children('input[name="objectType"]').val(objectType).end()
                     .show();
-				$("#Comment_content").focus();
+                $("#Comment_content").focus();
             }
         },
 
@@ -296,12 +296,12 @@ function isGuest () {
 
             // Показываем или скрываем кнопку "Показать все комментарии"
             // NOTE: Делаем это здесь, а не при генерации шаблона, т.к. только здесь известно реальное количество отображенных
-            //		 комментариев, например в ситуации когда их два и один дочерний другого
-			var commentsToggleAllButton = self.wrap.find('div#comments-toggle-all');
-			if( numOfCollapseComments > 0 )
-				commentsToggleAllButton.removeClass('hidden');
-			else
-				commentsToggleAllButton.addClass('hidden');
+            //       комментариев, например в ситуации когда их два и один дочерний другого
+            var commentsToggleAllButton = self.wrap.find('div#comments-toggle-all');
+            if( numOfCollapseComments > 0 )
+                commentsToggleAllButton.removeClass('hidden');
+            else
+                commentsToggleAllButton.addClass('hidden');
             
             if (elemCommentsTree.hasClass('hidden') || self.wrap.find('div#comments-tree').hasClass('hidden'))
             {
@@ -395,21 +395,21 @@ function isGuest () {
                                 return;
                             }
 
-							var commentId;
-							var $jsComment = elem.closest('.js_comment');
-							// Удаляем текст комментария
-							$jsComment.children('.comment_content').empty();
-							// Удаляем все элементы управления
-							$jsComment.find('.comment_head_content:first').html("<span class='comment_removed'><i>"+result.remover+"</i></span>");
+                            var commentId;
+                            var $jsComment = elem.closest('.js_comment');
+                            // Удаляем текст комментария
+                            $jsComment.children('.comment_content').empty();
+                            // Удаляем все элементы управления
+                            $jsComment.find('.comment_head_content:first').html("<span class='comment_removed'><i>"+result.remover+"</i></span>");
 
-							if (commentId = $jsComment.attr('_id')) { // если у нас вдруг задан _id, это означает, что мы находимся в свернутой ветке.
-								$jsComment = $('#'+commentId); // работать следует с реальным развернутым деревом
+                            if (commentId = $jsComment.attr('_id')) { // если у нас вдруг задан _id, это означает, что мы находимся в свернутой ветке.
+                                $jsComment = $('#'+commentId); // работать следует с реальным развернутым деревом
 
-								// Удаляем текст комментария
-								$jsComment.children('.comment_content').empty();
-								// Удаляем все элементы управления
-								$jsComment.find('.comment_head_content:first').html("<span class='comment_removed'><i>"+result.remover+"</i></span>");
-							}
+                                // Удаляем текст комментария
+                                $jsComment.children('.comment_content').empty();
+                                // Удаляем все элементы управления
+                                $jsComment.find('.comment_head_content:first').html("<span class='comment_removed'><i>"+result.remover+"</i></span>");
+                            }
 
                             self._changeCommentsCount(-1);
                         },
@@ -533,21 +533,21 @@ function isGuest () {
         // Отправка комментария
         commentFormSubmit: function (e)
         {
-	        if (!self.displayedFillProfilePopup) {
-		        var wasShown = showForceFillProfilePopup(self.form);
-		        self.displayedFillProfilePopup = true;
-		        if (wasShown)
-		            return false;
-	        }
+            if (!self.displayedFillProfilePopup) {
+                var wasShown = showForceFillProfilePopup(self.form);
+                self.displayedFillProfilePopup = true;
+                if (wasShown)
+                    return false;
+            }
 
-	        if (!self.displayedFillUserEmailPopupPopup) {
-		        var wasShownUserEmailPopup = showForceFillUserEmailPopup(self.form);
-		        self.displayedFillUserEmailPopupPopup = true;
-		        if (wasShownUserEmailPopup)
-		            return false;
-	        }
+            if (!self.displayedFillUserEmailPopupPopup) {
+                var wasShownUserEmailPopup = showForceFillUserEmailPopup(self.form);
+                self.displayedFillUserEmailPopupPopup = true;
+                if (wasShownUserEmailPopup)
+                    return false;
+            }
 
-	        if(self.sending) return false;
+            if(self.sending) return false;
             e.preventDefault();
 
             var form = $(e.currentTarget);
@@ -555,16 +555,16 @@ function isGuest () {
                 'objectId': form.children('input[name="objectId"]').val(),
                 'objectType': form.children('input[name="objectType"]').val()
             };
-	        self.sending = true;
-	        form.css('opacity','.5');
+            self.sending = true;
+            form.css('opacity','.5');
             $.ajax({
                 type: 'post',
                 url: form.attr('action'),
                 data: form.serialize(),
                 dataType: 'json',
                 success: function(result) {
-	                form.css('opacity',1);
-	                self.sending = false;
+                    form.css('opacity',1);
+                    self.sending = false;
                     if (!result) {
                         $.popup.show({
                             title: 'Ошибка', 
@@ -590,14 +590,14 @@ function isGuest () {
 
                     $newComment.appendTo($objectTo);
                     self._changeCommentsCount(1);
-					$newComment.slideDown(300);
-					if ($newComment.offset().top < ($('body').scrollTop() || $('html').scrollTop()) ||
-						$newComment.offset().top > ($('body').scrollTop() || $('html').scrollTop())+$(window).height())
-							self._scrollToElement($newComment);
+                    $newComment.slideDown(300);
+                    if ($newComment.offset().top < ($('body').scrollTop() || $('html').scrollTop()) ||
+                        $newComment.offset().top > ($('body').scrollTop() || $('html').scrollTop())+$(window).height())
+                            self._scrollToElement($newComment);
                 },
                 error: function () {
-	                form.css('opacity',1);
-	                self.sending = false;
+                    form.css('opacity',1);
+                    self.sending = false;
                     $.popup.show({
                         title: 'Ошибка', 
                         content: 'Во время отправки комментария произошла ошибка'

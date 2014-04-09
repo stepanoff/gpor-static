@@ -15,6 +15,12 @@ $(document).ready(function() {
         'resultCurrencySelector': '.mini-converter-resultCurrency',
         'currencyUpdateUrl': $('#updateCurrencyRatesUrl').val()
     });
+    window.setTimeout(function(){
+        if (typeof converter == 'object' && converter != null) {
+            miniConverter.additionalConverter = converter;
+        }
+    }, 1000);
+    
     
     // Удаление карт при сортировке
     $(".b-bank-exchange-table__wrap thead tr th").on("click", function() {
@@ -43,9 +49,9 @@ $(document).ready(function() {
                 'itemAddressClass': 'b-banking-adress__list-link',
                 'lat': $.data(document, 'yandexDefaultLatitude'),
                 'lng': $.data(document, 'yandexDefaultLongitude'),
-                'scale': 14,
+                'scale': 12,
                 'pmap': $.data(document, 'yandexPeopleMaps'),
-                'height': 300,
+                'height': 320,
                 'updateCenter': true
             });
         }
@@ -158,7 +164,7 @@ $(document).ready(function() {
                                 placemark.events.add('balloonopen', function(event) {
                                     $.ajax({
                                         url: $('#getOfficeBalloonUrl').val(),
-                                        data: 'office_id=' + addrEl.attr('container_id'),
+                                        data: 'office_id=' + addrEl.attr('office_id'),
                                         dataType:'json',
                                         success: function(data) {
                                             if (!data.status) {
@@ -166,8 +172,11 @@ $(document).ready(function() {
                                             }
                                             placemark.properties.set('balloonContent', data.content);
                                             if (typeof miniConverter == 'object' && miniConverter != null) {
-                                                miniConverter.parentContainerSelector = '#miniContainer_' + addrEl.attr('container_id');
-                                                miniConverter.updateCurrencyRates(addrEl.attr('bank_id'));
+                                                converter.additionalConverter = miniConverter;
+                                                miniConverter.sourceCurrencyWrapper = $('.mini-converter-sCurrencyList').parent('.b-valute-converter-more');
+                                                miniConverter.resultCurrencyWrapper = $('.mini-converter-rCurrencyList').parent('.b-valute-converter-more');
+                                                miniConverter.parentContainerSelector = '#miniContainer_' + addrEl.attr('office_id');
+                                                miniConverter.updateCurrencyRates(addrEl.attr('bank_id'), addrEl.attr('office_id'), true);
                                                 bind_mini_converter_links();
                                             } 
                                         }
@@ -177,6 +186,7 @@ $(document).ready(function() {
                                 if (o.updateCenter) {
                                     o.updateCenter = false;
                                     map.setCenter(coords);
+                                    placemark.balloon.open();
                                 }
 
                                 var lat = coords[0];
@@ -238,8 +248,8 @@ $(document).ready(function() {
             var balloon = $(this).parents('div.mini-container-bank');
             var containter = $(this).parents('div.b-valute-converter-more');
 
-            containter.find('.b-more__elem').removeClass('b-more__elem_cur').show();
-            $(this).parent('li').addClass('b-more__elem_cur').hide();
+            containter.find('.b-more__elem').removeClass('b-more__elem_cur');
+            $(this).parent('li').addClass('b-more__elem_cur');
 
             containter.find('.b-more__visible').html($(this).html());
 
